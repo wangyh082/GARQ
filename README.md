@@ -13,7 +13,7 @@ We develop a deep learning framework based on graph-aware residual quantization 
 - [Output](#Output)
 
 ## <a name="diagram">Framework diagram</a>
-
+![GARQ Framework](https://github.com/BioLab-Hebut/GARQ/blob/main/frame.svg)
 
 
 ## <a name="Datasets">Datasets</a>
