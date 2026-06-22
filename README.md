@@ -18,7 +18,7 @@ We develop a deep learning framework based on graph-aware residual quantization 
 
 ## <a name="Datasets">Datasets</a>
 
-Example datasets used in the article can be downloaded from https://doi.org/10.6084/m9.figshare.30899447, and the downloaded datasets should be placed in the "datasets" folder.
+Example datasets used in the article can be downloaded from https://doi.org/10.6084/m9.figshare.32751672, and the downloaded datasets should be placed in the "datasets" folder.
 
 ## <a name="Dependencies">Dependencies</a>
 
