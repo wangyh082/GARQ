@@ -12,6 +12,7 @@ import anndata as ad
 import numpy as np
 import pandas as pd
 from epicarousel import preprocess as pp
+from scipy import sparse
 from epicarousel.core import Carousel
 from tqdm import tqdm
 
@@ -24,12 +25,23 @@ class SnapAPICompatCarousel(Carousel):
         snap_adata.X.enable_cache()
         chunks = snap_adata.X.chunked(self.chunk_size)
         self.cells_number, self.peaks_number = snap_adata.shape
-        raw_obs, raw_var = snap_adata.obs[:], snap_adata.var[:]
-        self.obs = raw_obs.to_pandas() if hasattr(raw_obs, "to_pandas") else pd.DataFrame(raw_obs)
-        self.var = raw_var.to_pandas() if hasattr(raw_var, "to_pandas") else pd.DataFrame(raw_var)
+        try:
+            raw_obs, raw_var = snap_adata.obs[:], snap_adata.var[:]
+            self.obs = raw_obs.to_pandas() if hasattr(raw_obs, "to_pandas") else pd.DataFrame(raw_obs)
+            self.var = raw_var.to_pandas() if hasattr(raw_var, "to_pandas") else pd.DataFrame(raw_var)
+        except RuntimeError as exc:
+            # SnapATAC2 cannot decode some valid H5AD scalar columns. Upstream
+            # only propagates these frames; assignments use the source H5AD.
+            self.obs = pd.DataFrame(index=np.arange(self.cells_number).astype(str))
+            self.var = pd.DataFrame(index=np.arange(self.peaks_number).astype(str))
+            self.metadata_fallback_reason = str(exc)
         origin_sum = 0
         for i, chunk in tqdm(enumerate(chunks), desc="EpiCarousel chunks"):
-            x = chunk[0].astype(np.int8)
+            x = chunk[0]
+            # Upstream preprocessing requires sparse `.X.data`; SnapATAC2 may
+            # expose a dense ndarray for dense source H5AD files.
+            x = x.astype(np.int8)
+            x = x if sparse.issparse(x) else sparse.csr_matrix(x)
             chunk_adata = ad.AnnData(X=x)
             chunk_adata.write(self.chunk_dir + f"/{self.data_name}_fold{i + 1}.h5ad")
             origin_sum += np.sum(x)
@@ -94,6 +106,7 @@ def main():
     summary = {"status": "PASS", "n_cells": n, "requested_K": args.requested_k,
                "realized_K": int(frame.metacell_id.nunique()), "compression": compression,
                "compatibility_shims": ["SnapATAC2 Polars obs/var conversion",
+                                        "dense chunk to equivalent CSR for upstream sparse API",
                                         "upstream np.int/np.float aliases replaced by built-in equivalents"]}
     (out / "summary.json").write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(summary, indent=2))

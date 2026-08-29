@@ -1,0 +1,209 @@
+{
+  "status": "PARTIAL",
+  "branch": "revision/major-review-experiments-phase2",
+  "base_commit": "5da45adcd62f1be8ee318d8742c80c59cb242ca2",
+  "phase1_commit": "cfaf79bdcbc26840b6cbf67e3531d6fab6540a09",
+  "gate0_commit": "59d295dddda624b43f01ca89c31c4209e70e2b5c",
+  "full_garq_runs": 12,
+  "official_epicarousel_full_pass": [
+    "D11_seed0",
+    "D17_seed0"
+  ],
+  "files": [
+    {
+      "path": "revision_exp/configs/methods_phase2/p2_D11_full_seed0.yaml",
+      "bytes": 750,
+      "sha256": "825f6c29ebd0ef6cd918ade3c92c6f7604cef227e78aabbc68bf419c28f875cf"
+    },
+    {
+      "path": "revision_exp/configs/methods_phase2/p2_D11_full_seed1.yaml",
+      "bytes": 750,
+      "sha256": "b06435b52f4771cf6bd734cc60bbfc84288868db89159222cabce1ee2ba18c8d"
+    },
+    {
+      "path": "revision_exp/configs/methods_phase2/p2_D11_full_seed2.yaml",
+      "bytes": 750,
+      "sha256": "4156fa5fc263132d2f471ff7566d65290f358383447f0a03032b508d2b82c951"
+    },
+    {
+      "path": "revision_exp/configs/methods_phase2/p2_D17_full_seed0.yaml",
+      "bytes": 729,
+      "sha256": "61268c0721a778230d99bcb95bfeb956c2febce94a4ab8146b29caa0555521c0"
+    },
+    {
+      "path": "revision_exp/configs/methods_phase2/p2_D17_full_seed1.yaml",
+      "bytes": 729,
+      "sha256": "b9715c74d7b5b030f1e6543965e09b0e8520bcbab3d6337e1dfffafb776309e0"
+    },
+    {
+      "path": "revision_exp/configs/methods_phase2/p2_D17_full_seed2.yaml",
+      "bytes": 729,
+      "sha256": "5f7fbcc137fbd1368181fba9fd9263603ea718ac7a83aa99caff853e343efe32"
+    },
+    {
+      "path": "revision_exp/configs/methods_phase2/p2_D18_full_seed0.yaml",
+      "bytes": 910,
+      "sha256": "025278e7b044ae0868469780cd2e3474f36f06b76efd87232e330f9d4c29c96a"
+    },
+    {
+      "path": "revision_exp/configs/methods_phase2/p2_D18_full_seed1.yaml",
+      "bytes": 910,
+      "sha256": "40d359543817ab0b9e71a8e18d66f2fe113449012b15d8028c978cc4cd8c8c23"
+    },
+    {
+      "path": "revision_exp/configs/methods_phase2/p2_D18_full_seed2.yaml",
+      "bytes": 910,
+      "sha256": "7e70bc655eb21776c98a5529cdfde738ff4542cf82e2f6e40422500824677898"
+    },
+    {
+      "path": "revision_exp/configs/methods_phase2/p2_D5_full_seed0.yaml",
+      "bytes": 696,
+      "sha256": "ddec4af65cc792caa5b3d1c3bc0c8e18626f8b9daf4037f9df74270e3ed6fb13"
+    },
+    {
+      "path": "revision_exp/configs/methods_phase2/p2_D5_full_seed1.yaml",
+      "bytes": 697,
+      "sha256": "ef42e0d837fcbf093112e0e073e191968fe09cf2ecb7c187671b3a942759e649"
+    },
+    {
+      "path": "revision_exp/configs/methods_phase2/p2_D5_full_seed2.yaml",
+      "bytes": 697,
+      "sha256": "371d3751d2eee52b041f20d47b711f7ed45d15546b4dab454ea8145f487b0434"
+    },
+    {
+      "path": "revision_exp/methods/epicarousel_adapter.py",
+      "bytes": 5749,
+      "sha256": "cdea79b1d124d16f638792bf163f5eb73562e765c643976f073bfdcc7663ca1a"
+    },
+    {
+      "path": "revision_results/phase2/01_size_resolution/full_benchmark_long.csv",
+      "bytes": 7288,
+      "sha256": "7a095f71e5a6c83092d2666a7315ae36dc5c9d4e7b4f82ee2acf38981de6c633"
+    },
+    {
+      "path": "revision_results/phase2/01_size_resolution/metacell_size_summary.csv",
+      "bytes": 3771,
+      "sha256": "40c78fc867c41bee9e1ee757c69bac3a5bbe7f7968a9ac48a155d03f159e0982"
+    },
+    {
+      "path": "revision_results/phase2/01_size_resolution/per_type_metrics_long.csv",
+      "bytes": 53948,
+      "sha256": "55f6d09f543b0409f63a66885af16ee776df9fefa4f45718f558cd469087fbe7"
+    },
+    {
+      "path": "revision_results/phase2/02_modality/modality_block_contribution_full.csv",
+      "bytes": 5121,
+      "sha256": "4cb842fd1c4c9f9eef8d3eba5841c534a8cc69c211eedd3e8676902cb591b20e"
+    },
+    {
+      "path": "revision_results/phase2/03_controlled_benchmark/epicarousel_D11_full_seed0_K002_retry3/summary.json",
+      "bytes": 314,
+      "sha256": "6bdf0088184913e27418f1c859a6573cf6214f78fa4058ce04e8b5bf6f6c7179"
+    },
+    {
+      "path": "revision_results/phase2/03_controlled_benchmark/epicarousel_D17_full_seed0_K002_retry1/summary.json",
+      "bytes": 315,
+      "sha256": "694b1cb4b1f972463ed2e4a264409267a2b1621197cd56300e74ebec82bafb09"
+    },
+    {
+      "path": "revision_results/phase2/08_scalability/stage_profile.csv",
+      "bytes": 9934,
+      "sha256": "1f181e52bab28f3da990c57a03a69481f7b2f602adbfaee055e720b8f70fbd79"
+    },
+    {
+      "path": "revision_results/phase2/audit/DATASET_IDENTITY_AUDIT_PHASE2.md",
+      "bytes": 1441,
+      "sha256": "800671346d8f1ec2a49986ac9f322a69cdf74deac646d6b91016227586e26d47"
+    },
+    {
+      "path": "revision_results/phase2/audit/INPUT_MATRIX_PROVENANCE.csv",
+      "bytes": 5904,
+      "sha256": "0e946ff5886927dcb1c9ab62da2bec6525cf35c324076c6f255d7c4d263340a0"
+    },
+    {
+      "path": "revision_results/phase2/audit/data_inventory.csv",
+      "bytes": 5611,
+      "sha256": "ddbd0fc8fdcfb09c50fa8b54c7a042d6d6c3bb9ce691362742191e1ae7d2d9c5"
+    },
+    {
+      "path": "revision_results/phase2/audit/dataset_registry_conflicts.csv",
+      "bytes": 539,
+      "sha256": "ff1da3f51415efffa5f9fe11c3e379ed9d602a7844ff459836c42d8c42c3c087"
+    },
+    {
+      "path": "revision_results/phase2/audit/phase1_result_validity.csv",
+      "bytes": 2087936,
+      "sha256": "e056450e0ba245233ad1d38eb59dcc3550f74b5f18b027ea444d763611d05d59"
+    },
+    {
+      "path": "revision_results/phase2/logs/P2_E3_EpiCarousel_D11_full_seed0.driver.log",
+      "bytes": 125,
+      "sha256": "f8c93ec0a8d1176307f78c0b50c881666422b1644188b6a82cca648e612662b9"
+    },
+    {
+      "path": "revision_results/phase2/logs/P2_E3_EpiCarousel_D11_full_seed0_retry1.driver.log",
+      "bytes": 898,
+      "sha256": "cefd5d1d7c7c2087a6246bd0c394c201d53fa8df6978fd86a08d645fc624bcdf"
+    },
+    {
+      "path": "revision_results/phase2/logs/P2_E3_EpiCarousel_D11_full_seed0_retry2.driver.log",
+      "bytes": 898,
+      "sha256": "57925be2291366f7d3c84f535b93759dea297dc0542e9f6159766c8d047416ae"
+    },
+    {
+      "path": "revision_results/phase2/logs/P2_E3_EpiCarousel_D11_full_seed0_retry3.driver.log",
+      "bytes": 1550,
+      "sha256": "d453847bdfe0421e82e574b0606df65a2986ddc300d0a740aa84e1818dd96513"
+    },
+    {
+      "path": "revision_results/phase2/logs/P2_E3_EpiCarousel_D17_full_seed0.driver.log",
+      "bytes": 7083,
+      "sha256": "ba9c09e37599a7f25c786bc4ef8b6ce93cb411a962a58d1e82332ed4b92a4d3a"
+    },
+    {
+      "path": "revision_results/phase2/logs/P2_E3_EpiCarousel_D17_full_seed0_retry1.driver.log",
+      "bytes": 2135,
+      "sha256": "9006553aa701aac74bdab50cda65f4d3a8ff1a207ad3fb1053d463cc3e70ffe3"
+    },
+    {
+      "path": "revision_results/phase2/reports/BASELINE_IMPLEMENTATION_TABLE_PHASE2.md",
+      "bytes": 2375,
+      "sha256": "a1417dbb8c9dae1dc87b44fb68d280ff068040d4488c1a4ceaa6d6219b4820b4"
+    },
+    {
+      "path": "revision_results/phase2/reports/BLOCKED_OR_DEFERRED_PHASE2.md",
+      "bytes": 379,
+      "sha256": "8eacf2f258b5dbcb9882fb948a3eee7e30e503938426cf3ed896c48e0557b5d2"
+    },
+    {
+      "path": "revision_results/phase2/reports/FAILURE_LOG_PHASE2.md",
+      "bytes": 2082,
+      "sha256": "a6be0e7274706312fa3c8b8e01d32ffce21305cb1146631007f3ac8613186943"
+    },
+    {
+      "path": "revision_results/phase2/reports/HANDOFF_FOR_CHATGPT_PHASE2.md",
+      "bytes": 3798,
+      "sha256": "e0508673250c86df5985d787040ba099c1415087ac6432ee792f5d24041de677"
+    },
+    {
+      "path": "revision_results/phase2/reports/PHASE2_EXPERIMENT_REPORT.md",
+      "bytes": 9868,
+      "sha256": "9470dfd06e23644451858889ea6d9db981c98e3c9f2d45128eef5bc5e4a5b5dc"
+    },
+    {
+      "path": "revision_results/phase2/reports/REBUTTAL_EVIDENCE_DRAFT_PHASE2.md",
+      "bytes": 146,
+      "sha256": "33383b9fbf676bbdae1f8702bad9e02361a711ec774749d376d3e8ff29f6a4c9"
+    },
+    {
+      "path": "revision_results/phase2/reports/RESULT_FILE_INDEX_PHASE2.md",
+      "bytes": 110,
+      "sha256": "b00d7e4ad6589dc4a21013d5f1013813841359166c5ffea3884dc6cb37d2bc87"
+    },
+    {
+      "path": "revision_results/phase2/reports/REVIEWER_EVIDENCE_MATRIX_PHASE2.md",
+      "bytes": 3405,
+      "sha256": "f4db8da69111fefad50cacd2af4b71a7da5955176e3e1334bbe576162aded923"
+    }
+  ]
+}

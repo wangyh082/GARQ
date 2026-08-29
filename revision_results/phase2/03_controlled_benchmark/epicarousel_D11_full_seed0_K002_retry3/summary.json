@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "n_cells": 9631,
+  "requested_K": 193,
+  "realized_K": 192,
+  "compression": 50,
+  "compatibility_shims": [
+    "SnapATAC2 Polars obs/var conversion",
+    "dense chunk to equivalent CSR for upstream sparse API",
+    "upstream np.int/np.float aliases replaced by built-in equivalents"
+  ]
+}

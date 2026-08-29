@@ -20,3 +20,9 @@ Failures are retained; none is silently removed from method tables.
 - First D11 smoke stopped in upstream `Carousel.data_split`: current SnapATAC2 returns a Polars DataFrame, while upstream assumes its older table orientation.
 - Second D11 smoke reached the construction launcher, which stopped on upstream `np.int`/`np.float` aliases removed by NumPy.
 - With the two disclosed compatibility-only shims, official D11 ATAC construction PASS: 2,000/2,000 cells assigned, requested K=40, realized K=40.
+
+## EpiCarousel full-data compatibility attempts
+
+- D17 initial full run failed because upstream assumes sparse `.X.data`; retained log `P2_E3_EpiCarousel_D17_full_seed0.driver.log`. Equivalent dense chunk to CSR shim enabled retry PASS.
+- D11 initial launcher used a nonexistent Conda environment and exited immediately; log retained.
+- D11 retry1/retry2 exposed SnapATAC2 `Unsupported data type: Scalar(I8)` for H5AD metadata. An anonymous metadata-frame fallback was added only for upstream propagation; source cell IDs remain authoritative. Retry3 PASS.
