@@ -33,29 +33,41 @@ def _condition_fields(condition: str) -> tuple[str, str, float | None]:
 
 
 def main() -> None:
-    root = Path("revision_results/02_modality/noise/D5")
-    baseline_dir = root / "baseline_counts_p1"
-    baseline_assignments = pd.read_csv(baseline_dir / "cell_assignments.csv")
-    baseline_ids = baseline_assignments["metacell_id"].to_numpy()
-    baseline_blocks = _blocks(baseline_dir)
-    baseline_neighbors = {name: cosine_neighbors(block, 15) for name, block in baseline_blocks.items()}
     rows = []
     per_type_rows = []
-    for run_dir in sorted(path for path in root.iterdir() if path.is_dir()):
-        condition = run_dir.name
-        perturbed_modality, perturbation_kind, probability = _condition_fields(condition)
-        assignments = pd.read_csv(run_dir / "cell_assignments.csv")
-        comparison = compare_assignments(baseline_ids, assignments["metacell_id"].to_numpy())
-        size = pd.read_csv(run_dir / "metacell_size_summary.csv").iloc[0]
-        contribution = pd.read_csv(run_dir / "modality_block_contribution.csv").set_index("data_type")
-        blocks = _blocks(run_dir)
-        for evaluated_modality, block in blocks.items():
-            jaccard = neighbor_jaccard(
-                baseline_neighbors[evaluated_modality], cosine_neighbors(block, 15)
+    noise_root = Path("revision_results/02_modality/noise")
+    for root in sorted(path for path in noise_root.iterdir() if path.is_dir()):
+        dataset = root.name
+        baseline_dir = root / "baseline_counts_p1"
+        if not baseline_dir.exists():
+            continue
+        baseline_assignments = pd.read_csv(baseline_dir / "cell_assignments.csv")
+        baseline_ids = baseline_assignments["metacell_id"].to_numpy()
+        baseline_blocks = _blocks(baseline_dir)
+        baseline_neighbors = {
+            name: cosine_neighbors(block, 15)
+            for name, block in baseline_blocks.items()
+        }
+        for run_dir in sorted(path for path in root.iterdir() if path.is_dir()):
+            condition = run_dir.name
+            perturbed_modality, perturbation_kind, probability = _condition_fields(condition)
+            assignments = pd.read_csv(run_dir / "cell_assignments.csv")
+            comparison = compare_assignments(
+                baseline_ids, assignments["metacell_id"].to_numpy()
             )
-            rows.append(
-                {
-                    "dataset": "D5",
+            size = pd.read_csv(run_dir / "metacell_size_summary.csv").iloc[0]
+            contribution = pd.read_csv(
+                run_dir / "modality_block_contribution.csv"
+            ).set_index("data_type")
+            blocks = _blocks(run_dir)
+            for evaluated_modality, block in blocks.items():
+                jaccard = neighbor_jaccard(
+                    baseline_neighbors[evaluated_modality],
+                    cosine_neighbors(block, 15),
+                )
+                rows.append(
+                    {
+                    "dataset": dataset,
                     "seed": 0,
                     "condition": condition,
                     "perturbed_modality": perturbed_modality,
@@ -76,14 +88,14 @@ def main() -> None:
                     "block_l2_norm_mean": float(contribution.loc[evaluated_modality, "l2_norm_mean"]),
                     "block_variance_trace": float(contribution.loc[evaluated_modality, "variance_trace"]),
                     "relative_abs_dot_contribution": float(contribution.loc[evaluated_modality, "relative_abs_dot_contribution"]),
-                }
-            )
-        per_type = pd.read_csv(run_dir / "per_type_metrics_long.csv")
-        per_type.insert(0, "retention_probability", probability)
-        per_type.insert(0, "perturbation_kind", perturbation_kind)
-        per_type.insert(0, "perturbed_modality", perturbed_modality)
-        per_type.insert(0, "condition", condition)
-        per_type_rows.append(per_type)
+                    }
+                )
+            per_type = pd.read_csv(run_dir / "per_type_metrics_long.csv")
+            per_type.insert(0, "retention_probability", probability)
+            per_type.insert(0, "perturbation_kind", perturbation_kind)
+            per_type.insert(0, "perturbed_modality", perturbed_modality)
+            per_type.insert(0, "condition", condition)
+            per_type_rows.append(per_type)
     output_root = Path("revision_results/02_modality")
     pd.DataFrame(rows).to_csv(output_root / "modality_noise_perturbation.csv", index=False)
     pd.concat(per_type_rows, ignore_index=True).to_csv(output_root / "modality_noise_per_type.csv", index=False)

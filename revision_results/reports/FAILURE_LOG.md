@@ -39,3 +39,7 @@ D11 RNA 在 legacy `sc.pp.log1p` 前被 Scanpy 判定“seems to be already log-
 ## F010 — direct pytest invocation collection failure recurred
 
 新增 E8 instrumentation 后直接执行 `pytest -q revision_exp/tests`，9 个模块在 collection 阶段因仓库根目录未进入 import path 而失败，与 F002 同因。立即使用 `python -m pytest -q revision_exp/tests`，结果为 `14 passed, 13 warnings`。本次失败未通过删除测试规避。
+
+## F011 — direct pytest invocation collection failure after E2 extension
+
+新增 D11 noise 配置后再次直接执行 `pytest -q revision_exp/tests`，12 个模块在 collection 阶段因同一 import-path 问题失败。未修改或删除测试；改用 `python -m pytest -q revision_exp/tests` 后结果为 `19 passed, 13 warnings`。这是运行入口失败，不是行为断言失败。

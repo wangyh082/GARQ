@@ -2,7 +2,7 @@
 
 ## Status
 
-当前证据包括 D5/D11/D17/D18 的 2,000-cell、seed-0 modality combination smoke，learned-block contribution 与 kNN-to-anchor mapping，以及 D5 count-level thinning/permutation grid。尚未完成 5 seeds、全量 cells、显式 modality-weight grid 和其他 baseline，因此结论为 **PARTIAL diagnostic evidence**，不得写成最终 biological superiority claim。
+当前证据包括 D5/D11/D17/D18 的 2,000-cell、seed-0 modality combination smoke，learned-block contribution 与 kNN-to-anchor mapping，以及 D5/D11 count-level thinning/permutation grids。尚未完成 5 seeds、全量 cells、D17/D18 noise grids、显式 modality-weight grid 和其他 baseline，因此结论为 **PARTIAL diagnostic evidence**，不得写成最终 biological superiority claim。
 
 ## What a released shared anchor represents
 
@@ -35,9 +35,26 @@ The grid shows strong assignment sensitivity and asymmetric coupling. ADT pertur
 
 The relative absolute-dot contribution does not automatically suppress a degraded modality: across RNA thinning, RNA contribution remains 37.9%–48.8%; across ADT thinning/permutation, ADT remains 48.7%–51.9%. Thus raw concatenation does not provide an evident quality-aware gating mechanism.
 
+## D11 count-level modality perturbation
+
+Design matches the D5 smoke (same 2,000-cell subset, seed 0, requested K=40, 6 epochs), but uses `layers['counts']` for RNA because D11 RNA `.X` is log-normalized, and uses ATAC `.X` after verifying non-negative integer values. The shared p=1 baseline therefore is a count-source diagnostic baseline, not a silent replacement for the legacy log-`.X` reproduction.
+
+| Condition | realized K | ARI vs p=1 | perturbed-block kNN15 Jaccard | unperturbed-block kNN15 Jaccard |
+|---|---:|---:|---:|---:|
+| RNA thin 0.75 | 40 | 0.307 | 0.082 | 0.036 |
+| RNA thin 0.50 | 40 | 0.227 | 0.057 | 0.036 |
+| RNA thin 0.25 | 40 | 0.153 | 0.038 | 0.035 |
+| RNA permutation | 40 | 0.132 | 0.004 | 1.000 |
+| ATAC thin 0.75 | 40 | 0.303 | 0.050 | 1.000 |
+| ATAC thin 0.50 | 40 | 0.245 | 0.033 | 1.000 |
+| ATAC thin 0.25 | 40 | 0.263 | 0.013 | 1.000 |
+| ATAC permutation | 37 | 0.190 | 0.005 | 1.000 |
+
+The D11 count baseline realizes 39 anchors. Its sampled absolute-dot contribution is RNA 37.4% and ATAC 62.6%. The contribution does not track input quality monotonically: at ATAC p=0.25 the ATAC share rises to 70.3%, while at RNA p=0.25 the RNA share remains 30.2%. As in D5, thinning one modality can substantially change the separately encoded block for the unchanged modality, whereas the permutation controls happen to preserve the unchanged block exactly under this deterministic single-seed path. This supports sensitivity and training-coupling, not automatic quality-aware weighting.
+
 ## Rare-state evidence
 
-In the D5 subset, Regulatory T cells and conventional DC each have 15 cells. Treg recall/F1 is 0 in the p=1 baseline and every perturbation condition. cDC recall/F1 is also 0 except RNA thinning p=0.75 (recall 0.467, F1 0.438). Because this is one seed and a non-monotonic isolated result, it must not be selected as evidence that noise improves rare-state preservation.
+In the D5 subset, Regulatory T cells and conventional DC each have 15 cells. Treg recall/F1 is 0 in the p=1 baseline and every perturbation condition. cDC recall/F1 is also 0 except RNA thinning p=0.75 (recall 0.467, F1 0.438). In the D11 subset, Plasma cell has 8 cells and recall/F1 is 0 in the count baseline and all eight perturbations; the reviewer-requested gdT label is absent from the current D11 labels. These results do not support rare-state robustness. The isolated non-monotonic D5 cDC result must not be selected as evidence that noise improves rare-state preservation.
 
 ## Interpretation boundary
 
@@ -45,4 +62,4 @@ In the D5 subset, Regulatory T cells and conventional DC each have 15 cells. Tre
 - They do not support “all modalities contribute equally,” “adding a modality is always beneficial,” or a causal biological interpretation of anchor membership.
 - Full claims require D5/D11/D17/D18 full-data, 5 seeds, explicit block-normalization/variance/weight variants, matched realized K, gradient/update norm tracing, and baseline comparisons.
 
-Primary evidence: `revision_results/02_modality/modality_block_contribution.csv`, `neighborhood_anchor_mapping.csv`, `modality_noise_perturbation.csv`, `modality_noise_per_type.csv`, and all resolved `E2_D5_noise_*` configs/manifests.
+Primary evidence: `revision_results/02_modality/modality_block_contribution.csv`, `neighborhood_anchor_mapping.csv`, `modality_noise_perturbation.csv`, `modality_noise_per_type.csv`, and all resolved `E2_D5_noise_*` / `E2_D11_noise_*` configs/manifests.
