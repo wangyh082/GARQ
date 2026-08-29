@@ -1,0 +1,36 @@
+{
+  "config_id": "E4_D5_reposition_interval5_smoke_seed1_v1",
+  "task": "legacy_garq",
+  "implementation_tag": "diagnostic_variant_reposition_interval",
+  "dataset": "D5",
+  "data_files": [
+    "/home/zhangpeiru/data/RNA+ADT/D5/D5_rna.h5ad",
+    "/home/zhangpeiru/data/RNA+ADT/D5/D5_adt.h5ad"
+  ],
+  "data_types": [
+    "RNA",
+    "ADT"
+  ],
+  "label_key": "celltype",
+  "cell_limit": 2000,
+  "subset_seed": 1729,
+  "requested_K": 40,
+  "epochs": 6,
+  "batch_size": 256,
+  "k_knn": 5,
+  "seed": 1,
+  "device": "cuda",
+  "deterministic": true,
+  "anchors_init": "Kmeans",
+  "converge_threshold": 10,
+  "min_available_ram_gb": 32,
+  "min_free_gpu_gb": 8,
+  "anchor_dynamics": {
+    "trace": true,
+    "manual_reposition_enabled": true,
+    "reposition_interval": 5
+  },
+  "output_subdir": "04_anchor/D5_reposition_interval5_smoke_seed1",
+  "result_root": "revision_results",
+  "force": false
+}

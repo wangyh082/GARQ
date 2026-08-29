@@ -1,0 +1,2 @@
+dataset,method,seed,implementation_tag,resolution,n_cells,requested_K,realized_K,empty_anchor_count,empty_rate,compression_ratio,size_min,size_q1,size_median,size_mean,size_q3,size_p90,size_p95,size_p99,size_max,size_sd,size_cv,size_gini,singleton_rate,size_le_2_rate,size_gt_2x_median_rate,size_gt_5x_median_rate,tukey_outlier_count,max_median_ratio
+D5,GARQ,3,instrumented_legacy,0.02,2000,40,40,0,0.0,50.0,1.0,7.25,19.0,50.0,87.25,135.1,152.69999999999985,210.1,214.0,58.172158288995945,1.163443165779919,0.589575,0.05,0.15,0.4,0.2,1,11.263157894736842

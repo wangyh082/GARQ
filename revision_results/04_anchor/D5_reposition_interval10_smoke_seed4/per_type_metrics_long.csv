@@ -1,0 +1,29 @@
+dataset,method,seed,implementation_tag,resolution,cell_type,abundance,abundance_class,support,cell_precision,cell_recall,cell_f1,dominant_metacell_count,purity_unweighted,purity_weighted,involved_metacell_size_median,involved_metacell_size_p95,involved_metacell_size_max,strict_recovery,majority_recovery,majority_retention_metacell_count,majority_retention,high_purity_recovery_metacell_count,high_purity_recovery
+D5,GARQ,4,diagnostic_variant_reposition_interval,0.02,CD4 and CD8 activated memory,0.0075,Rare,15,1.0,0.06666666666666667,0.125,1,1.0,1.0,144.5,344.54999999999995,366.0,0.06666666666666667,0.06666666666666667,1,0.25,1,0.25
+D5,GARQ,4,diagnostic_variant_reposition_interval,0.02,CD4 memory,0.0865,Intermediate,173,0.36193029490616624,0.7803468208092486,0.4945054945054945,2,0.4646760343481655,0.36193029490616624,51.0,330.25,366.0,0.0,0.7803468208092486,1,0.16666666666666666,0,0.0
+D5,GARQ,4,diagnostic_variant_reposition_interval,0.02,CD4 naive I,0.0735,Intermediate,147,0.4019607843137255,0.2789115646258503,0.3293172690763052,2,0.44318181818181823,0.4019607843137255,66.0,337.4,366.0,0.0,0.2789115646258503,1,0.2,0,0.0
+D5,GARQ,4,diagnostic_variant_reposition_interval,0.02,CD4 naive II,0.018,Intermediate,36,0.0,0.0,0.0,0,,,66.0,337.4,366.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,4,diagnostic_variant_reposition_interval,0.02,CD56bright CD16dim NK,0.0185,Intermediate,37,0.0,0.0,0.0,0,,,139.0,344.2,367.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,4,diagnostic_variant_reposition_interval,0.02,CD56dim CD16bright NK,0.206,Common,412,0.6560509554140127,1.0,0.7923076923076923,3,0.7022428334189753,0.6560509554140127,139.0,344.2,367.0,0.0,1.0,3,1.0,2,0.6666666666666666
+D5,GARQ,4,diagnostic_variant_reposition_interval,0.02,CD8 effector,0.06,Intermediate,120,0.0,0.0,0.0,0,,,181.0,345.4,367.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,4,diagnostic_variant_reposition_interval,0.02,CD8 memory,0.038,Intermediate,76,0.0,0.0,0.0,0,,,223.0,366.8,367.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,4,diagnostic_variant_reposition_interval,0.02,CD8 naive,0.0385,Intermediate,77,0.0,0.0,0.0,0,,,144.5,344.54999999999995,366.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,4,diagnostic_variant_reposition_interval,0.02,Classical monocytes,0.1035,Common,207,0.6160990712074303,0.961352657004831,0.7509433962264151,5,0.6560196469043303,0.6160990712074303,66.5,141.0,157.0,0.0,0.961352657004831,5,0.8333333333333334,2,0.3333333333333333
+D5,GARQ,4,diagnostic_variant_reposition_interval,0.02,Erythroid ,0.005,Rare,10,0.8333333333333334,1.0,0.9090909090909091,1,0.8333333333333334,0.8333333333333334,12.0,12.0,12.0,0.0,1.0,1,1.0,1,1.0
+D5,GARQ,4,diagnostic_variant_reposition_interval,0.02,MAIT-NKT cells,0.045,Intermediate,90,0.3004484304932735,0.7444444444444445,0.4281150159744409,1,0.3004484304932735,0.3004484304932735,294.5,366.85,367.0,0.0,0.7444444444444445,0,0.0,0,0.0
+D5,GARQ,4,diagnostic_variant_reposition_interval,0.02,Memory B,0.0215,Intermediate,43,0.41379310344827586,0.5581395348837209,0.4752475247524752,1,0.41379310344827586,0.41379310344827586,92.0,122.6,126.0,0.0,0.5581395348837209,0,0.0,0,0.0
+D5,GARQ,4,diagnostic_variant_reposition_interval,0.02,NK-T doublets,0.015,Intermediate,30,0.0,0.0,0.0,0,,,223.0,366.8,367.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,4,diagnostic_variant_reposition_interval,0.02,NK-monocyte doublets,0.014,Intermediate,28,0.25,0.03571428571428571,0.0625,1,0.25,0.25,46.0,298.59999999999985,367.0,0.0,0.03571428571428571,0,0.0,0,0.0
+D5,GARQ,4,diagnostic_variant_reposition_interval,0.02,Naive B,0.057,Intermediate,114,0.7698412698412699,0.8508771929824561,0.8083333333333333,1,0.7698412698412699,0.7698412698412699,92.0,122.6,126.0,0.0,0.8508771929824561,1,0.5,1,0.5
+D5,GARQ,4,diagnostic_variant_reposition_interval,0.02,Neutrophils,0.0295,Intermediate,59,0.0,0.0,0.0,0,,,56.0,134.59999999999997,157.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,4,diagnostic_variant_reposition_interval,0.02,Non classical monocytes,0.051,Intermediate,102,0.8526315789473684,0.7941176470588235,0.8223350253807108,2,0.6925287356321839,0.8526315789473684,90.0,366.55,367.0,0.0,0.7941176470588235,1,0.1,1,0.1
+D5,GARQ,4,diagnostic_variant_reposition_interval,0.02,Plasma cells,0.002,Rare,4,1.0,0.25,0.4,1,1.0,1.0,18.5,34.25,36.0,0.25,0.25,1,0.5,1,0.5
+D5,GARQ,4,diagnostic_variant_reposition_interval,0.02,Platelet-T cell doublets,0.002,Rare,4,1.0,0.25,0.4,1,1.0,1.0,73.5,210.39999999999998,223.0,0.25,0.25,1,0.25,1,0.25
+D5,GARQ,4,diagnostic_variant_reposition_interval,0.02,Platelet-bound monocytes,0.0155,Intermediate,31,0.0,0.0,0.0,0,,,46.0,144.2,157.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,4,diagnostic_variant_reposition_interval,0.02,Platelets,0.003,Rare,6,0.75,1.0,0.8571428571428571,1,0.75,0.75,8.0,8.0,8.0,0.0,1.0,1,1.0,1,1.0
+D5,GARQ,4,diagnostic_variant_reposition_interval,0.02,Proliferating T and NK cell,0.0025,Rare,5,0.0,0.0,0.0,0,,,244.5,354.75,367.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,4,diagnostic_variant_reposition_interval,0.02,Regulatory T cells,0.0075,Rare,15,0.0,0.0,0.0,0,,,223.0,351.7,366.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,4,diagnostic_variant_reposition_interval,0.02,T-NK-B cell doublets,0.0265,Intermediate,53,0.9444444444444444,0.32075471698113206,0.4788732394366197,2,0.9705882352941176,0.9444444444444444,27.0,147.7,157.0,0.018867924528301886,0.32075471698113206,2,0.2857142857142857,2,0.2857142857142857
+D5,GARQ,4,diagnostic_variant_reposition_interval,0.02,conventional DC,0.0075,Rare,15,0.0,0.0,0.0,0,,,52.0,139.5,157.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,4,diagnostic_variant_reposition_interval,0.02,gdT cells,0.04,Intermediate,80,0.0,0.0,0.0,0,,,181.0,366.75,367.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,4,diagnostic_variant_reposition_interval,0.02,plasmacytoid DC,0.0055,Rare,11,0.37037037037037035,0.9090909090909091,0.5263157894736842,1,0.37037037037037035,0.37037037037037035,15.5,25.849999999999998,27.0,0.0,0.9090909090909091,0,0.0,0,0.0
