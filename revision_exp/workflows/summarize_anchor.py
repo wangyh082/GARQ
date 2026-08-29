@@ -13,7 +13,7 @@ def main() -> None:
     root = Path("revision_results/04_anchor")
     trace_tables = []
     summary_rows = []
-    for dataset in ("D5", "D11"):
+    for dataset in ("D5", "D11", "D17"):
         legacy_dir = root / f"{dataset}_legacy_continuous_smoke"
         legacy_ids = pd.read_csv(legacy_dir / "cell_assignments.csv")["metacell_id"].to_numpy()
         for run_dir in sorted(root.glob(f"{dataset}_*_smoke")):
