@@ -1,0 +1,5 @@
+stage,wall_time_seconds,peak_cpu_rss_bytes,output_shape
+representation_RNA,0.6826388477347791,1297289216,"[2000, 50]"
+representation_ADT,0.01763555407524109,1297289216,"[2000, 30]"
+aggregation_KMeans,0.30911687202751637,1297289216,[2000]
+aggregation_MiniBatchKMeans,0.10633875010535121,1297289216,[2000]

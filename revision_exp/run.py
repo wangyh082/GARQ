@@ -13,6 +13,7 @@ from pathlib import Path
 import yaml
 
 from revision_exp.audit.e0 import run_e0
+from revision_exp.workflows.fixed_representation import run_fixed_representation_benchmark
 from revision_exp.workflows.legacy import run_legacy_experiment
 from revision_exp.utils.provenance import config_hash, hardware_snapshot, peak_rss_bytes, write_json
 
@@ -56,6 +57,8 @@ def run(config_path: Path) -> Path:
             run_e0(output_dir, repo_root)
         elif config["task"] == "legacy_garq":
             run_legacy_experiment(config, output_dir, result_root)
+        elif config["task"] == "fixed_representation_benchmark":
+            run_fixed_representation_benchmark(config, output_dir, result_root)
         else:
             raise ValueError(f"Unsupported task: {config['task']}")
     except BaseException as caught:

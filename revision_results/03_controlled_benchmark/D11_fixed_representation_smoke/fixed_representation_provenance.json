@@ -1,0 +1,27 @@
+{
+  "dataset": "D11",
+  "shape": [
+    2000,
+    100
+  ],
+  "equal_weight_concatenation": true,
+  "blocks": [
+    {
+      "data_type": "RNA",
+      "preprocessing": "normalize_total_1e4+log1p+HVG+PCA",
+      "selected_features": 3004,
+      "components": 50,
+      "postprocessing": "feature_standardize+per-cell_L2"
+    },
+    {
+      "data_type": "ATAC",
+      "preprocessing": "TF-IDF+TruncatedSVD_LSI",
+      "input_features": 113600,
+      "components": 50,
+      "first_component_depth_correlation": -0.5058816733390793,
+      "remove_first_component_threshold_abs_correlation": 0.5,
+      "first_component_removed": true,
+      "postprocessing": "feature_standardize+per-cell_L2"
+    }
+  ]
+}

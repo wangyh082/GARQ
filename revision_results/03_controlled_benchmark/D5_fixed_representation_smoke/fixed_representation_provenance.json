@@ -1,0 +1,24 @@
+{
+  "dataset": "D5",
+  "shape": [
+    2000,
+    80
+  ],
+  "equal_weight_concatenation": true,
+  "blocks": [
+    {
+      "data_type": "RNA",
+      "preprocessing": "normalize_total_1e4+log1p+HVG+PCA",
+      "selected_features": 3000,
+      "components": 50,
+      "postprocessing": "feature_standardize+per-cell_L2"
+    },
+    {
+      "data_type": "ADT",
+      "preprocessing": "per-cell CLR(log1p centered)+PCA",
+      "input_features": 189,
+      "components": 30,
+      "postprocessing": "feature_standardize+per-cell_L2"
+    }
+  ]
+}

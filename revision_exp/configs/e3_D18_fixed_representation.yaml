@@ -1,0 +1,17 @@
+config_id: E3_D18_fixed_representation_smoke_seed0_K002_v1
+task: fixed_representation_benchmark
+implementation_tag: diagnostic_fixed_representation
+dataset: D18
+data_files: [/home/zhangpeiru/data/RNA_ATAC_ADT/GSE158013/GSE158013_rna.h5ad, /home/zhangpeiru/data/RNA_ATAC_ADT/GSE158013/GSE158013_atac.h5ad, /home/zhangpeiru/data/RNA_ATAC_ADT/GSE158013/GSE158013_adt.h5ad]
+data_types: [RNA, ATAC, ADT]
+label_key: celltype
+obs_name_canonicalization: [null, null, {pattern: '\.([0-9]+)$', replacement: '-\1'}]
+cell_limit: 2000
+subset_seed: 1729
+requested_K: 40
+seed: 0
+aggregation_methods: [KMeans, MiniBatchKMeans]
+minibatch_size: 256
+output_subdir: 03_controlled_benchmark/D18_fixed_representation_smoke
+result_root: revision_results
+force: false
