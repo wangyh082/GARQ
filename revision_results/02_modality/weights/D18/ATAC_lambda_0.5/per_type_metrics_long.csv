@@ -1,0 +1,13 @@
+dataset,method,seed,implementation_tag,resolution,cell_type,abundance,abundance_class,support,cell_precision,cell_recall,cell_f1,dominant_metacell_count,purity_unweighted,purity_weighted,involved_metacell_size_median,involved_metacell_size_p95,involved_metacell_size_max,strict_recovery,majority_recovery,majority_retention_metacell_count,majority_retention,high_purity_recovery_metacell_count,high_purity_recovery
+D18,GARQ,0,diagnostic_variant_modality_weight,0.02,B.Activated,0.0325,Intermediate,65,0.0,0.0,0.0,0,,,95.0,145.9,148.0,0.0,0.0,0,0.0,0,0.0
+D18,GARQ,0,diagnostic_variant_modality_weight,0.02,B.Naive,0.1545,Common,309,0.824,1.0,0.9035087719298246,4,0.7968110701319657,0.824,95.0,145.9,148.0,0.0,1.0,4,1.0,3,0.75
+D18,GARQ,0,diagnostic_variant_modality_weight,0.02,DC.Myeloid,0.001,Rare,2,0.0,0.0,0.0,0,,,146.0,146.0,146.0,0.0,0.0,0,0.0,0,0.0
+D18,GARQ,0,diagnostic_variant_modality_weight,0.02,Mono.CD14,0.1345,Common,269,0.9572953736654805,1.0,0.9781818181818182,3,0.9012828875842575,0.9572953736654805,126.0,144.0,146.0,0.0,1.0,3,1.0,3,1.0
+D18,GARQ,0,diagnostic_variant_modality_weight,0.02,Mono.CD16,0.004,Rare,8,0.0,0.0,0.0,0,,,126.0,144.0,146.0,0.0,0.0,0,0.0,0,0.0
+D18,GARQ,0,diagnostic_variant_modality_weight,0.02,NK,0.0525,Intermediate,105,0.78125,0.9523809523809523,0.8583690987124463,1,0.78125,0.78125,85.5,150.95,155.0,0.0,0.9523809523809523,1,0.25,1,0.25
+D18,GARQ,0,diagnostic_variant_modality_weight,0.02,Platelets,0.002,Rare,4,1.0,0.25,0.4,1,1.0,1.0,47.5,120.04999999999997,131.0,0.25,0.25,1,0.25,1,0.25
+D18,GARQ,0,diagnostic_variant_modality_weight,0.02,T.CD4.Memory,0.2205,Common,441,0.6949152542372882,0.46485260770975056,0.5570652173913043,12,0.6717551224781481,0.6949152542372882,20.0,150.5,249.0,0.009070294784580499,0.46485260770975056,10,0.3225806451612903,4,0.12903225806451613
+D18,GARQ,0,diagnostic_variant_modality_weight,0.02,T.CD4.Naive,0.221,Common,442,0.5860597439544808,0.9321266968325792,0.7196506550218341,11,0.6303367240770503,0.5860597439544808,18.0,148.69999999999982,249.0,0.0022624434389140274,0.9321266968325792,9,0.5,4,0.2222222222222222
+D18,GARQ,0,diagnostic_variant_modality_weight,0.02,T.CD8.Effector,0.12,Common,240,0.6852791878172588,0.5625,0.6178489702517163,6,0.707576726257626,0.6852791878172588,39.5,153.79999999999998,249.0,0.0,0.5625,6,0.2727272727272727,3,0.13636363636363635
+D18,GARQ,0,diagnostic_variant_modality_weight,0.02,T.CD8.Naive,0.0565,Intermediate,113,0.5,0.08849557522123894,0.15037593984962405,1,0.5,0.5,53.0,178.19999999999982,249.0,0.0,0.08849557522123894,0,0.0,0,0.0
+D18,GARQ,0,diagnostic_variant_modality_weight,0.02,T.DoubleNegative,0.001,Rare,2,0.0,0.0,0.0,0,,,131.5,237.25,249.0,0.0,0.0,0,0.0,0,0.0

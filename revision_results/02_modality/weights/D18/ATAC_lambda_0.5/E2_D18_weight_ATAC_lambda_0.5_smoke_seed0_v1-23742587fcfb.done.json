@@ -1,0 +1,108 @@
+{
+  "run_id": "E2_D18_weight_ATAC_lambda_0.5_smoke_seed0_v1-23742587fcfb",
+  "config_id": "E2_D18_weight_ATAC_lambda_0.5_smoke_seed0_v1",
+  "config_sha256": "23742587fcfb9e1a3a75b9a88c5f8d43d77cd2b0dd6702b93be21ed9a1c29b3c",
+  "task": "legacy_garq",
+  "implementation_tag": "diagnostic_variant_modality_weight",
+  "status": "PASS",
+  "error": null,
+  "wall_time_seconds": 18.485962629318237,
+  "peak_cpu_rss_bytes": 7192653824,
+  "git_commit": "a3d78689b56a647915ee82d41cc2d4c6dc34f5d6",
+  "git_branch": "revision/major-review-experiments",
+  "runtime_environment": {
+    "CUDA_VISIBLE_DEVICES": "0",
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "OMP_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4"
+  },
+  "hardware_before": {
+    "captured_at_utc": "2026-08-29T06:18:19.769243+00:00",
+    "hostname": "node01",
+    "os": "Linux-5.15.0-139-generic-x86_64-with-glibc2.31",
+    "python": "3.11.6",
+    "pid": 1239838,
+    "cpu": {
+      "command": [
+        "lscpu"
+      ],
+      "returncode": 0,
+      "stdout": "Architecture:                         x86_64\nCPU op-mode(s):                       32-bit, 64-bit\nByte Order:                           Little Endian\nAddress sizes:                        46 bits physical, 57 bits virtual\nCPU(s):                               64\nOn-line CPU(s) list:                  0-63\nThread(s) per core:                   1\nCore(s) per socket:                   32\nSocket(s):                            2\nNUMA node(s):                         2\nVendor ID:                            GenuineIntel\nCPU family:                           6\nModel:                                106\nModel name:                           Intel(R) Xeon(R) Platinum 8336C CPU @ 2.30GHz\nStepping:                             6\nCPU MHz:                              800.000\nCPU max MHz:                          3500.0000\nCPU min MHz:                          800.0000\nBogoMIPS:                             4600.00\nVirtualization:                       VT-x\nL1d cache:                            3 MiB\nL1i cache:                            2 MiB\nL2 cache:                             80 MiB\nL3 cache:                             108 MiB\nNUMA node0 CPU(s):                    0-31\nNUMA node1 CPU(s):                    32-63\nVulnerability Gather data sampling:   Mitigation; Microcode\nVulnerability Itlb multihit:          Not affected\nVulnerability L1tf:                   Not affected\nVulnerability Mds:                    Not affected\nVulnerability Meltdown:               Not affected\nVulnerability Mmio stale data:        Mitigation; Clear CPU buffers; SMT disabled\nVulnerability Reg file data sampling: Not affected\nVulnerability Retbleed:               Not affected\nVulnerability Spec rstack overflow:   Not affected\nVulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl and seccomp\nVulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditional; RSB filling; PBRSB-eIBRS SW sequence; BHI SW loop, KVM SW loop\nVulnerability Srbds:                  Not affected\nVulnerability Tsx async abort:        Not affected\nFlags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 invpcid_single intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local split_lock_detect wbnoinvd dtherm ida arat pln pts avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg tme avx512_vpopcntdq la57 rdpid fsrm md_clear pconfig flush_l1d arch_capabilities",
+      "stderr": ""
+    },
+    "memory": {
+      "command": [
+        "free",
+        "-b"
+      ],
+      "returncode": 0,
+      "stdout": "total        used        free      shared  buff/cache   available\nMem:    540620517376  8372953088 86793949184    15597568 445453615104 528267427840\nSwap:   65535995904   215744512 65320251392",
+      "stderr": ""
+    },
+    "disk": {
+      "command": [
+        "df",
+        "-B1",
+        "."
+      ],
+      "returncode": 0,
+      "stdout": "Filesystem          1B-blocks         Used      Available Use% Mounted on\n/dev/sda       13889010892800 918194892800 12270773243904   7% /data",
+      "stderr": ""
+    },
+    "gpu": {
+      "command": [
+        "nvidia-smi",
+        "--query-gpu=index,name,driver_version,memory.total,memory.used,memory.free,utilization.gpu,temperature.gpu",
+        "--format=csv,noheader,nounits"
+      ],
+      "returncode": 0,
+      "stdout": "0, NVIDIA GeForce RTX 4090, 535.183.01, 24564, 11, 24206, 0, 38\n1, NVIDIA GeForce RTX 4090, 535.183.01, 24564, 11, 24206, 0, 30",
+      "stderr": ""
+    }
+  },
+  "hardware_after": {
+    "captured_at_utc": "2026-08-29T06:18:38.260977+00:00",
+    "hostname": "node01",
+    "os": "Linux-5.15.0-139-generic-x86_64-with-glibc2.31",
+    "python": "3.11.6",
+    "pid": 1239838,
+    "cpu": {
+      "command": [
+        "lscpu"
+      ],
+      "returncode": 0,
+      "stdout": "Architecture:                         x86_64\nCPU op-mode(s):                       32-bit, 64-bit\nByte Order:                           Little Endian\nAddress sizes:                        46 bits physical, 57 bits virtual\nCPU(s):                               64\nOn-line CPU(s) list:                  0-63\nThread(s) per core:                   1\nCore(s) per socket:                   32\nSocket(s):                            2\nNUMA node(s):                         2\nVendor ID:                            GenuineIntel\nCPU family:                           6\nModel:                                106\nModel name:                           Intel(R) Xeon(R) Platinum 8336C CPU @ 2.30GHz\nStepping:                             6\nCPU MHz:                              1100.000\nCPU max MHz:                          3500.0000\nCPU min MHz:                          800.0000\nBogoMIPS:                             4600.00\nVirtualization:                       VT-x\nL1d cache:                            3 MiB\nL1i cache:                            2 MiB\nL2 cache:                             80 MiB\nL3 cache:                             108 MiB\nNUMA node0 CPU(s):                    0-31\nNUMA node1 CPU(s):                    32-63\nVulnerability Gather data sampling:   Mitigation; Microcode\nVulnerability Itlb multihit:          Not affected\nVulnerability L1tf:                   Not affected\nVulnerability Mds:                    Not affected\nVulnerability Meltdown:               Not affected\nVulnerability Mmio stale data:        Mitigation; Clear CPU buffers; SMT disabled\nVulnerability Reg file data sampling: Not affected\nVulnerability Retbleed:               Not affected\nVulnerability Spec rstack overflow:   Not affected\nVulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl and seccomp\nVulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditional; RSB filling; PBRSB-eIBRS SW sequence; BHI SW loop, KVM SW loop\nVulnerability Srbds:                  Not affected\nVulnerability Tsx async abort:        Not affected\nFlags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 invpcid_single intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local split_lock_detect wbnoinvd dtherm ida arat pln pts avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg tme avx512_vpopcntdq la57 rdpid fsrm md_clear pconfig flush_l1d arch_capabilities",
+      "stderr": ""
+    },
+    "memory": {
+      "command": [
+        "free",
+        "-b"
+      ],
+      "returncode": 0,
+      "stdout": "total        used        free      shared  buff/cache   available\nMem:    540620517376  9207881728 85410721792   562892800 446001913856 526884810752\nSwap:   65535995904   215744512 65320251392",
+      "stderr": ""
+    },
+    "disk": {
+      "command": [
+        "df",
+        "-B1",
+        "."
+      ],
+      "returncode": 0,
+      "stdout": "Filesystem          1B-blocks         Used      Available Use% Mounted on\n/dev/sda       13889010892800 918195875840 12270772260864   7% /data",
+      "stderr": ""
+    },
+    "gpu": {
+      "command": [
+        "nvidia-smi",
+        "--query-gpu=index,name,driver_version,memory.total,memory.used,memory.free,utilization.gpu,temperature.gpu",
+        "--format=csv,noheader,nounits"
+      ],
+      "returncode": 0,
+      "stdout": "0, NVIDIA GeForce RTX 4090, 535.183.01, 24564, 2913, 21303, 0, 39\n1, NVIDIA GeForce RTX 4090, 535.183.01, 24564, 11, 24206, 0, 30",
+      "stderr": ""
+    }
+  },
+  "resolved_config": "revision_results/configs_resolved/E2_D18_weight_ATAC_lambda_0.5_smoke_seed0_v1-23742587fcfb.json"
+}

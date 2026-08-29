@@ -25,6 +25,26 @@ def main() -> None:
             ],
             "data_types": ["RNA", "ATAC"],
         },
+        "D17": {
+            "data_files": [
+                "/home/zhangpeiru/data/analysis/new/kidney_rna_updated.h5ad",
+                "/home/zhangpeiru/data/analysis/new/kidney_atac_updated.h5ad",
+            ],
+            "data_types": ["RNA", "ATAC"],
+        },
+        "D18": {
+            "data_files": [
+                "/home/zhangpeiru/data/RNA_ATAC_ADT/GSE158013/GSE158013_rna.h5ad",
+                "/home/zhangpeiru/data/RNA_ATAC_ADT/GSE158013/GSE158013_atac.h5ad",
+                "/home/zhangpeiru/data/RNA_ATAC_ADT/GSE158013/GSE158013_adt.h5ad",
+            ],
+            "data_types": ["RNA", "ATAC", "ADT"],
+            "obs_name_canonicalization": [
+                None,
+                None,
+                {"pattern": r"\.([0-9]+)$", "replacement": r"-\1"},
+            ],
+        },
     }
     runtime = {
         "label_key": "celltype",
