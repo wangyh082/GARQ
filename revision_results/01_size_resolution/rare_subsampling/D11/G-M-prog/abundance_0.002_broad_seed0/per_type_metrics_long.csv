@@ -1,0 +1,20 @@
+dataset,method,seed,implementation_tag,resolution,cell_type,abundance,abundance_class,support,cell_precision,cell_recall,cell_f1,dominant_metacell_count,purity_unweighted,purity_weighted,involved_metacell_size_median,involved_metacell_size_p95,involved_metacell_size_max,strict_recovery,majority_recovery,majority_retention_metacell_count,majority_retention,high_purity_recovery_metacell_count,high_purity_recovery
+D11,GARQ,0,diagnostic_variant_rare_subsampling,0.02,B1 B,0.0365,Intermediate,73,0.35714285714285715,0.0684931506849315,0.11494252873563218,2,0.3666666666666667,0.35714285714285715,66.0,255.0,336.0,0.0,0.0684931506849315,0,0.0,0,0.0
+D11,GARQ,0,diagnostic_variant_rare_subsampling,0.02,CD14+ Mono,0.0405,Intermediate,81,0.47368421052631576,1.0,0.6428571428571429,3,0.6018346732632446,0.47368421052631576,66.0,94.8,98.0,0.0,1.0,2,0.6666666666666666,1,0.3333333333333333
+D11,GARQ,0,diagnostic_variant_rare_subsampling,0.02,CD16+ Mono,0.009,Rare,18,0.0,0.0,0.0,0,,,66.0,116.39999999999999,121.0,0.0,0.0,0,0.0,0,0.0
+D11,GARQ,0,diagnostic_variant_rare_subsampling,0.02,CD4+ T activated,0.0615,Intermediate,123,0.0,0.0,0.0,0,,,24.0,193.0,336.0,0.0,0.0,0,0.0,0,0.0
+D11,GARQ,0,diagnostic_variant_rare_subsampling,0.02,CD4+ T naive,0.036,Intermediate,72,0.5,0.06944444444444445,0.12195121951219513,3,0.5,0.5,21.5,214.4499999999998,336.0,0.0,0.06944444444444445,0,0.0,0,0.0
+D11,GARQ,0,diagnostic_variant_rare_subsampling,0.02,CD8+ T,0.4035,Common,807,0.7413953488372093,0.9876084262701363,0.8469713071200851,19,0.6593971553495885,0.7413953488372093,17.0,190.14999999999995,336.0,0.0012391573729863693,0.9876084262701363,14,0.5833333333333334,9,0.375
+D11,GARQ,0,diagnostic_variant_rare_subsampling,0.02,Erythroblast,0.033,Intermediate,66,0.0,0.0,0.0,0,,,19.0,119.79999999999994,145.0,0.0,0.0,0,0.0,0,0.0
+D11,GARQ,0,diagnostic_variant_rare_subsampling,0.02,G/M prog,0.002,Rare,4,0.0,0.0,0.0,0,,,66.0,94.8,98.0,0.0,0.0,0,0.0,0,0.0
+D11,GARQ,0,diagnostic_variant_rare_subsampling,0.02,HSC,0.015,Intermediate,30,0.4090909090909091,0.3,0.34615384615384615,2,0.45238095238095233,0.4090909090909091,33.0,162.79999999999998,174.0,0.0,0.3,1,0.1111111111111111,0,0.0
+D11,GARQ,0,diagnostic_variant_rare_subsampling,0.02,Lymph prog,0.036,Intermediate,72,0.0,0.0,0.0,0,,,82.0,164.2,174.0,0.0,0.0,0,0.0,0,0.0
+D11,GARQ,0,diagnostic_variant_rare_subsampling,0.02,MK/E prog,0.014,Intermediate,28,0.8,0.14285714285714285,0.24242424242424243,2,0.875,0.8,26.0,161.39999999999998,174.0,0.03571428571428571,0.14285714285714285,2,0.2,2,0.2
+D11,GARQ,0,diagnostic_variant_rare_subsampling,0.02,NK,0.046,Intermediate,92,1.0,0.010869565217391304,0.02150537634408602,1,1.0,1.0,17.0,221.5999999999999,336.0,0.010869565217391304,0.010869565217391304,1,0.058823529411764705,1,0.058823529411764705
+D11,GARQ,0,diagnostic_variant_rare_subsampling,0.02,Naive CD20+ B,0.088,Intermediate,176,0.475,0.8636363636363636,0.6129032258064516,2,0.4803180601480082,0.475,98.0,165.59999999999997,174.0,0.0,0.8636363636363636,1,0.14285714285714285,0,0.0
+D11,GARQ,0,diagnostic_variant_rare_subsampling,0.02,Normoblast,0.011,Intermediate,22,0.0,0.0,0.0,0,,,38.5,132.39999999999998,145.0,0.0,0.0,0,0.0,0,0.0
+D11,GARQ,0,diagnostic_variant_rare_subsampling,0.02,Plasma cell,0.0035,Rare,7,0.0,0.0,0.0,0,,,98.0,168.4,174.0,0.0,0.0,0,0.0,0,0.0
+D11,GARQ,0,diagnostic_variant_rare_subsampling,0.02,Proerythroblast,0.0825,Intermediate,165,0.6,0.9818181818181818,0.7448275862068966,5,0.5649266338671592,0.6,33.0,165.29999999999998,174.0,0.0,0.9818181818181818,4,0.5714285714285714,1,0.14285714285714285
+D11,GARQ,0,diagnostic_variant_rare_subsampling,0.02,Transitional B,0.0615,Intermediate,123,0.4732142857142857,0.43089430894308944,0.451063829787234,1,0.4732142857142857,0.4732142857142857,79.5,161.39999999999998,174.0,0.0,0.43089430894308944,0,0.0,0,0.0
+D11,GARQ,0,diagnostic_variant_rare_subsampling,0.02,cDC2,0.0165,Intermediate,33,0.0,0.0,0.0,0,,,82.0,162.59999999999997,174.0,0.0,0.0,0,0.0,0,0.0
+D11,GARQ,0,diagnostic_variant_rare_subsampling,0.02,pDC,0.004,Rare,8,0.0,0.0,0.0,0,,,105.0,164.7,174.0,0.0,0.0,0,0.0,0,0.0

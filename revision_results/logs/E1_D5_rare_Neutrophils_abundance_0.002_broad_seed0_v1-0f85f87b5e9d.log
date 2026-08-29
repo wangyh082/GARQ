@@ -1,0 +1,3 @@
+2026-08-29 15:19:26,918 INFO Loading faiss with AVX512 support.
+2026-08-29 15:19:26,942 INFO Successfully loaded faiss with AVX512 support.
+2026-08-29 15:19:26,947 INFO Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.

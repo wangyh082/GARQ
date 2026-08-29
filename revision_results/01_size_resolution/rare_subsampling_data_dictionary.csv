@@ -1,0 +1,20 @@
+column,description,unit_or_values
+dataset,Dataset identifier,D5 or D11
+method,Metacell method,GARQ
+seed,Training seed,integer
+subset_seed,Base uniform-subset seed,integer
+target_cell_type,Cell type deliberately reduced,source label
+source_abundance,Target-type fraction in the full source dataset,fraction
+target_abundance,Requested target-type fraction in the 2000-cell subset,fraction
+realized_abundance,Observed target-type fraction after sampling,fraction
+support,Observed target-type cell count after sampling,cells
+requested_K,Requested anchor count,anchors
+realized_K,Non-empty metacell count,metacells
+cell_precision,Majority-label cell-level precision,fraction
+cell_recall,Majority-label cell-level recall,fraction
+cell_f1,Harmonic mean of cell_precision and cell_recall,fraction
+purity_unweighted,Mean purity among target-dominated metacells,fraction or NA
+purity_weighted,Size-weighted purity among target-dominated metacells,fraction or NA
+majority_retention,Target-cell recovery with purity greater than 0.5,fraction
+high_purity_recovery,Target-cell recovery with purity at least 0.7,fraction
+run_id,Configuration-derived immutable run identifier,string

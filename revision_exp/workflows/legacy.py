@@ -77,6 +77,52 @@ def _canonicalize_obs_names(names: np.ndarray, rule: dict[str, str] | None) -> n
     return canonical
 
 
+def _select_targeted_abundance_indices(
+    labels: np.ndarray,
+    n_cells: int,
+    target_label: str,
+    target_abundance: float,
+    seed: int,
+) -> tuple[np.ndarray, dict[str, Any]]:
+    labels = np.asarray(labels, dtype=str)
+    if not 0 < target_abundance < 1:
+        raise ValueError("target_abundance must be strictly between 0 and 1")
+    if not 0 < n_cells <= len(labels):
+        raise ValueError("n_cells must be in [1, len(labels)]")
+    target_pool = np.flatnonzero(labels == target_label)
+    other_pool = np.flatnonzero(labels != target_label)
+    source_abundance = len(target_pool) / len(labels)
+    if target_abundance > source_abundance + 1e-12:
+        raise ValueError(
+            f"target abundance {target_abundance:g} exceeds source abundance "
+            f"{source_abundance:g}; rare-cell upsampling is prohibited"
+        )
+    target_count = int(round(target_abundance * n_cells))
+    other_count = n_cells - target_count
+    if target_count < 1:
+        raise ValueError("target abundance yields zero target cells")
+    if target_count > len(target_pool) or other_count > len(other_pool):
+        raise ValueError("requested targeted subset cannot be sampled without replacement")
+    rng = np.random.default_rng(seed)
+    indices = np.sort(
+        np.concatenate(
+            [
+                rng.choice(target_pool, size=target_count, replace=False),
+                rng.choice(other_pool, size=other_count, replace=False),
+            ]
+        )
+    )
+    return indices, {
+        "sampling": "targeted_abundance_without_replacement",
+        "target_label": target_label,
+        "target_abundance_requested": target_abundance,
+        "target_abundance_realized": target_count / n_cells,
+        "target_count": target_count,
+        "source_target_count": int(len(target_pool)),
+        "source_target_abundance": source_abundance,
+    }
+
+
 def _prepare_uniform_subset(
     source_paths: list[Path],
     cache_dir: Path,
@@ -86,6 +132,7 @@ def _prepare_uniform_subset(
     canonicalization_rules: list[dict[str, str] | None] | None = None,
     matrix_sources: list[str] | None = None,
     perturbations: list[dict[str, Any] | None] | None = None,
+    rare_subsampling: dict[str, Any] | None = None,
 ) -> tuple[list[str], dict[str, Any]]:
     cache_dir.mkdir(parents=True, exist_ok=True)
     canonicalization_rules = canonicalization_rules or [None] * len(source_paths)
@@ -100,18 +147,42 @@ def _prepare_uniform_subset(
     first_names = _canonicalize_obs_names(
         first.obs_names.to_numpy().astype(str), canonicalization_rules[0]
     )
+    first_labels = None
+    if rare_subsampling is not None:
+        label_key = rare_subsampling["label_key"]
+        if label_key not in first.obs:
+            raise KeyError(f"Missing rare-subsampling label column {label_key!r}")
+        first_labels = first.obs[label_key].astype(str).to_numpy()
     first.file.close()
-    if n_cells >= total:
+    if n_cells >= total and rare_subsampling is None:
         return [str(path) for path in source_paths], {"subset_applied": False, "n_cells": total}
-    rng = np.random.default_rng(seed)
-    indices = np.sort(rng.choice(total, size=n_cells, replace=False))
+    rare_info: dict[str, Any] = {}
+    sampling_variant = ""
+    if rare_subsampling is not None:
+        indices, rare_info = _select_targeted_abundance_indices(
+            first_labels,
+            n_cells,
+            str(rare_subsampling["target_label"]),
+            float(rare_subsampling["target_abundance"]),
+            int(rare_subsampling.get("seed", seed)),
+        )
+        safe_label = re.sub(r"[^A-Za-z0-9_.-]+", "-", rare_info["target_label"]).strip("-")
+        if not safe_label:
+            raise ValueError("target_label does not yield a safe cache identifier")
+        sampling_variant = (
+            f"_rare-{safe_label}-abundance{rare_info['target_abundance_requested']:g}"
+            f"-seed{int(rare_subsampling.get('seed', seed))}"
+        )
+    else:
+        rng = np.random.default_rng(seed)
+        indices = np.sort(rng.choice(total, size=n_cells, replace=False))
     selected_names = first_names[indices]
     output_paths = []
     modality_checks = []
     for source, rule, matrix_source, perturbation in zip(
         source_paths, canonicalization_rules, matrix_sources, perturbations
     ):
-        variant = ""
+        variant = sampling_variant
         if matrix_source != "X":
             variant += f"_matrix-{matrix_source}"
         if perturbation:
@@ -186,12 +257,13 @@ def _prepare_uniform_subset(
         )
     return output_paths, {
         "subset_applied": True,
-        "sampling": "uniform_without_replacement_no_labels_used",
+        "sampling": rare_info.get("sampling", "uniform_without_replacement_no_labels_used"),
         "subset_seed": seed,
         "source_n_cells": total,
         "n_cells": n_cells,
         "selected_obs_names_sha256": __import__("hashlib").sha256("\n".join(selected_names).encode()).hexdigest(),
         "modality_checks": modality_checks,
+        **rare_info,
     }
 
 
@@ -211,6 +283,7 @@ def run_legacy_experiment(config: dict[str, Any], output_dir: Path, result_root:
         "diagnostic_variant_reposition_interval",
         "diagnostic_variant_modality_noise",
         "diagnostic_variant_modality_weight",
+        "diagnostic_variant_rare_subsampling",
     }
     if config["implementation_tag"] not in allowed_tags:
         raise ValueError(f"Unsupported implementation_tag: {config['implementation_tag']}")
@@ -240,6 +313,7 @@ def run_legacy_experiment(config: dict[str, Any], output_dir: Path, result_root:
                 config.get("obs_name_canonicalization"),
                 config.get("matrix_sources"),
                 config.get("modality_perturbations"),
+                config.get("rare_subsampling"),
             )
     write_json(output_dir / "subset_provenance.json", subset_info)
     args = _args(config, paths)

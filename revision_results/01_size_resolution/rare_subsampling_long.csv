@@ -1,0 +1,83 @@
+dataset,method,seed,subset_seed,target_cell_type,source_abundance,target_abundance,realized_abundance,support,requested_K,realized_K,cell_precision,cell_recall,cell_f1,purity_unweighted,purity_weighted,majority_retention,high_purity_recovery,run_id
+D11,GARQ,0,624272,B1 B,0.03300931551235318,0.002,0.002,4,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_B1-B_abundance_0.002_broad_seed0_v1-5db3ef328eed
+D11,GARQ,0,597912,B1 B,0.03300931551235318,0.005,0.005,10,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_B1-B_abundance_0.005_broad_seed0_v1-898a46ae6291
+D11,GARQ,0,385264,B1 B,0.03300931551235318,0.01,0.01,20,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_B1-B_abundance_0.01_broad_seed0_v1-14fd93c89f2c
+D11,GARQ,0,622122,CD14+ Mono,0.04637505062778453,0.002,0.002,4,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_CD14+-Mono_abundance_0.002_broad_seed0_v1-8337753bddea
+D11,GARQ,0,929191,CD14+ Mono,0.04637505062778453,0.005,0.005,10,40,39,0.3333333333333333,0.1,0.1538461538461538,0.3333333333333333,0.3333333333333333,0.0,0.0,E1_D11_rare_CD14+-Mono_abundance_0.005_broad_seed0_v1-ce6f1a6348e5
+D11,GARQ,0,322430,CD14+ Mono,0.04637505062778453,0.01,0.01,20,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_CD14+-Mono_abundance_0.01_broad_seed0_v1-0b6787d146d1
+D11,GARQ,0,837047,CD16+ Mono,0.010024301336573511,0.002,0.002,4,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_CD16+-Mono_abundance_0.002_broad_seed0_v1-181c4ef5e7b2
+D11,GARQ,0,687090,CD16+ Mono,0.010024301336573511,0.005,0.005,10,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_CD16+-Mono_abundance_0.005_broad_seed0_v1-8b7b85eedec2
+D11,GARQ,0,262165,CD16+ Mono,0.010024301336573511,0.01,0.01,20,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_CD16+-Mono_abundance_0.01_broad_seed0_v1-2e0d123916fe
+D11,GARQ,0,747817,CD4+ T naive,0.03027541514783313,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_CD4+-T-naive_abundance_0.002_broad_seed0_v1-182d29863792
+D11,GARQ,0,853059,CD4+ T naive,0.03027541514783313,0.005,0.005,10,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_CD4+-T-naive_abundance_0.005_broad_seed0_v1-63f82efa6666
+D11,GARQ,0,354691,CD4+ T naive,0.03027541514783313,0.01,0.01,20,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_CD4+-T-naive_abundance_0.01_broad_seed0_v1-40c4cfd9b863
+D11,GARQ,0,425875,Erythroblast,0.026933981368975294,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_Erythroblast_abundance_0.002_broad_seed0_v1-25644d36898a
+D11,GARQ,0,37942,Erythroblast,0.026933981368975294,0.005,0.005,10,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_Erythroblast_abundance_0.005_broad_seed0_v1-edd9b8ee7163
+D11,GARQ,0,120449,Erythroblast,0.026933981368975294,0.01,0.01,20,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_Erythroblast_abundance_0.01_broad_seed0_v1-e0041b4df360
+D11,GARQ,0,54437,G/M prog,0.006682867557715674,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_G-M-prog_abundance_0.002_broad_seed0_v1-b69d3ab76749
+D11,GARQ,0,321976,G/M prog,0.006682867557715674,0.005,0.005,10,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_G-M-prog_abundance_0.005_broad_seed0_v1-99bc38c4f76e
+D11,GARQ,0,788523,HSC,0.010935601458080195,0.002,0.002,4,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_HSC_abundance_0.002_broad_seed0_v1-44ad03b5dedb
+D11,GARQ,0,237086,HSC,0.010935601458080195,0.005,0.005,10,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_HSC_abundance_0.005_broad_seed0_v1-8a3a8c006182
+D11,GARQ,0,973319,HSC,0.010935601458080195,0.01,0.01,20,40,40,1.0,0.15,0.2608695652173913,1.0,1.0,0.2,0.2,E1_D11_rare_HSC_abundance_0.01_broad_seed0_v1-a45fc8dfe2fd
+D11,GARQ,0,592620,Lymph prog,0.033110571081409475,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_Lymph-prog_abundance_0.002_broad_seed0_v1-7ad027d56d83
+D11,GARQ,0,499915,Lymph prog,0.033110571081409475,0.005,0.005,10,40,39,0.3333333333333333,0.1,0.1538461538461538,0.3333333333333333,0.3333333333333333,0.0,0.0,E1_D11_rare_Lymph-prog_abundance_0.005_broad_seed0_v1-9965a4b1559f
+D11,GARQ,0,863567,Lymph prog,0.033110571081409475,0.01,0.01,20,40,39,0.4285714285714285,0.45,0.4390243902439024,0.4666666666666666,0.4285714285714285,0.1111111111111111,0.0,E1_D11_rare_Lymph-prog_abundance_0.01_broad_seed0_v1-b0f1f02219bd
+D11,GARQ,0,926291,MK/E prog,0.012150668286755772,0.002,0.002,4,40,38,0.25,0.25,0.25,0.25,0.25,0.0,0.0,E1_D11_rare_MK-E-prog_abundance_0.002_broad_seed0_v1-4c225c8d8618
+D11,GARQ,0,826348,MK/E prog,0.012150668286755772,0.005,0.005,10,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_MK-E-prog_abundance_0.005_broad_seed0_v1-434ad31b4d9b
+D11,GARQ,0,488725,MK/E prog,0.012150668286755772,0.01,0.01,20,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_MK-E-prog_abundance_0.01_broad_seed0_v1-f4b69cc85079
+D11,GARQ,0,122049,NK,0.042628594572701496,0.002,0.002,4,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_NK_abundance_0.002_broad_seed0_v1-d4870a22f170
+D11,GARQ,0,215869,NK,0.042628594572701496,0.005,0.005,10,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_NK_abundance_0.005_broad_seed0_v1-ec4b3e7500f4
+D11,GARQ,0,52696,NK,0.042628594572701496,0.01,0.01,20,40,37,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_NK_abundance_0.01_broad_seed0_v1-955fd766555f
+D11,GARQ,0,220243,Normoblast,0.009113001215066828,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_Normoblast_abundance_0.002_broad_seed0_v1-8c59a630f58b
+D11,GARQ,0,958868,Normoblast,0.009113001215066828,0.005,0.005,10,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_Normoblast_abundance_0.005_broad_seed0_v1-b79351b9cdfe
+D11,GARQ,0,9105,Plasma cell,0.0026326447954637504,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_Plasma-cell_abundance_0.002_broad_seed0_v1-a545c71ddf2d
+D11,GARQ,0,9108,cDC2,0.016200891049007696,0.002,0.002,4,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_cDC2_abundance_0.002_broad_seed0_v1-2591863234f7
+D11,GARQ,0,9107,cDC2,0.016200891049007696,0.005,0.005,10,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_cDC2_abundance_0.005_broad_seed0_v1-07b9c4fed87b
+D11,GARQ,0,9106,cDC2,0.016200891049007696,0.01,0.01,20,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_cDC2_abundance_0.01_broad_seed0_v1-bcfd668b5ebb
+D5,GARQ,0,24416,CD4 and CD8 activated memory,0.006459054209919262,0.002,0.002,4,40,40,0.3333333333333333,0.25,0.2857142857142857,0.3333333333333333,0.3333333333333333,0.0,0.0,E1_D5_rare_CD4-and-CD8-activated-memory_abundance_0.002_broad_seed0_v1-4813241590e5
+D5,GARQ,0,171424,CD4 and CD8 activated memory,0.006459054209919262,0.005,0.005,10,40,34,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_CD4-and-CD8-activated-memory_abundance_0.005_broad_seed0_v1-d8468c9b414a
+D5,GARQ,0,656859,CD4 naive II,0.01845444059976932,0.002,0.002,4,40,37,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_CD4-naive-II_abundance_0.002_broad_seed0_v1-e1790c085219
+D5,GARQ,0,844320,CD4 naive II,0.01845444059976932,0.005,0.005,10,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_CD4-naive-II_abundance_0.005_broad_seed0_v1-e564045000b1
+D5,GARQ,0,893066,CD4 naive II,0.01845444059976932,0.01,0.01,20,40,37,0.5,0.05,0.0909090909090909,0.5,0.5,0.0,0.0,E1_D5_rare_CD4-naive-II_abundance_0.01_broad_seed0_v1-0e40ab2a2196
+D5,GARQ,0,362859,CD56bright CD16dim NK,0.01707035755478662,0.002,0.002,4,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_CD56bright-CD16dim-NK_abundance_0.002_broad_seed0_v1-9d9603e84115
+D5,GARQ,0,89116,CD56bright CD16dim NK,0.01707035755478662,0.005,0.005,10,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_CD56bright-CD16dim-NK_abundance_0.005_broad_seed0_v1-192c951dd9bf
+D5,GARQ,0,212452,CD56bright CD16dim NK,0.01707035755478662,0.01,0.01,20,40,40,0.4,0.1,0.16,0.4,0.4,0.0,0.0,E1_D5_rare_CD56bright-CD16dim-NK_abundance_0.01_broad_seed0_v1-8e2b6aeb1d42
+D5,GARQ,0,588527,CD8 memory,0.04025374855824683,0.002,0.002,4,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_CD8-memory_abundance_0.002_broad_seed0_v1-0df55a7cf2c2
+D5,GARQ,0,184166,CD8 memory,0.04025374855824683,0.005,0.005,10,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_CD8-memory_abundance_0.005_broad_seed0_v1-85223179b3f9
+D5,GARQ,0,55616,CD8 memory,0.04025374855824683,0.01,0.01,20,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_CD8-memory_abundance_0.01_broad_seed0_v1-581d0399104c
+D5,GARQ,0,363611,CD8 naive,0.0405997693194925,0.002,0.002,4,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_CD8-naive_abundance_0.002_broad_seed0_v1-c93cca4928e4
+D5,GARQ,0,707079,CD8 naive,0.0405997693194925,0.005,0.005,10,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_CD8-naive_abundance_0.005_broad_seed0_v1-f9645e01ec04
+D5,GARQ,0,830029,CD8 naive,0.0405997693194925,0.01,0.01,20,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_CD8-naive_abundance_0.01_broad_seed0_v1-8299f2e75bd9
+D5,GARQ,0,647067,MAIT-NKT cells,0.044867358708189156,0.002,0.002,4,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_MAIT-NKT-cells_abundance_0.002_broad_seed0_v1-f3e8aa7a8e5f
+D5,GARQ,0,223168,MAIT-NKT cells,0.044867358708189156,0.005,0.005,10,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_MAIT-NKT-cells_abundance_0.005_broad_seed0_v1-aa5fac12495a
+D5,GARQ,0,147172,MAIT-NKT cells,0.044867358708189156,0.01,0.01,20,40,40,0.75,0.15,0.2499999999999999,0.75,0.75,0.1428571428571428,0.1428571428571428,E1_D5_rare_MAIT-NKT-cells_abundance_0.01_broad_seed0_v1-6da7a89df5b8
+D5,GARQ,0,125420,Memory B,0.0209919261822376,0.002,0.002,4,40,36,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Memory-B_abundance_0.002_broad_seed0_v1-87699190d761
+D5,GARQ,0,577929,Memory B,0.0209919261822376,0.005,0.005,10,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Memory-B_abundance_0.005_broad_seed0_v1-d35f8f29af32
+D5,GARQ,0,487071,Memory B,0.0209919261822376,0.01,0.01,20,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Memory-B_abundance_0.01_broad_seed0_v1-884901bf4b42
+D5,GARQ,0,517074,NK-T doublets,0.018108419838523643,0.002,0.002,4,40,33,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_NK-T-doublets_abundance_0.002_broad_seed0_v1-cc3780825920
+D5,GARQ,0,745724,NK-T doublets,0.018108419838523643,0.005,0.005,10,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_NK-T-doublets_abundance_0.005_broad_seed0_v1-2950232daebf
+D5,GARQ,0,415310,NK-T doublets,0.018108419838523643,0.01,0.01,20,40,39,0.4,0.2,0.2666666666666666,0.4,0.4,0.0,0.0,E1_D5_rare_NK-T-doublets_abundance_0.01_broad_seed0_v1-4ee403a11feb
+D5,GARQ,0,490243,NK-monocyte doublets,0.0132641291810842,0.002,0.002,4,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_NK-monocyte-doublets_abundance_0.002_broad_seed0_v1-f891e8014df6
+D5,GARQ,0,23590,NK-monocyte doublets,0.0132641291810842,0.005,0.005,10,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_NK-monocyte-doublets_abundance_0.005_broad_seed0_v1-09836f0b67a8
+D5,GARQ,0,154863,NK-monocyte doublets,0.0132641291810842,0.01,0.01,20,40,40,0.5,0.2,0.2857142857142857,0.5,0.5,0.0,0.0,E1_D5_rare_NK-monocyte-doublets_abundance_0.01_broad_seed0_v1-0e7e6d62884a
+D5,GARQ,0,444193,Neutrophils,0.028719723183391003,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Neutrophils_abundance_0.002_broad_seed0_v1-0f85f87b5e9d
+D5,GARQ,0,646802,Neutrophils,0.028719723183391003,0.005,0.005,10,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Neutrophils_abundance_0.005_broad_seed0_v1-659312b48cfc
+D5,GARQ,0,416480,Neutrophils,0.028719723183391003,0.01,0.01,20,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Neutrophils_abundance_0.01_broad_seed0_v1-8adb57723401
+D5,GARQ,0,651117,Non classical monocytes,0.04728950403690888,0.002,0.002,4,40,37,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Non-classical-monocytes_abundance_0.002_broad_seed0_v1-1490ca447262
+D5,GARQ,0,949901,Non classical monocytes,0.04728950403690888,0.005,0.005,10,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Non-classical-monocytes_abundance_0.005_broad_seed0_v1-7f03fee5afa3
+D5,GARQ,0,207075,Non classical monocytes,0.04728950403690888,0.01,0.01,20,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Non-classical-monocytes_abundance_0.01_broad_seed0_v1-2d89e5ba4bb1
+D5,GARQ,0,835164,Platelet-bound monocytes,0.01591695501730104,0.002,0.002,4,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Platelet-bound-monocytes_abundance_0.002_broad_seed0_v1-6cc8b9eeeb0e
+D5,GARQ,0,731048,Platelet-bound monocytes,0.01591695501730104,0.005,0.005,10,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Platelet-bound-monocytes_abundance_0.005_broad_seed0_v1-f7fccd1a82ab
+D5,GARQ,0,470452,Platelet-bound monocytes,0.01591695501730104,0.01,0.01,20,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Platelet-bound-monocytes_abundance_0.01_broad_seed0_v1-e3534f36c3f1
+D5,GARQ,0,9102,Regulatory T cells,0.008189158016147636,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Regulatory-T-cells_abundance_0.002_broad_seed0_v1-781174fc4807
+D5,GARQ,0,9101,Regulatory T cells,0.008189158016147636,0.005,0.005,10,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Regulatory-T-cells_abundance_0.005_broad_seed0_v1-0f2ae8ca81a2
+D5,GARQ,0,585409,T-NK-B cell doublets,0.022029988465974624,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_T-NK-B-cell-doublets_abundance_0.002_broad_seed0_v1-258eba63d79e
+D5,GARQ,0,421091,T-NK-B cell doublets,0.022029988465974624,0.005,0.005,10,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_T-NK-B-cell-doublets_abundance_0.005_broad_seed0_v1-9985f478464e
+D5,GARQ,0,922141,T-NK-B cell doublets,0.022029988465974624,0.01,0.01,20,40,39,1.0,0.4,0.5714285714285715,1.0,1.0,0.2,0.2,E1_D5_rare_T-NK-B-cell-doublets_abundance_0.01_broad_seed0_v1-1d29ebef3b80
+D5,GARQ,0,9104,conventional DC,0.007727797001153403,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_conventional-DC_abundance_0.002_broad_seed0_v1-367dda7d5aba
+D5,GARQ,0,9103,conventional DC,0.007727797001153403,0.005,0.005,10,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_conventional-DC_abundance_0.005_broad_seed0_v1-bafeb00eeb80
+D5,GARQ,0,524923,gdT cells,0.0461361014994233,0.002,0.002,4,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_gdT-cells_abundance_0.002_broad_seed0_v1-2aed18a3d4fe
+D5,GARQ,0,59885,gdT cells,0.0461361014994233,0.005,0.005,10,40,37,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_gdT-cells_abundance_0.005_broad_seed0_v1-7a4dbe605c78
+D5,GARQ,0,928770,gdT cells,0.0461361014994233,0.01,0.01,20,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_gdT-cells_abundance_0.01_broad_seed0_v1-0ddb20108b6c
+D5,GARQ,0,634001,plasmacytoid DC,0.0059976931949250285,0.002,0.002,4,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_plasmacytoid-DC_abundance_0.002_broad_seed0_v1-a2c05902f8f4
+D5,GARQ,0,935205,plasmacytoid DC,0.0059976931949250285,0.005,0.005,10,40,37,0.6666666666666666,0.6,0.631578947368421,0.6666666666666666,0.6666666666666666,0.25,0.0,E1_D5_rare_plasmacytoid-DC_abundance_0.005_broad_seed0_v1-55ff5762c7cf

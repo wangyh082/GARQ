@@ -1,0 +1,4 @@
+2026-08-29 14:57:48,596 INFO Loading faiss with AVX512 support.
+2026-08-29 14:57:48,611 INFO Successfully loaded faiss with AVX512 support.
+2026-08-29 14:57:48,614 INFO Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2026-08-29 15:23:08,837 INFO Cached run already complete: revision_results/01_size_resolution/rare_subsampling/D5/Regulatory-T-cells/abundance_0.005_broad_seed0/E1_D5_rare_Regulatory-T-cells_abundance_0.005_broad_seed0_v1-0f2ae8ca81a2.done.json

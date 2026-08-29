@@ -1,0 +1,3 @@
+dataset,seed,modality_combination,data_type,block_dim,l2_norm_mean,l2_norm_median,l2_norm_p95,variance_trace,variance_per_dim_mean,pairwise_squared_distance_energy,sampled_pair_mean_abs_dot,normalization_before_concat,modality_weight,relative_abs_dot_contribution
+D11,0,RNA+ATAC,RNA,32,5.677636623382568,5.678119659423828,5.694293713569641,29.934829711914062,0.9354634284973145,59.869659423828125,8.919312477111816,False,1.0,0.31701558544593683
+D11,0,RNA+ATAC,ATAC,32,5.669057846069336,5.674543380737305,5.686662888526916,23.272994995117188,0.7272810935974121,46.545989990234375,19.2159366607666,False,1.0,0.6829844145540631
