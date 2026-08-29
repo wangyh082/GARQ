@@ -1,0 +1,3 @@
+dataset_id,authoritative_name,authoritative_n_cells,phase1_path,phase1_n_cells,candidate_correspondence,status,reason
+D5,BMMC_batch1,12103,/home/zhangpeiru/data/RNA+ADT/D5/D5_rna.h5ad,8670,D4 PBMC_HD3_Adult,INVALID_FOR_MANUSCRIPT_DATASET_ID,Phase 1 shape is the authoritative D4 scale; no silent relabel permitted.
+D11,10Xpbmc10k,9631,/home/zhangpeiru/data/11_GSE194122/11_GSE194122_rna.h5ad,9876,D7 GSE194122_s4d8,INVALID_FOR_MANUSCRIPT_DATASET_ID,Phase 1 accession/shape match the authoritative D7 entry; no silent relabel permitted.

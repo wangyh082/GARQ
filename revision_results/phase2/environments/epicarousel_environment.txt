@@ -1,0 +1,11 @@
+official_package=epicarousel==0.0.2
+official_repository=https://github.com/BioX-NKU/EpiCarousel
+repository_head_observed=19715449311dbd16295a0b346644551113c8d532
+python=3.11
+numpy=1.26.4
+anndata=0.8.0
+episcanpy=0.3.2
+snapatac2=2.9.0
+compatibility_patch_sha256=83233fb9d8910662ca885a9b4ff6859a4bc0511f8482411567db26fd2ff5e357
+compatibility_patch_scope=np.int/np.float aliases only
+adapter=revision_exp/methods/epicarousel_adapter.py

@@ -10,10 +10,13 @@ revision_results/**/*.pt
 revision_results/**/*.pth
 revision_results/**/*assignments*.parquet
 revision_results/**/*assignments*.csv
+!revision_results/phase2/baseline_smoke/**/cell_assignments.csv
 revision_results/**/*links_long*.parquet
 revision_results/**/*.h5ad
 revision_results/**/*.npy
 revision_results/**/*.npz
+.venvs/
+revision_results/**/EpiCarousel_export/
 save/
 figures/
 *.tmp

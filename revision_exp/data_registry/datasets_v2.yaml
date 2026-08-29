@@ -1,0 +1,108 @@
+registry_version: 2
+authority: Supplementary Table 1
+datasets:
+  D5:
+    status: CONFIRMED
+    authoritative_name: BMMC_batch1
+    data_type: RNA+ADT
+    n_cells: 12103
+    modalities:
+      RNA: /home/zhangpeiru/data/RNA+ADT/D8/D8_rna.h5ad
+      ADT: /home/zhangpeiru/data/RNA+ADT/D8/D8_adt.h5ad
+    feature_dimensions:
+      RNA: 9786
+      ADT: 25
+    label_key_candidate: celltype
+    paired_id_set_equality: true
+    paired_row_order_verified: true
+    canonicalization: {}
+    identity_basis: authoritative shape + modality + feature dimensions + paired obs
+      hashes
+  D11:
+    status: CONFIRMED
+    authoritative_name: 10Xpbmc10k
+    data_type: RNA+ATAC
+    n_cells: 9631
+    modalities:
+      RNA: /home/zhangpeiru/data/RNA+ATAC/pbmc10k/10x-Multiome-Pbmc10k-RNA.h5ad
+      ATAC: /home/zhangpeiru/data/RNA+ATAC/pbmc10k/10x-Multiome-Pbmc10k-ATAC.h5ad
+    feature_dimensions:
+      RNA: 29095
+      ATAC: 107194
+    label_key_candidate: cell_type
+    paired_id_set_equality: true
+    paired_row_order_verified: true
+    canonicalization: {}
+    identity_basis: authoritative shape + modality + feature dimensions + paired obs
+      hashes
+  D13:
+    status: CONFIRMED
+    authoritative_name: GSE164378
+    data_type: RNA+ADT
+    n_cells: 161764
+    modalities:
+      RNA: /home/zhangpeiru/data/RNA+ADT/GSE164378/GSE164378_rna.h5ad
+      ADT: /home/zhangpeiru/data/RNA+ADT/GSE164378/GSE164378_adt.h5ad
+    feature_dimensions:
+      RNA: 33538
+      ADT: 228
+    label_key_candidate: celltype
+    paired_id_set_equality: true
+    paired_row_order_verified: true
+    canonicalization: {}
+    identity_basis: authoritative shape + modality + feature dimensions + paired obs
+      hashes
+  D16:
+    status: CONFIRMED
+    authoritative_name: GSE140203
+    data_type: RNA+ATAC
+    n_cells: 32231
+    modalities:
+      RNA: /home/zhangpeiru/data/RNA+ATAC/ma/Ma-2020-RNA.h5ad
+      ATAC: /home/zhangpeiru/data/RNA+ATAC/ma/Ma-2020-ATAC.h5ad
+    feature_dimensions:
+      RNA: 21478
+      ATAC: 340341
+    label_key_candidate: celltype
+    paired_id_set_equality: true
+    paired_row_order_verified: true
+    canonicalization: {}
+    identity_basis: authoritative shape + modality + feature dimensions + paired obs
+      hashes
+  D17:
+    status: CONFIRMED
+    authoritative_name: Human_Kidney_Cancer
+    data_type: RNA+ATAC
+    n_cells: 16143
+    modalities:
+      RNA: /home/zhangpeiru/data/analysis/new/kidney_rna_updated.h5ad
+      ATAC: /home/zhangpeiru/data/analysis/new/kidney_atac_updated.h5ad
+    feature_dimensions:
+      RNA: 32445
+      ATAC: 67150
+    label_key_candidate: celltype
+    paired_id_set_equality: true
+    paired_row_order_verified: true
+    canonicalization: {}
+    identity_basis: authoritative shape + modality + feature dimensions + paired obs
+      hashes
+  D18:
+    status: CONFIRMED
+    authoritative_name: GSE158013
+    data_type: RNA+ATAC+ADT
+    n_cells: 25517
+    modalities:
+      RNA: /home/zhangpeiru/data/RNA_ATAC_ADT/GSE158013/GSE158013_rna.h5ad
+      ATAC: /home/zhangpeiru/data/RNA_ATAC_ADT/GSE158013/GSE158013_atac.h5ad
+      ADT: /home/zhangpeiru/data/RNA_ATAC_ADT/GSE158013/GSE158013_adt.h5ad
+    feature_dimensions:
+      RNA: 17882
+      ATAC: 128853
+      ADT: 46
+    label_key_candidate: celltype
+    paired_id_set_equality: true
+    paired_row_order_verified: true
+    canonicalization:
+      ADT: terminal_dot_to_hyphen
+    identity_basis: authoritative shape + modality + feature dimensions + paired obs
+      hashes

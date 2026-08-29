@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "n_cells": 2000,
+  "requested_K": 40,
+  "realized_K": 40,
+  "resolution": 0.02,
+  "wall_seconds": 28.6,
+  "peak_rss_kib": 888652,
+  "compatibility_shims": [
+    "SnapATAC2 Polars obs/var conversion",
+    "np.int/np.float to builtin equivalent"
+  ]
+}
