@@ -1,0 +1,45 @@
+config_id: E2_D18_noise_ADT_thin_0.25_smoke_seed0_v1
+task: legacy_garq
+implementation_tag: diagnostic_variant_modality_noise
+dataset: D18
+data_files:
+- /home/zhangpeiru/data/RNA_ATAC_ADT/GSE158013/GSE158013_rna.h5ad
+- /home/zhangpeiru/data/RNA_ATAC_ADT/GSE158013/GSE158013_atac.h5ad
+- /home/zhangpeiru/data/RNA_ATAC_ADT/GSE158013/GSE158013_adt.h5ad
+data_types:
+- RNA
+- ATAC
+- ADT
+matrix_sources:
+- X
+- X
+- X
+obs_name_canonicalization:
+- null
+- null
+- pattern: \.([0-9]+)$
+  replacement: -\1
+label_key: celltype
+cell_limit: 2000
+subset_seed: 1729
+requested_K: 40
+epochs: 6
+batch_size: 256
+k_knn: 5
+seed: 0
+device: cuda
+deterministic: true
+anchors_init: Kmeans
+converge_threshold: 10
+min_available_ram_gb: 32
+min_free_gpu_gb: 8
+result_root: revision_results
+force: false
+modality_perturbations:
+- null
+- null
+- kind: binomial_thinning
+  p: 0.25
+  seed: 8302
+noise_condition: ADT_thin_0.25
+output_subdir: 02_modality/noise/D18/ADT_thin_0.25

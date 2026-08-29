@@ -1,0 +1,2 @@
+dataset,method,seed,implementation_tag,resolution,n_cells,requested_K,realized_K,empty_anchor_count,empty_rate,compression_ratio,size_min,size_q1,size_median,size_mean,size_q3,size_p90,size_p95,size_p99,size_max,size_sd,size_cv,size_gini,singleton_rate,size_le_2_rate,size_gt_2x_median_rate,size_gt_5x_median_rate,tukey_outlier_count,max_median_ratio
+D17,GARQ,0,diagnostic_variant_modality_noise,0.02,2000,40,40,0,0.0,50.0,2.0,7.0,11.5,50.0,24.75,163.8,355.9,415.09,442.0,104.69687625443224,2.093937525088645,0.732575,0.0,0.05,0.275,0.125,5,38.43478260869565

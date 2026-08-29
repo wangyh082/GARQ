@@ -1,0 +1,44 @@
+{
+  "subset_applied": true,
+  "sampling": "uniform_without_replacement_no_labels_used",
+  "subset_seed": 1729,
+  "source_n_cells": 25517,
+  "n_cells": 2000,
+  "selected_obs_names_sha256": "7d5a9eb25a48370800aff384bb801ed8706f3bab5d1455d94b022f6db4009820",
+  "modality_checks": [
+    {
+      "source": "/home/zhangpeiru/data/RNA_ATAC_ADT/GSE158013/GSE158013_rna.h5ad",
+      "canonicalization_rule": null,
+      "names_changed": false,
+      "same_obs_names_and_order": true,
+      "subset": "revision_results/cache/subsets/D18_GSE158013_rna_2000cells_seed1729.h5ad",
+      "matrix_source": "X",
+      "perturbation": null
+    },
+    {
+      "source": "/home/zhangpeiru/data/RNA_ATAC_ADT/GSE158013/GSE158013_atac.h5ad",
+      "canonicalization_rule": null,
+      "names_changed": false,
+      "same_obs_names_and_order": true,
+      "subset": "revision_results/cache/subsets/D18_GSE158013_atac_2000cells_seed1729.h5ad",
+      "matrix_source": "X",
+      "perturbation": null
+    },
+    {
+      "source": "/home/zhangpeiru/data/RNA_ATAC_ADT/GSE158013/GSE158013_adt.h5ad",
+      "canonicalization_rule": {
+        "pattern": "\\.([0-9]+)$",
+        "replacement": "-\\1"
+      },
+      "names_changed": true,
+      "same_obs_names_and_order": true,
+      "subset": "revision_results/cache/subsets/D18_GSE158013_adt_2000cells_seed1729_thin-0.5-seed8301.h5ad",
+      "matrix_source": "X",
+      "perturbation": {
+        "kind": "binomial_thinning",
+        "p": 0.5,
+        "seed": 8301
+      }
+    }
+  ]
+}

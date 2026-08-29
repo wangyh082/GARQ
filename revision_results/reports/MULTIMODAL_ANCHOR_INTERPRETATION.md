@@ -2,7 +2,7 @@
 
 ## Status
 
-当前证据包括 D5/D11/D17/D18 的 2,000-cell、seed-0 modality combination smoke，learned-block contribution 与 kNN-to-anchor mapping，以及 D5/D11 count-level thinning/permutation grids。尚未完成 5 seeds、全量 cells、D17/D18 noise grids、显式 modality-weight grid 和其他 baseline，因此结论为 **PARTIAL diagnostic evidence**，不得写成最终 biological superiority claim。
+当前证据包括 D5/D11/D17/D18 的 2,000-cell、seed-0 modality combination smoke，learned-block contribution、kNN-to-anchor mapping，以及四个核心数据集的 count-level thinning/permutation grids。尚未完成 5 seeds、全量 cells、显式 modality-weight grid 和其他 baseline，因此结论为 **PARTIAL diagnostic evidence**，不得写成最终 biological superiority claim。
 
 ## What a released shared anchor represents
 
@@ -52,9 +52,25 @@ Design matches the D5 smoke (same 2,000-cell subset, seed 0, requested K=40, 6 e
 
 The D11 count baseline realizes 39 anchors. Its sampled absolute-dot contribution is RNA 37.4% and ATAC 62.6%. The contribution does not track input quality monotonically: at ATAC p=0.25 the ATAC share rises to 70.3%, while at RNA p=0.25 the RNA share remains 30.2%. As in D5, thinning one modality can substantially change the separately encoded block for the unchanged modality, whereas the permutation controls happen to preserve the unchanged block exactly under this deterministic single-seed path. This supports sensitivity and training-coupling, not automatic quality-aware weighting.
 
+## D17 and D18 count-level modality perturbation
+
+D17 uses integer RNA/ATAC `.X`; D18 uses integer RNA/ATAC/ADT `.X` plus the preregistered ADT cell-ID canonicalization. Both use the same 2,000-cell, seed-0, requested-K=40, 6-epoch diagnostic design. All 9 D17 and 13 D18 manifests are `PASS`. To respect the shared-server storage budget, condition-specific thinning/permutation H5AD caches were removed after output validation; p=1 subset caches, resolved configs, seeds, provenance, manifests, and all small result tables remain, so the transient caches can be regenerated exactly.
+
+| Dataset / perturbation | thinning ARI vs p=1 | permutation ARI vs p=1 | baseline absolute-dot contribution |
+|---|---:|---:|---|
+| D17 RNA | 0.199–0.241 | 0.102 | RNA 48.8% |
+| D17 ATAC | 0.172–0.287 | 0.089 | ATAC 51.2% |
+| D18 RNA | 0.194–0.261 | 0.114 | RNA 27.6% |
+| D18 ATAC | 0.200–0.276 | 0.195 | ATAC 38.3% |
+| D18 ADT | 0.221–0.310 | 0.228 | ADT 34.2% |
+
+D17 realizes 39–40 anchors across conditions and D18 realizes 38–40, so the low ARIs are not explained by a gross collapse in realized K. D17 reproduces the directional pattern seen in D5/D11: ATAC perturbation leaves the RNA block's kNN15 neighborhoods identical, while RNA thinning changes the unchanged ATAC learned block. D18 is more informative because there are two unperturbed blocks. ATAC or ADT perturbation leaves both unperturbed learned blocks identical in this deterministic path; RNA thinning changes both unchanged ATAC (mean Jaccard 0.014–0.019) and ADT (0.076–0.085) blocks. This asymmetry is evidence of optimizer/training-path coupling and requires multi-seed gradient/update tracing before mechanistic claims.
+
+The contribution shares again do not behave as quality gates. D18 ATAC contribution rises from 38.3% at p=1 to 49.2% at p=0.25, and ADT remains 36.3% at p=0.25. D18 first-epoch reconstruction loss is also on a very different scale for ADT (roughly 11–24 across its perturbations) than RNA/ATAC (roughly 0.1–0.5). Reconstruction scale and cosine contribution are distinct diagnostics, but together they show that raw concatenation/reconstruction has no explicit cross-modality quality calibration.
+
 ## Rare-state evidence
 
-In the D5 subset, Regulatory T cells and conventional DC each have 15 cells. Treg recall/F1 is 0 in the p=1 baseline and every perturbation condition. cDC recall/F1 is also 0 except RNA thinning p=0.75 (recall 0.467, F1 0.438). In the D11 subset, Plasma cell has 8 cells and recall/F1 is 0 in the count baseline and all eight perturbations; the reviewer-requested gdT label is absent from the current D11 labels. These results do not support rare-state robustness. The isolated non-monotonic D5 cDC result must not be selected as evidence that noise improves rare-state preservation.
+In the D5 subset, Regulatory T cells and conventional DC each have 15 cells. Treg recall/F1 is 0 in the p=1 baseline and every perturbation condition. cDC recall/F1 is also 0 except RNA thinning p=0.75 (recall 0.467, F1 0.438). In D11, Plasma cell has 8 cells and recall/F1 is 0 in all conditions; the reviewer-requested gdT label is absent. In D17, Endothelial Cells (4), Mast Cells (8), and T Cells (14) have recall/F1=0 in every condition. In D18, DC.Myeloid (2), T.DoubleNegative (2), and Mono.CD16 (8) are never recovered; Platelets (4) has baseline recall/F1=0 and reaches recall 0.5 only in an isolated perturbation condition. These results do not support rare-state robustness. Non-monotonic isolated improvements must not be selected as evidence that noise is beneficial.
 
 ## Interpretation boundary
 
@@ -62,4 +78,4 @@ In the D5 subset, Regulatory T cells and conventional DC each have 15 cells. Tre
 - They do not support “all modalities contribute equally,” “adding a modality is always beneficial,” or a causal biological interpretation of anchor membership.
 - Full claims require D5/D11/D17/D18 full-data, 5 seeds, explicit block-normalization/variance/weight variants, matched realized K, gradient/update norm tracing, and baseline comparisons.
 
-Primary evidence: `revision_results/02_modality/modality_block_contribution.csv`, `neighborhood_anchor_mapping.csv`, `modality_noise_perturbation.csv`, `modality_noise_per_type.csv`, and all resolved `E2_D5_noise_*` / `E2_D11_noise_*` configs/manifests.
+Primary evidence: `revision_results/02_modality/modality_block_contribution.csv`, `neighborhood_anchor_mapping.csv`, `modality_noise_perturbation.csv`, `modality_noise_per_type.csv`, and all resolved `E2_D5_noise_*`, `E2_D11_noise_*`, `E2_D17_noise_*`, and `E2_D18_noise_*` configs/manifests.

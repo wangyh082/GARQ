@@ -1,0 +1,32 @@
+{
+  "subset_applied": true,
+  "sampling": "uniform_without_replacement_no_labels_used",
+  "subset_seed": 1729,
+  "source_n_cells": 16143,
+  "n_cells": 2000,
+  "selected_obs_names_sha256": "0c3414eefc36869902446eefe431ec8daae7ccd09bbe21b23d6bdd29fa0ad13b",
+  "modality_checks": [
+    {
+      "source": "/home/zhangpeiru/data/analysis/new/kidney_rna_updated.h5ad",
+      "canonicalization_rule": null,
+      "names_changed": false,
+      "same_obs_names_and_order": true,
+      "subset": "revision_results/cache/subsets/D17_kidney_rna_updated_2000cells_seed1729_thin-0.25-seed8102.h5ad",
+      "matrix_source": "X",
+      "perturbation": {
+        "kind": "binomial_thinning",
+        "p": 0.25,
+        "seed": 8102
+      }
+    },
+    {
+      "source": "/home/zhangpeiru/data/analysis/new/kidney_atac_updated.h5ad",
+      "canonicalization_rule": null,
+      "names_changed": false,
+      "same_obs_names_and_order": true,
+      "subset": "revision_results/cache/subsets/D17_kidney_atac_updated_2000cells_seed1729.h5ad",
+      "matrix_source": "X",
+      "perturbation": null
+    }
+  ]
+}

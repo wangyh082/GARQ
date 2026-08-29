@@ -45,7 +45,29 @@ def main() -> None:
             # D11 RNA .X is log-normalized; thinning must use raw integer counts.
             "data_types": ["RNA", "ATAC"],
             "matrix_sources": ["counts", "X"],
-        }
+        },
+        "D17": {
+            "data_files": [
+                "/home/zhangpeiru/data/analysis/new/kidney_rna_updated.h5ad",
+                "/home/zhangpeiru/data/analysis/new/kidney_atac_updated.h5ad",
+            ],
+            "data_types": ["RNA", "ATAC"],
+            "matrix_sources": ["X", "X"],
+        },
+        "D18": {
+            "data_files": [
+                "/home/zhangpeiru/data/RNA_ATAC_ADT/GSE158013/GSE158013_rna.h5ad",
+                "/home/zhangpeiru/data/RNA_ATAC_ADT/GSE158013/GSE158013_atac.h5ad",
+                "/home/zhangpeiru/data/RNA_ATAC_ADT/GSE158013/GSE158013_adt.h5ad",
+            ],
+            "data_types": ["RNA", "ATAC", "ADT"],
+            "matrix_sources": ["X", "X", "X"],
+            "obs_name_canonicalization": [
+                None,
+                None,
+                {"pattern": r"\.([0-9]+)$", "replacement": r"-\1"},
+            ],
+        },
     }
     for dataset, specification in datasets.items():
         n_modalities = len(specification["data_types"])
