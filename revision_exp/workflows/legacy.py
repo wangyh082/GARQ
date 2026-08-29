@@ -20,6 +20,7 @@ from model import GARQ
 from revision_exp.metrics.metacell import evaluate_assignments
 from revision_exp.utils.provenance import data_fingerprint, write_json
 from revision_exp.utils.resource_monitor import ResourceMonitor, enforce_resource_floor
+from revision_exp.workflows.stability import run_inference_stability
 
 
 def _args(config: dict[str, Any], paths: list[str]) -> SimpleNamespace:
@@ -290,6 +291,21 @@ def run_legacy_experiment(config: dict[str, Any], output_dir: Path, result_root:
     if args.type_key in adata_list[0].obs:
         assignments["cell_type"] = adata_list[0].obs[args.type_key].astype(str).to_numpy()
     assignments.to_csv(output_dir / "cell_assignments.csv", index=False)
+    with monitor.stage("same_checkpoint_inference_stability"):
+        run_inference_stability(
+            model=model,
+            dataset=dataloader_eval.dataset,
+            device=device,
+            reference_ids=ids,
+            cell_ids=adata_list[0].obs_names.astype(str).to_numpy(),
+            cell_types=(
+                adata_list[0].obs[args.type_key].astype(str).to_numpy()
+                if args.type_key in adata_list[0].obs
+                else None
+            ),
+            config=config,
+            output_dir=output_dir,
+        )
     with monitor.stage("common_evaluation"):
         tables = evaluate_assignments(
             assignments,
