@@ -2,7 +2,7 @@
 
 ## Status
 
-当前证据包括 D5/D11/D17/D18 的 2,000-cell、seed-0 modality combination smoke，learned-block contribution、kNN-to-anchor mapping，以及四个核心数据集的 count-level thinning/permutation grids。尚未完成 5 seeds、全量 cells、显式 modality-weight grid 和其他 baseline，因此结论为 **PARTIAL diagnostic evidence**，不得写成最终 biological superiority claim。
+当前证据包括 D5/D11/D17/D18 的 2,000-cell、seed-0 modality combination smoke，learned-block contribution、kNN-to-anchor mapping，四个核心数据集的 count-level thinning/permutation grids，以及 D5/D11 的显式 modality-weight grid。尚未完成 5 seeds、全量 cells、D17/D18 权重扩展和其他 baseline，因此结论为 **PARTIAL diagnostic evidence**，不得写成最终 biological superiority claim。
 
 ## What a released shared anchor represents
 
@@ -67,6 +67,18 @@ D17 uses integer RNA/ATAC `.X`; D18 uses integer RNA/ATAC/ADT `.X` plus the prer
 D17 realizes 39–40 anchors across conditions and D18 realizes 38–40, so the low ARIs are not explained by a gross collapse in realized K. D17 reproduces the directional pattern seen in D5/D11: ATAC perturbation leaves the RNA block's kNN15 neighborhoods identical, while RNA thinning changes the unchanged ATAC learned block. D18 is more informative because there are two unperturbed blocks. ATAC or ADT perturbation leaves both unperturbed learned blocks identical in this deterministic path; RNA thinning changes both unchanged ATAC (mean Jaccard 0.014–0.019) and ADT (0.076–0.085) blocks. This asymmetry is evidence of optimizer/training-path coupling and requires multi-seed gradient/update tracing before mechanistic claims.
 
 The contribution shares again do not behave as quality gates. D18 ATAC contribution rises from 38.3% at p=1 to 49.2% at p=0.25, and ADT remains 36.3% at p=0.25. D18 first-epoch reconstruction loss is also on a very different scale for ADT (roughly 11–24 across its perturbations) than RNA/ATAC (roughly 0.1–0.5). Reconstruction scale and cosine contribution are distinct diagnostics, but together they show that raw concatenation/reconstruction has no explicit cross-modality quality calibration.
+
+## D5 and D11 explicit modality-weight diagnostics
+
+The diagnostic implementation accepts one non-negative scalar per modality block and multiplies each encoded block before concatenation, anchor initialization, quantization, and inference export. `modality_weights: null` preserves the released `torch.cat` path exactly and is the equal-weight baseline. The grid uses λ∈{0,0.25,0.5,1,2}, where λ=1 is represented by that baseline; every non-baseline run is tagged `diagnostic_variant_modality_weight`. These are 2,000-cell, seed-0, requested-K=40, 6-epoch smoke runs and are not a proposed replacement for released GARQ.
+
+All 18 manifests pass (9 each for D5 and D11). D5 equal weights realizes 34 anchors with RNA/ADT absolute-dot contribution 51.8%/48.2%; D11 realizes 40 with RNA/ATAC 36.8%/63.2%. Scaling strongly changes assignment despite similar realized K: non-baseline ARI versus equal weights is 0.247–0.398 for D5 (realized K 34–40) and 0.166–0.254 for D11 (realized K 38–40). Thus the diagnostic supports sensitivity to block weighting, not a uniquely optimal weight.
+
+Contribution changes are large and nonlinear because the reported absolute-dot shares depend approximately on squared block scale. For example, D5 ADT contribution moves from 0% at λ=0 to 5.5%, 18.9%, 48.2%, and 78.8% at λ=0.25, 0.5, 1, and 2. D11 ATAC moves from 0% to 9.7%, 30.1%, 63.2%, and 87.3%. A positive scalar leaves that block's own cosine-neighbor ordering unchanged, so its kNN15 Jaccard versus equal weights is 1.0 by construction; at λ=0 the block is all zeros and the resulting arbitrary tie-based neighborhood Jaccard must not be biologically interpreted.
+
+Rare-state outcomes do not justify selecting a favorable λ. D5 Regulatory T cells and conventional DC each have 15 sampled cells and recall/F1=0 in every weight condition. D11 Plasma cell has 8 cells and recall/F1=0 throughout. D11 cDC2 (42 cells) is non-monotonic (F1 0–0.471), while the equal-weight F1 is 0.125; this single-seed fluctuation is exploratory and cannot be used for label-guided weight choice. The reviewer-requested D11 gdT label remains absent. Multi-seed, full-data and preregistered label-free model-selection evidence is required before recommending any explicit weighting.
+
+Primary weight evidence: `revision_results/02_modality/modality_weight_grid.csv`, `modality_weight_per_type.csv`, `weights/D5`, `weights/D11`, and the resolved `E2_D5_weight_*` / `E2_D11_weight_*` configs and manifests.
 
 ## Rare-state evidence
 

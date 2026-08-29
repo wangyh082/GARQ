@@ -25,10 +25,7 @@ def init_gart_anchors(
             
      
             hiddens = model(x_list)
-            if model.omics_num > 1:
-                hidden = torch.cat(hiddens, dim=1)
-            else:
-                hidden = hiddens[0]
+            hidden = model.combine_hiddens(hiddens)
             
             all_hiddens.append(hidden.detach())
     
@@ -224,10 +221,7 @@ def inference(model, data_types, data_loader, device):
                 )
                 loss_rec_q_all += loss_rec_q
 
-        if omics_num > 1:
-            hidden = torch.cat(hiddens, dim=1)
-        else:
-            hidden = hiddens[0]
+        hidden = model.combine_hiddens(hiddens)
 
         embeds.append(hidden.detach().cpu().numpy())
         ids.append(id.detach().cpu().numpy())

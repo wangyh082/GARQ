@@ -336,9 +336,27 @@ def get_decoder(data_type, entry_dim, output_dim):
 
 
 class GARQ(nn.Module):
-    def __init__(self, input_dims, data_types, entry_num, entry_dim=32, k_knn=5):
+    def __init__(
+        self,
+        input_dims,
+        data_types,
+        entry_num,
+        entry_dim=32,
+        k_knn=5,
+        modality_weights=None,
+    ):
         super(GARQ, self).__init__()
         self.omics_num = len(input_dims)
+        if modality_weights is not None:
+            if len(modality_weights) != self.omics_num:
+                raise ValueError("modality_weights must match the number of modalities")
+            if any(float(weight) < 0 for weight in modality_weights):
+                raise ValueError("modality_weights must be non-negative")
+            if not any(float(weight) > 0 for weight in modality_weights):
+                raise ValueError("at least one modality weight must be positive")
+            self.modality_weights = tuple(float(weight) for weight in modality_weights)
+        else:
+            self.modality_weights = None
         self.encoders = nn.ModuleList(
             [TransformerEncoder(input_dim, entry_dim) for input_dim in input_dims]
         )
@@ -364,11 +382,21 @@ class GARQ(nn.Module):
         if self.omics_num == 1:
             self.decoders_q[0].load_state_dict(self.decoders[0].state_dict())
 
-    def quantize(self, hiddens, return_assignment=False):
-        if self.omics_num > 1:
-            hidden = torch.cat(hiddens, dim=1)
+    def combine_hiddens(self, hiddens):
+        if self.modality_weights is None:
+            weighted = hiddens
         else:
-            hidden = hiddens[0]
+            weighted = [
+                hidden * weight
+                for hidden, weight in zip(hiddens, self.modality_weights)
+            ]
+        if self.omics_num > 1:
+            return torch.cat(weighted, dim=1)
+        else:
+            return weighted[0]
+
+    def quantize(self, hiddens, return_assignment=False):
+        hidden = self.combine_hiddens(hiddens)
         return self.quantizer(hidden, return_assignment)
 
     def forward(self, inputs):

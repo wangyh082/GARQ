@@ -210,6 +210,7 @@ def run_legacy_experiment(config: dict[str, Any], output_dir: Path, result_root:
         "diagnostic_variant_no_dynamic_update",
         "diagnostic_variant_reposition_interval",
         "diagnostic_variant_modality_noise",
+        "diagnostic_variant_modality_weight",
     }
     if config["implementation_tag"] not in allowed_tags:
         raise ValueError(f"Unsupported implementation_tag: {config['implementation_tag']}")
@@ -264,6 +265,7 @@ def run_legacy_experiment(config: dict[str, Any], output_dir: Path, result_root:
         data_types=args.data_type,
         entry_num=args.n_GARQs,
         k_knn=args.k_knn,
+        modality_weights=config.get("modality_weights"),
     ).to(device)
     anchor_settings = config.get("anchor_dynamics", {})
     model.quantizer.configure_anchor_diagnostics(
@@ -344,6 +346,11 @@ def run_legacy_experiment(config: dict[str, Any], output_dir: Path, result_root:
                 "pairwise_squared_distance_energy": float(2.0 * variance_trace),
                 "sampled_pair_mean_abs_dot": mean_abs_dot,
                 "normalization_before_concat": False,
+                "modality_weight": (
+                    model.modality_weights[block_index]
+                    if model.modality_weights is not None
+                    else 1.0
+                ),
             }
         )
     energy_total = sum(abs_dot_energy)
@@ -412,6 +419,7 @@ def run_legacy_experiment(config: dict[str, Any], output_dir: Path, result_root:
         output_dir / "legacy_runtime_summary.json",
         {
             "implementation_tag": config["implementation_tag"],
+            "modality_weights": model.modality_weights,
             "parameters_before_first_forward": parameters_before,
             "parameters_after_inference": [name for name, _ in model.named_parameters()],
             "warm_epochs": warm_epochs,
