@@ -13,6 +13,7 @@ import anndata as ad
 import numpy as np
 import pandas as pd
 import torch
+from scipy import sparse
 
 from data_utils import compute_metacell, load_data
 from engine import inference, init_gart_anchors, train_one_epoch, warm_one_epoch
@@ -83,11 +84,17 @@ def _prepare_uniform_subset(
     n_cells: int,
     seed: int,
     canonicalization_rules: list[dict[str, str] | None] | None = None,
+    matrix_sources: list[str] | None = None,
+    perturbations: list[dict[str, Any] | None] | None = None,
 ) -> tuple[list[str], dict[str, Any]]:
     cache_dir.mkdir(parents=True, exist_ok=True)
     canonicalization_rules = canonicalization_rules or [None] * len(source_paths)
+    matrix_sources = matrix_sources or ["X"] * len(source_paths)
+    perturbations = perturbations or [None] * len(source_paths)
     if len(canonicalization_rules) != len(source_paths):
         raise ValueError("obs_name_canonicalization must match data_files length")
+    if len(matrix_sources) != len(source_paths) or len(perturbations) != len(source_paths):
+        raise ValueError("matrix_sources and modality_perturbations must match data_files length")
     first = ad.read_h5ad(source_paths[0], backed="r")
     total = first.n_obs
     first_names = _canonicalize_obs_names(
@@ -101,8 +108,23 @@ def _prepare_uniform_subset(
     selected_names = first_names[indices]
     output_paths = []
     modality_checks = []
-    for source, rule in zip(source_paths, canonicalization_rules):
-        output = cache_dir / f"{dataset}_{source.stem}_{n_cells}cells_seed{seed}.h5ad"
+    for source, rule, matrix_source, perturbation in zip(
+        source_paths, canonicalization_rules, matrix_sources, perturbations
+    ):
+        variant = ""
+        if matrix_source != "X":
+            variant += f"_matrix-{matrix_source}"
+        if perturbation:
+            kind = perturbation["kind"]
+            if kind == "binomial_thinning":
+                variant += f"_thin-{float(perturbation['p']):g}-seed{int(perturbation['seed'])}"
+            elif kind == "cell_permutation":
+                variant += f"_permute-seed{int(perturbation['seed'])}"
+            else:
+                raise ValueError(f"Unsupported modality perturbation: {kind}")
+        if not re.fullmatch(r"[A-Za-z0-9_.-]*", variant):
+            raise ValueError(f"Unsafe cache variant: {variant}")
+        output = cache_dir / f"{dataset}_{source.stem}_{n_cells}cells_seed{seed}{variant}.h5ad"
         backed = ad.read_h5ad(source, backed="r")
         source_names_original = backed.obs_names.to_numpy().astype(str)
         source_names = _canonicalize_obs_names(source_names_original, rule)
@@ -119,6 +141,35 @@ def _prepare_uniform_subset(
         if needs_write:
             subset = backed[indices].to_memory()
             subset.obs_names = source_names[indices]
+            if matrix_source != "X":
+                if matrix_source not in subset.layers:
+                    raise KeyError(f"Missing requested layer {matrix_source!r} in {source}")
+                subset.X = subset.layers[matrix_source].copy()
+            for layer_name in list(subset.layers.keys()):
+                del subset.layers[layer_name]
+            if perturbation:
+                perturb_rng = np.random.default_rng(int(perturbation["seed"]))
+                if perturbation["kind"] == "binomial_thinning":
+                    probability = float(perturbation["p"])
+                    if not 0 <= probability <= 1:
+                        raise ValueError("Binomial thinning probability must be in [0, 1]")
+                    if sparse.issparse(subset.X):
+                        matrix = sparse.csr_matrix(subset.X, copy=True)
+                        rounded = np.rint(matrix.data)
+                        if np.any(matrix.data < 0) or np.any(np.abs(matrix.data - rounded) > 1e-6):
+                            raise ValueError("Count-level thinning requires non-negative integer matrix values")
+                        matrix.data = perturb_rng.binomial(rounded.astype(np.int64), probability).astype(matrix.data.dtype)
+                        matrix.eliminate_zeros()
+                        subset.X = matrix
+                    else:
+                        matrix = np.asarray(subset.X)
+                        rounded = np.rint(matrix)
+                        if np.any(matrix < 0) or np.any(np.abs(matrix - rounded) > 1e-6):
+                            raise ValueError("Count-level thinning requires non-negative integer matrix values")
+                        subset.X = perturb_rng.binomial(rounded.astype(np.int64), probability).astype(matrix.dtype)
+                elif perturbation["kind"] == "cell_permutation":
+                    permutation = perturb_rng.permutation(subset.n_obs)
+                    subset.X = subset.X[permutation].copy()
             subset.write_h5ad(output, compression="gzip")
         backed.file.close()
         output_paths.append(str(output))
@@ -129,6 +180,8 @@ def _prepare_uniform_subset(
                 "names_changed": bool(np.any(source_names != source_names_original)),
                 "same_obs_names_and_order": same_order,
                 "subset": str(output),
+                "matrix_source": matrix_source,
+                "perturbation": perturbation,
             }
         )
     return output_paths, {
@@ -156,6 +209,7 @@ def run_legacy_experiment(config: dict[str, Any], output_dir: Path, result_root:
         "instrumented_legacy",
         "diagnostic_variant_no_dynamic_update",
         "diagnostic_variant_reposition_interval",
+        "diagnostic_variant_modality_noise",
     }
     if config["implementation_tag"] not in allowed_tags:
         raise ValueError(f"Unsupported implementation_tag: {config['implementation_tag']}")
@@ -183,6 +237,8 @@ def run_legacy_experiment(config: dict[str, Any], output_dir: Path, result_root:
                 int(config["cell_limit"]),
                 int(config.get("subset_seed", config["seed"])),
                 config.get("obs_name_canonicalization"),
+                config.get("matrix_sources"),
+                config.get("modality_perturbations"),
             )
     write_json(output_dir / "subset_provenance.json", subset_info)
     args = _args(config, paths)

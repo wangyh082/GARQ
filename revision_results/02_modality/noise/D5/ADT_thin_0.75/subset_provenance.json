@@ -1,0 +1,32 @@
+{
+  "subset_applied": true,
+  "sampling": "uniform_without_replacement_no_labels_used",
+  "subset_seed": 1729,
+  "source_n_cells": 8670,
+  "n_cells": 2000,
+  "selected_obs_names_sha256": "82ce2327cac1491db377675b764afa2f0c1d997578303554ef71d1d41553278f",
+  "modality_checks": [
+    {
+      "source": "/home/zhangpeiru/data/RNA+ADT/D5/D5_rna.h5ad",
+      "canonicalization_rule": null,
+      "names_changed": false,
+      "same_obs_names_and_order": true,
+      "subset": "revision_results/cache/subsets/D5_D5_rna_2000cells_seed1729.h5ad",
+      "matrix_source": "X",
+      "perturbation": null
+    },
+    {
+      "source": "/home/zhangpeiru/data/RNA+ADT/D5/D5_adt.h5ad",
+      "canonicalization_rule": null,
+      "names_changed": false,
+      "same_obs_names_and_order": true,
+      "subset": "revision_results/cache/subsets/D5_D5_adt_2000cells_seed1729_thin-0.75-seed8200.h5ad",
+      "matrix_source": "X",
+      "perturbation": {
+        "kind": "binomial_thinning",
+        "p": 0.75,
+        "seed": 8200
+      }
+    }
+  ]
+}

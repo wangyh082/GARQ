@@ -1,0 +1,44 @@
+{
+  "config_id": "E2_D5_noise_ADT_thin_0.5_smoke_seed0_v1",
+  "task": "legacy_garq",
+  "implementation_tag": "diagnostic_variant_modality_noise",
+  "dataset": "D5",
+  "data_files": [
+    "/home/zhangpeiru/data/RNA+ADT/D5/D5_rna.h5ad",
+    "/home/zhangpeiru/data/RNA+ADT/D5/D5_adt.h5ad"
+  ],
+  "data_types": [
+    "RNA",
+    "ADT"
+  ],
+  "matrix_sources": [
+    "X",
+    "X"
+  ],
+  "label_key": "celltype",
+  "cell_limit": 2000,
+  "subset_seed": 1729,
+  "requested_K": 40,
+  "epochs": 6,
+  "batch_size": 256,
+  "k_knn": 5,
+  "seed": 0,
+  "device": "cuda",
+  "deterministic": true,
+  "anchors_init": "Kmeans",
+  "converge_threshold": 10,
+  "min_available_ram_gb": 32,
+  "min_free_gpu_gb": 8,
+  "result_root": "revision_results",
+  "force": false,
+  "modality_perturbations": [
+    null,
+    {
+      "kind": "binomial_thinning",
+      "p": 0.5,
+      "seed": 8201
+    }
+  ],
+  "noise_condition": "ADT_thin_0.5",
+  "output_subdir": "02_modality/noise/D5/ADT_thin_0.5"
+}
