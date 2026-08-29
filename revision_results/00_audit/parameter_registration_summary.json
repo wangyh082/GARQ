@@ -1,0 +1,7 @@
+{
+  "alpha_present_before_forward": false,
+  "alpha_in_optimizer_after_forward": false,
+  "alpha_recreated_each_forward": true,
+  "first_alpha_object_id": 140224694206640,
+  "second_alpha_object_id": 140224695661296
+}

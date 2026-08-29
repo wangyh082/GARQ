@@ -1,0 +1,6 @@
+{
+  "faiss_version": "1.11.0",
+  "standard_gpu_resources_available": false,
+  "released_gpu_true_call_succeeded": true,
+  "index_type": "IndexFlatIP"
+}

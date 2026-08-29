@@ -1,0 +1,9 @@
+[
+  {
+    "path": "/home/zhangpeiru/data/11_GSE194122/11_GSE194122_rna.h5ad",
+    "bytes": 25916428,
+    "mtime_ns": 1753062343610724860,
+    "head_tail_sha256": "1adadd6f6b9c6247b5967e4ed45acf53fe2166f3c80e6e51b6ca2b905dd49cb9",
+    "fingerprint_scope": "first_and_last_1MiB_plus_size_and_mtime"
+  }
+]

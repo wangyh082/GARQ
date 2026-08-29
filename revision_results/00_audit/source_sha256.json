@@ -1,0 +1,292 @@
+[
+  {
+    "path": "GARQ.py",
+    "sha256": "35d7a44e60dd6d033d576118b5a5ab98842132e1f6237c554cb886ec0332b251",
+    "bytes": 6720
+  },
+  {
+    "path": "GARQ_Tutorial.ipynb",
+    "sha256": "6f654017c3c25b0f614d2ad61ebec6880f28b1298a7bf2b327be509e5cc3b9c9",
+    "bytes": 1109398
+  },
+  {
+    "path": "data_utils.py",
+    "sha256": "f86c775960003b070d5fcd71f789bdc7d53357bae16db21b1b54aedd5760e97a",
+    "bytes": 5165
+  },
+  {
+    "path": "engine.py",
+    "sha256": "25a2ba5fda0c4ed06602d65ceef3a061f8bdf9c021740aa59fbde05198498765",
+    "bytes": 7123
+  },
+  {
+    "path": "eval_utils.py",
+    "sha256": "38d74645ad6dcce0b28813190f3de2fd0e7d0f91dcbcea0cedc25f23166e8310",
+    "bytes": 10517
+  },
+  {
+    "path": "model.py",
+    "sha256": "c629f59de63f4d6e3b3554a3a2b3c425b504ec4b92134167b60407b3dbbac1e8",
+    "bytes": 11657
+  },
+  {
+    "path": "pyproject.toml",
+    "sha256": "a3dbc8e30e22b42fd79f8a7af4aeb65d6f9257c43414706181e3710caf60683f",
+    "bytes": 254
+  },
+  {
+    "path": "revision_exp/__init__.py",
+    "sha256": "562a433b338662d12a5412003ffc265fa1a2fbf87ad18d01977f718481f34cd9",
+    "bytes": 307
+  },
+  {
+    "path": "revision_exp/audit/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "revision_exp/audit/e0.py",
+    "sha256": "4adf22c4c87e0204bd54cdddcfdb5b49abbec913ac04f381c7225c761fcdd479",
+    "bytes": 9611
+  },
+  {
+    "path": "revision_exp/configs/blockdiag/D11.yaml",
+    "sha256": "dcdabbe2a406247dfce6bf05d6666ee5f1f4e0f5f4a10b93e77b74e795f489d4",
+    "bytes": 597
+  },
+  {
+    "path": "revision_exp/configs/blockdiag/D17.yaml",
+    "sha256": "103b4faeee746b89b2694fd7d045288b80ad0e40240a1f59eeda81c76761d501",
+    "bytes": 601
+  },
+  {
+    "path": "revision_exp/configs/blockdiag/D18.yaml",
+    "sha256": "dac58a62ad00ea5abebf9cb44d630b23dc6bd6b7a9cf99a0681d6b203628b2fb",
+    "bytes": 779
+  },
+  {
+    "path": "revision_exp/configs/blockdiag/D5.yaml",
+    "sha256": "f348ff856d8f49cd1bd85156b8b920c630ee246277a712dd4b573b871a283460",
+    "bytes": 567
+  },
+  {
+    "path": "revision_exp/configs/core_smoke/e2_D17_ATAC.yaml",
+    "sha256": "224461fa7478218b9d8ea20a11643595278adf96937669841331a74977c39122",
+    "bytes": 561
+  },
+  {
+    "path": "revision_exp/configs/core_smoke/e2_D17_RNA.yaml",
+    "sha256": "4ef71a34c9140e4efe5636e1a05c9447bc2602681d89c3fdfdea1287e27862b7",
+    "bytes": 556
+  },
+  {
+    "path": "revision_exp/configs/core_smoke/e2_D17_RNA_ATAC.yaml",
+    "sha256": "e1d1dde08ebb4816ea9cbd36e894508fcf566c994762ee57c15875402408b9d3",
+    "bytes": 638
+  },
+  {
+    "path": "revision_exp/configs/core_smoke/e2_D18_ADT.yaml",
+    "sha256": "6811e7c5dd8a4bd8db67d586c567c585e3d1b2ddc5c83b731e962835fe25b855",
+    "bytes": 561
+  },
+  {
+    "path": "revision_exp/configs/core_smoke/e2_D18_ATAC.yaml",
+    "sha256": "650103258940e714353c8cf03093abe2fe417f00ced8316a4665eecd8002d9fc",
+    "bytes": 566
+  },
+  {
+    "path": "revision_exp/configs/core_smoke/e2_D18_ATAC_ADT.yaml",
+    "sha256": "7085cc5ea27822381de3a4905b6c1b8cf505f1cd47682dd15b2f540b9791634a",
+    "bytes": 733
+  },
+  {
+    "path": "revision_exp/configs/core_smoke/e2_D18_FULL.yaml",
+    "sha256": "dea055ae12b70de825c1a5133be15fd368a19755c3d7c3031cdeba87c05d3626",
+    "bytes": 816
+  },
+  {
+    "path": "revision_exp/configs/core_smoke/e2_D18_RNA.yaml",
+    "sha256": "7c821a23d59c29d6aaeddf39f2f3163263b9b54f6f0039d4377199d2231f89a5",
+    "bytes": 561
+  },
+  {
+    "path": "revision_exp/configs/core_smoke/e2_D18_RNA_ADT.yaml",
+    "sha256": "e82bbe9acce33466a6a66127b9cb481679be29e16551cf191b7b49126f30703a",
+    "bytes": 728
+  },
+  {
+    "path": "revision_exp/configs/core_smoke/e2_D18_RNA_ATAC.yaml",
+    "sha256": "9df96455cb59d798bdf8d05854980948f948e468efece7a3b3e5f10e07b30d26",
+    "bytes": 688
+  },
+  {
+    "path": "revision_exp/configs/e0_D11_smoke.yaml",
+    "sha256": "84d80cbc93b2f691d9c0cad8dc7aba891c01624675b4e4ccd97247ea215a3431",
+    "bytes": 604
+  },
+  {
+    "path": "revision_exp/configs/e0_D5_smoke.yaml",
+    "sha256": "c53407b00dc01a3f65eae620d90b4bdb8426e0d392bb3803d8c4c89844d06271",
+    "bytes": 575
+  },
+  {
+    "path": "revision_exp/configs/e0_audit.yaml",
+    "sha256": "1469ebd80804a21871f95159dce54eeb2db0520aa7f8031830c2f1436627bbad",
+    "bytes": 150
+  },
+  {
+    "path": "revision_exp/configs/smoke/e1_D11_K001.yaml",
+    "sha256": "80ce548489353b9db5e1aaff7cc533cbb909570880629abbcc5d969bd3b66eb3",
+    "bytes": 620
+  },
+  {
+    "path": "revision_exp/configs/smoke/e1_D11_K005.yaml",
+    "sha256": "be089763e8f2b78d7afc83b205685338b53e0ccf6fdc488093a794a4b651a86c",
+    "bytes": 621
+  },
+  {
+    "path": "revision_exp/configs/smoke/e1_D5_K001.yaml",
+    "sha256": "3004283d741f015c99fa6a4d8cb94364ea3d8f4ce1ca960588b37facc98a3b9b",
+    "bytes": 591
+  },
+  {
+    "path": "revision_exp/configs/smoke/e1_D5_K005.yaml",
+    "sha256": "bf229d3ac44e7fc003f6dcbdae840fee2c4354004cf9e430a080859abdc74643",
+    "bytes": 592
+  },
+  {
+    "path": "revision_exp/configs/smoke/e2_D11_ATAC.yaml",
+    "sha256": "3d3c964aac7a4aba0e3e355221450bc080548ccf4aa90c1c283d8ac95cc36666",
+    "bytes": 582
+  },
+  {
+    "path": "revision_exp/configs/smoke/e2_D11_RNA.yaml",
+    "sha256": "7ab71da1a721c9aa6b2542b6c307ad00b18c824b5bb55e804181ef3ead5c39ac",
+    "bytes": 577
+  },
+  {
+    "path": "revision_exp/configs/smoke/e2_D11_RNA_ATAC.yaml",
+    "sha256": "bca359c930160e1ed2a46cd7bce52af2436d467b54b42b3ead4ef891b1587370",
+    "bytes": 657
+  },
+  {
+    "path": "revision_exp/configs/smoke/e2_D5_ADT.yaml",
+    "sha256": "b03c14dca9113b4a6b348901ed67af49789de53d20b8ef152eaec0bc940f0351",
+    "bytes": 562
+  },
+  {
+    "path": "revision_exp/configs/smoke/e2_D5_RNA.yaml",
+    "sha256": "8fabe5c68e153fb7a93c93971d8a99e2c4e4e3064ec98c6c817a79073bbf582c",
+    "bytes": 562
+  },
+  {
+    "path": "revision_exp/configs/smoke/e2_D5_RNA_ADT.yaml",
+    "sha256": "4f67672d39050babfdb95737694c442e8badcdc8bbce711a6279d7347ca10226",
+    "bytes": 625
+  },
+  {
+    "path": "revision_exp/data_registry/datasets.yaml",
+    "sha256": "90724ae39e21a770e3d09fdbc4fd48053321cbb386bb4bfe0bc3c4c453f092b5",
+    "bytes": 2230
+  },
+  {
+    "path": "revision_exp/metrics/__init__.py",
+    "sha256": "8a067d418ec82739b10f75deec0e8405bf278ce9927e4c97f7df38fa8b2e4f37",
+    "bytes": 49
+  },
+  {
+    "path": "revision_exp/metrics/assignment.py",
+    "sha256": "4f8dfd2e4ed23ee8bbabb455e1f0dccced9ad9cace89a5b37ef8aa1e98499ff1",
+    "bytes": 1828
+  },
+  {
+    "path": "revision_exp/metrics/metacell.py",
+    "sha256": "e85bf17350e0e45480a4faf8fd8428bb194b10289dcf56d2bfea22bc897dab01",
+    "bytes": 7227
+  },
+  {
+    "path": "revision_exp/run.py",
+    "sha256": "5451d92d90fc1c398c5807c8708803604feacab13ed733d7437eb5507879af1a",
+    "bytes": 3809
+  },
+  {
+    "path": "revision_exp/tests/test_alpha_optimizer_registration.py",
+    "sha256": "1edde37b5a4799a9d4d6cad6d9077def9f4fe3ed3c2696e3d79f5531a87afe25",
+    "bytes": 363
+  },
+  {
+    "path": "revision_exp/tests/test_anchor_update_schedule.py",
+    "sha256": "7daeb177a4370ed4ee31fdb4a5c670bbc5deec7e73853a2d5f678256a8e114ef",
+    "bytes": 759
+  },
+  {
+    "path": "revision_exp/tests/test_assignment_batch_order.py",
+    "sha256": "87c6a525fe1c77a18b488cca72a6813c58ff7d069cc07bcb5fe00224c0c8a18c",
+    "bytes": 279
+  },
+  {
+    "path": "revision_exp/tests/test_assignment_metrics.py",
+    "sha256": "28909d94b77d68f7f8c4bb98aa64a0dbdc31230f4bb5cedcbde2687f9e86363a",
+    "bytes": 629
+  },
+  {
+    "path": "revision_exp/tests/test_attention_sequence_length.py",
+    "sha256": "869abe6cc806bc8a12a2cfc8dd865bd7e3b6ce73c93ba4147f0ef588e6c4db6f",
+    "bytes": 433
+  },
+  {
+    "path": "revision_exp/tests/test_metric_purity_thresholds.py",
+    "sha256": "24cc4ddef9d26869e61e9ec67abf216ae43dd13decc4a43ff7d6ac64480d62c4",
+    "bytes": 915
+  },
+  {
+    "path": "revision_exp/tests/test_neighborhood_mapping.py",
+    "sha256": "26fd30199c6f7656a66f72470ffc6e019b66650582a311340395cd8c6058fffd",
+    "bytes": 447
+  },
+  {
+    "path": "revision_exp/tests/test_obs_name_reconciliation.py",
+    "sha256": "2c2b1adfe49bc3ac127774bf406232a8f62c87624db50a04b67b91e096d6c389",
+    "bytes": 661
+  },
+  {
+    "path": "revision_exp/tests/test_sparse_dense_equivalence.py",
+    "sha256": "1e507ae1cfb950f0615238e27e2961dbbf4450a0bfd265c5b13382d5ab2e06fd",
+    "bytes": 735
+  },
+  {
+    "path": "revision_exp/utils/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "revision_exp/utils/provenance.py",
+    "sha256": "8e2996d8c5a09875dbee00db5458331841392492636f08e2a2e4305160940a2a",
+    "bytes": 2721
+  },
+  {
+    "path": "revision_exp/utils/resource_monitor.py",
+    "sha256": "3740b9474a671677a1adbbef9c69221180f0ec9fce2cf2d4c6bcec1083ae161c",
+    "bytes": 3735
+  },
+  {
+    "path": "revision_exp/workflows/__init__.py",
+    "sha256": "fce4feac075dcdae3b98492cba420ba595e1a435e8c139e9c5ccf90e267d5966",
+    "bytes": 62
+  },
+  {
+    "path": "revision_exp/workflows/legacy.py",
+    "sha256": "b1304d460929f79f6208fe99252319bc5e090b0168e5115e94cf73718047eaf4",
+    "bytes": 14907
+  },
+  {
+    "path": "revision_exp/workflows/neighborhood_mapping.py",
+    "sha256": "8f15efd428f8e968605a23d157a574c07619727b2a0cf4e03cf27654b82d186e",
+    "bytes": 5391
+  },
+  {
+    "path": "revision_exp/workflows/summarize_smoke.py",
+    "sha256": "c4ee4f95cdee7775cbb274f06a97d326f38e9fd4d4a1c94754f1f46a9dd52470",
+    "bytes": 3945
+  }
+]

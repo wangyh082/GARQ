@@ -1,0 +1,8 @@
+{
+  "implementation_tag": "instrumented_legacy",
+  "trial": 4,
+  "assignment_context_a": 1,
+  "assignment_context_b": 0,
+  "target_similarity_max_abs_change": 0.3885008990764618,
+  "assignment_changed": true
+}

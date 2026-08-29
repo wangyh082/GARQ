@@ -1,0 +1,9 @@
+[
+  {
+    "path": "/home/zhangpeiru/data/RNA+ADT/D5/D5_adt.h5ad",
+    "bytes": 13636822,
+    "mtime_ns": 1761301713083404596,
+    "head_tail_sha256": "50b7e768ec25d5207ca575200301465c5077ec98dd0c10377aa6c9e8ad920e1d",
+    "fingerprint_scope": "first_and_last_1MiB_plus_size_and_mtime"
+  }
+]

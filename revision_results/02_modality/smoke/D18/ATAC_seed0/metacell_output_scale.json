@@ -1,0 +1,13 @@
+[
+  {
+    "data_type": "ATAC",
+    "source_matrix": "adata_ copy after normalize_total+log1p and before HVG selection/scale",
+    "shape": [
+      39,
+      128853
+    ],
+    "x_min": 0.0,
+    "x_max": 2.745068311691284,
+    "x_mean": 0.028229694813489914
+  }
+]

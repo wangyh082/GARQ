@@ -1,0 +1,29 @@
+dataset,method,seed,implementation_tag,resolution,cell_type,abundance,abundance_class,support,cell_precision,cell_recall,cell_f1,dominant_metacell_count,purity_unweighted,purity_weighted,involved_metacell_size_median,involved_metacell_size_p95,involved_metacell_size_max,strict_recovery,majority_recovery,majority_retention_metacell_count,majority_retention,high_purity_recovery_metacell_count,high_purity_recovery
+D5,GARQ,0,instrumented_legacy,0.01,CD4 and CD8 activated memory,0.0075,Rare,15,0.0,0.0,0.0,0,,,48.0,547.5,603.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,0,instrumented_legacy,0.01,CD4 memory,0.0865,Intermediate,173,0.250814332247557,0.8901734104046243,0.39135959339263027,2,0.44007236544549977,0.250814332247557,55.5,495.5,603.0,0.0,0.8901734104046243,1,0.16666666666666666,0,0.0
+D5,GARQ,0,instrumented_legacy,0.01,CD4 naive I,0.0735,Intermediate,147,0.5,0.24489795918367346,0.3287671232876712,2,0.5238095238095238,0.5,63.0,516.9999999999999,603.0,0.0,0.24489795918367346,1,0.2,0,0.0
+D5,GARQ,0,instrumented_legacy,0.01,CD4 naive II,0.018,Intermediate,36,0.0,0.0,0.0,0,,,55.5,521.9999999999998,603.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,0,instrumented_legacy,0.01,CD56bright CD16dim NK,0.0185,Intermediate,37,0.0,0.0,0.0,0,,,136.5,508.5,603.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,0,instrumented_legacy,0.01,CD56dim CD16bright NK,0.206,Common,412,0.9031413612565445,0.837378640776699,0.8690176322418137,5,0.7968003108003108,0.9031413612565445,63.0,443.6999999999996,603.0,0.0,0.837378640776699,5,0.5,4,0.4
+D5,GARQ,0,instrumented_legacy,0.01,CD8 effector,0.06,Intermediate,120,0.0,0.0,0.0,0,,,173.0,527.4,603.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,0,instrumented_legacy,0.01,CD8 memory,0.038,Intermediate,76,0.0,0.0,0.0,0,,,110.5,538.4999999999999,603.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,0,instrumented_legacy,0.01,CD8 naive,0.0385,Intermediate,77,0.5416666666666666,0.33766233766233766,0.416,1,0.5416666666666666,0.5416666666666666,55.5,521.9999999999998,603.0,0.0,0.33766233766233766,1,0.25,0,0.0
+D5,GARQ,0,instrumented_legacy,0.01,Classical monocytes,0.1035,Common,207,0.4987951807228916,1.0,0.6655948553054662,2,0.5230923694779117,0.4987951807228916,207.5,244.85,249.0,0.0,1.0,1,0.5,0,0.0
+D5,GARQ,0,instrumented_legacy,0.01,Erythroid ,0.005,Rare,10,0.7142857142857143,0.5,0.588235294117647,1,0.7142857142857143,0.7142857142857143,35.0,60.199999999999996,63.0,0.0,0.5,1,0.5,1,0.5
+D5,GARQ,0,instrumented_legacy,0.01,MAIT-NKT cells,0.045,Intermediate,90,0.75,0.2,0.31578947368421056,1,0.75,0.75,173.0,560.0,603.0,0.0,0.2,1,0.3333333333333333,1,0.3333333333333333
+D5,GARQ,0,instrumented_legacy,0.01,Memory B,0.0215,Intermediate,43,0.0,0.0,0.0,0,,,61.0,124.89999999999999,132.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,0,instrumented_legacy,0.01,NK-T doublets,0.015,Intermediate,30,0.0,0.0,0.0,0,,,211.0,549.8999999999999,603.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,0,instrumented_legacy,0.01,NK-monocyte doublets,0.014,Intermediate,28,0.0,0.0,0.0,0,,,249.0,249.0,249.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,0,instrumented_legacy,0.01,Naive B,0.057,Intermediate,114,0.803030303030303,0.9298245614035088,0.8617886178861788,1,0.803030303030303,0.803030303030303,61.0,124.89999999999999,132.0,0.0,0.9298245614035088,1,0.3333333333333333,1,0.3333333333333333
+D5,GARQ,0,instrumented_legacy,0.01,Neutrophils,0.0295,Intermediate,59,0.0,0.0,0.0,0,,,207.5,244.85,249.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,0,instrumented_legacy,0.01,Non classical monocytes,0.051,Intermediate,102,0.9714285714285714,0.3333333333333333,0.4963503649635036,1,0.9714285714285714,0.9714285714285714,29.0,215.79999999999995,249.0,0.0,0.3333333333333333,1,0.1111111111111111,1,0.1111111111111111
+D5,GARQ,0,instrumented_legacy,0.01,Plasma cells,0.002,Rare,4,0.0,0.0,0.0,0,,,61.0,61.0,61.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,0,instrumented_legacy,0.01,Platelet-T cell doublets,0.002,Rare,4,0.0,0.0,0.0,0,,,26.0,226.7,249.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,0,instrumented_legacy,0.01,Platelet-bound monocytes,0.0155,Intermediate,31,0.0,0.0,0.0,0,,,207.5,244.85,249.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,0,instrumented_legacy,0.01,Platelets,0.003,Rare,6,0.0,0.0,0.0,0,,,249.0,249.0,249.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,0,instrumented_legacy,0.01,Proliferating T and NK cell,0.0025,Rare,5,0.0,0.0,0.0,0,,,199.0,222.4,225.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,0,instrumented_legacy,0.01,Regulatory T cells,0.0075,Rare,15,0.0,0.0,0.0,0,,,307.0,573.4,603.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,0,instrumented_legacy,0.01,T-NK-B cell doublets,0.0265,Intermediate,53,0.4,0.6792452830188679,0.5034965034965035,2,0.3764838892029395,0.4,61.0,159.2,166.0,0.0,0.6792452830188679,0,0.0,0,0.0
+D5,GARQ,0,instrumented_legacy,0.01,conventional DC,0.0075,Rare,15,0.0,0.0,0.0,0,,,100.5,236.54999999999998,249.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,0,instrumented_legacy,0.01,gdT cells,0.04,Intermediate,80,0.3468208092485549,0.75,0.47430830039525684,1,0.3468208092485549,0.3468208092485549,117.0,538.4999999999999,603.0,0.0,0.75,0,0.0,0,0.0
+D5,GARQ,0,instrumented_legacy,0.01,plasmacytoid DC,0.0055,Rare,11,0.875,0.6363636363636364,0.7368421052631579,1,0.875,0.875,29.0,152.29999999999998,166.0,0.0,0.6363636363636364,1,0.3333333333333333,1,0.3333333333333333

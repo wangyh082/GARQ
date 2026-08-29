@@ -1,0 +1,17 @@
+{
+  "subset_applied": true,
+  "sampling": "uniform_without_replacement_no_labels_used",
+  "subset_seed": 1729,
+  "source_n_cells": 25517,
+  "n_cells": 2000,
+  "selected_obs_names_sha256": "474e199f5489307a65d8998b400a8135e20536a0cc281289c40b43555275361f",
+  "modality_checks": [
+    {
+      "source": "/home/zhangpeiru/data/RNA_ATAC_ADT/GSE158013/GSE158013_adt.h5ad",
+      "canonicalization_rule": null,
+      "names_changed": false,
+      "same_obs_names_and_order": true,
+      "subset": "revision_results/cache/subsets/D18_GSE158013_adt_2000cells_seed1729.h5ad"
+    }
+  ]
+}

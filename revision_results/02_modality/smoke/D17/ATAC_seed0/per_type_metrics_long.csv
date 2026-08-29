@@ -1,0 +1,13 @@
+dataset,method,seed,implementation_tag,resolution,cell_type,abundance,abundance_class,support,cell_precision,cell_recall,cell_f1,dominant_metacell_count,purity_unweighted,purity_weighted,involved_metacell_size_median,involved_metacell_size_p95,involved_metacell_size_max,strict_recovery,majority_recovery,majority_retention_metacell_count,majority_retention,high_purity_recovery_metacell_count,high_purity_recovery
+D17,GARQ,0,instrumented_legacy,0.02,Endothelial Cells,0.002,Rare,4,0.0,0.0,0.0,0,,,426.0,530.4,542.0,0.0,0.0,0,0.0,0,0.0
+D17,GARQ,0,instrumented_legacy,0.02,Injured PT-like,0.0175,Intermediate,35,0.16666666666666666,0.02857142857142857,0.048780487804878044,1,0.16666666666666666,0.16666666666666666,29.5,478.19999999999993,542.0,0.0,0.02857142857142857,0,0.0,0,0.0
+D17,GARQ,0,instrumented_legacy,0.02,Low Quality / Dying,0.0355,Intermediate,71,0.2,0.014084507042253521,0.02631578947368421,1,0.2,0.2,19.5,431.80000000000007,542.0,0.0,0.014084507042253521,0,0.0,0,0.0
+D17,GARQ,0,instrumented_legacy,0.02,Mast Cells,0.004,Rare,8,0.3333333333333333,0.125,0.18181818181818182,1,0.3333333333333333,0.3333333333333333,115.0,501.59999999999997,542.0,0.0,0.125,0,0.0,0,0.0
+D17,GARQ,0,instrumented_legacy,0.02,Myeloid Cells,0.0375,Intermediate,75,0.0,0.0,0.0,0,,,30.0,484.0,542.0,0.0,0.0,0,0.0,0,0.0
+D17,GARQ,0,instrumented_legacy,0.02,Parietal Epithelial Cells,0.034,Intermediate,68,0.0,0.0,0.0,0,,,26.0,449.19999999999993,542.0,0.0,0.0,0,0.0,0,0.0
+D17,GARQ,0,instrumented_legacy,0.02,Podocytes,0.083,Intermediate,166,0.5,0.006024096385542169,0.011904761904761906,1,0.5,0.5,16.5,387.2999999999997,542.0,0.0,0.006024096385542169,0,0.0,0,0.0
+D17,GARQ,0,instrumented_legacy,0.02,Proximal Tubule,0.4285,Common,857,0.43568464730290457,0.9801633605600933,0.6032315978456015,31,0.48083224731468577,0.43568464730290457,15.0,352.89999999999986,542.0,0.007001166861143524,0.9801633605600933,10,0.2631578947368421,2,0.05263157894736842
+D17,GARQ,0,instrumented_legacy,0.02,Stressed Tumor (p53+),0.0635,Intermediate,127,0.0,0.0,0.0,0,,,18.5,404.5,542.0,0.0,0.0,0,0.0,0,0.0
+D17,GARQ,0,instrumented_legacy,0.02,T Cells,0.007,Rare,14,0.0,0.0,0.0,0,,,110.5,501.3999999999999,542.0,0.0,0.0,0,0.0,0,0.0
+D17,GARQ,0,instrumented_legacy,0.02,Tumor (Neuronal-like),0.0845,Intermediate,169,0.0,0.0,0.0,0,,,18.0,408.7999999999997,542.0,0.0,0.0,0,0.0,0,0.0
+D17,GARQ,0,instrumented_legacy,0.02,Tumor Epithelial,0.203,Common,406,0.39285714285714285,0.054187192118226604,0.09523809523809525,4,0.40409798534798536,0.39285714285714285,16.5,378.69999999999993,542.0,0.0,0.054187192118226604,0,0.0,0,0.0

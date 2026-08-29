@@ -1,0 +1,2 @@
+implementation_tag,component,inter_cell_input_changed,target_output_max_abs_change,sequence_length
+instrumented_legacy,TransformerEncoder,True,0.0,1

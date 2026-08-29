@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="6" failures="0" skipped="0" tests="6" time="2.025" timestamp="2026-08-29T10:56:27.445890+08:00" hostname="node01"><testcase classname="" name="revision_exp.tests.test_alpha_optimizer_registration" time="0.000"><error message="collection failure">ImportError while importing test module '/data/zhangpeiru/GARQ_revision/revision_exp/tests/test_alpha_optimizer_registration.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/home/zhangpeiru/.conda/envs/MetqQ2/lib/python3.11/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+revision_exp/tests/test_alpha_optimizer_registration.py:1: in &lt;module&gt;
+    from revision_exp.audit.e0 import capture_parameter_registration
+E   ModuleNotFoundError: No module named 'revision_exp'</error></testcase><testcase classname="" name="revision_exp.tests.test_anchor_update_schedule" time="0.000"><error message="collection failure">ImportError while importing test module '/data/zhangpeiru/GARQ_revision/revision_exp/tests/test_anchor_update_schedule.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/home/zhangpeiru/.conda/envs/MetqQ2/lib/python3.11/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+revision_exp/tests/test_anchor_update_schedule.py:1: in &lt;module&gt;
+    from revision_exp.audit.e0 import anchor_update_trace
+E   ModuleNotFoundError: No module named 'revision_exp'</error></testcase><testcase classname="" name="revision_exp.tests.test_assignment_batch_order" time="0.000"><error message="collection failure">ImportError while importing test module '/data/zhangpeiru/GARQ_revision/revision_exp/tests/test_assignment_batch_order.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/home/zhangpeiru/.conda/envs/MetqQ2/lib/python3.11/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+revision_exp/tests/test_assignment_batch_order.py:1: in &lt;module&gt;
+    from revision_exp.audit.e0 import batch_local_graph_dependency
+E   ModuleNotFoundError: No module named 'revision_exp'</error></testcase><testcase classname="" name="revision_exp.tests.test_attention_sequence_length" time="0.000"><error message="collection failure">ImportError while importing test module '/data/zhangpeiru/GARQ_revision/revision_exp/tests/test_attention_sequence_length.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/home/zhangpeiru/.conda/envs/MetqQ2/lib/python3.11/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+revision_exp/tests/test_attention_sequence_length.py:3: in &lt;module&gt;
+    from revision_exp.audit.e0 import attention_dependency, capture_tensor_shapes
+E   ModuleNotFoundError: No module named 'revision_exp'</error></testcase><testcase classname="" name="revision_exp.tests.test_metric_purity_thresholds" time="0.000"><error message="collection failure">ImportError while importing test module '/data/zhangpeiru/GARQ_revision/revision_exp/tests/test_metric_purity_thresholds.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/home/zhangpeiru/.conda/envs/MetqQ2/lib/python3.11/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+revision_exp/tests/test_metric_purity_thresholds.py:3: in &lt;module&gt;
+    from revision_exp.metrics.metacell import per_type_table
+E   ModuleNotFoundError: No module named 'revision_exp'</error></testcase><testcase classname="" name="revision_exp.tests.test_sparse_dense_equivalence" time="0.000"><error message="collection failure">ImportError while importing test module '/data/zhangpeiru/GARQ_revision/revision_exp/tests/test_sparse_dense_equivalence.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/home/zhangpeiru/.conda/envs/MetqQ2/lib/python3.11/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+revision_exp/tests/test_sparse_dense_equivalence.py:7: in &lt;module&gt;
+    from data_utils import preprocess
+E   ModuleNotFoundError: No module named 'data_utils'</error></testcase></testsuite></testsuites>

@@ -1,0 +1,56 @@
+registry_version: 1
+server_host: node01
+notes:
+  - Paths were inspected in backed/read-only mode; source data are never copied into the repository.
+  - D5, D11, D17 and D18 are confirmed by directory, shape, labels and paired row order.
+  - Unresolved D1-D4/D6-D10/D12-D16 mappings must not be guessed; recover them from Supplementary.pdf.
+datasets:
+  D5:
+    status: confirmed
+    modalities:
+      RNA: /home/zhangpeiru/data/RNA+ADT/D5/D5_rna.h5ad
+      ADT: /home/zhangpeiru/data/RNA+ADT/D5/D5_adt.h5ad
+    n_cells: 8670
+    label_key: celltype
+    paired_row_order_verified: true
+    reviewer_examples:
+      Treg: Regulatory T cells
+      cDC2: conventional DC
+  D11:
+    status: confirmed
+    modalities:
+      RNA: /home/zhangpeiru/data/11_GSE194122/11_GSE194122_rna.h5ad
+      ATAC: /home/zhangpeiru/data/11_GSE194122/11_GSE194122_atac.h5ad
+    n_cells: 9876
+    label_key: celltype
+    paired_row_order_verified: true
+    reviewer_examples:
+      Plasma: Plasma cell
+      gdT: NOT_PRESENT_IN_CURRENT_LABELS
+  D17:
+    status: confirmed
+    modalities:
+      RNA: /home/zhangpeiru/data/analysis/new/kidney_rna_updated.h5ad
+      ATAC: /home/zhangpeiru/data/analysis/new/kidney_atac_updated.h5ad
+    n_cells: 16143
+    label_key: celltype
+    paired_row_order_verified: true
+  D18:
+    status: confirmed_with_obs_name_canonicalization
+    modalities:
+      RNA: /home/zhangpeiru/data/RNA_ATAC_ADT/GSE158013/GSE158013_rna.h5ad
+      ATAC: /home/zhangpeiru/data/RNA_ATAC_ADT/GSE158013/GSE158013_atac.h5ad
+      ADT: /home/zhangpeiru/data/RNA_ATAC_ADT/GSE158013/GSE158013_adt.h5ad
+    n_cells: 25517
+    label_key: celltype
+    paired_row_order_verified: false
+    paired_row_order_verified_after_canonicalization: true
+    obs_name_canonicalization:
+      ADT:
+        pattern: '\.([0-9]+)$'
+        replacement: '-\1'
+    evidence: RNA and ATAC names are identical; replacing the terminal ADT .batch separator with -batch yields 25517 unique names with exact position-wise equality and identical celltype labels.
+  unresolved:
+    ids: [D1, D2, D3, D4, D6, D7, D8, D9, D10, D12, D13, D14, D15, D16]
+    status: NOT_RECOVERED
+    blocker: Supplementary.pdf was not found in the repository or the inspected server home tree.

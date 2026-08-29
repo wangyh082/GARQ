@@ -1,0 +1,24 @@
+config_id: E1_D11_smoke_seed0_K005
+task: legacy_garq
+implementation_tag: instrumented_legacy
+dataset: D11
+data_files: [/home/zhangpeiru/data/11_GSE194122/11_GSE194122_rna.h5ad, /home/zhangpeiru/data/11_GSE194122/11_GSE194122_atac.h5ad]
+data_types: [RNA, ATAC]
+label_key: celltype
+cell_limit: 2000
+subset_seed: 1729
+requested_K: 100
+epochs: 6
+batch_size: 256
+k_knn: 5
+seed: 0
+device: cuda
+deterministic: true
+anchors_init: Kmeans
+converge_threshold: 10
+min_available_ram_gb: 32
+min_free_gpu_gb: 8
+resource_poll_seconds: 0.1
+output_subdir: 01_size_resolution/smoke/D11/K005_seed0
+result_root: revision_results
+force: false

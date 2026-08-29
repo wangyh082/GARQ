@@ -1,0 +1,8 @@
+{
+  "config_id": "E0_runtime_audit",
+  "task": "e0_audit",
+  "implementation_tag": "instrumented_legacy",
+  "output_subdir": "00_audit",
+  "result_root": "revision_results",
+  "force": false
+}

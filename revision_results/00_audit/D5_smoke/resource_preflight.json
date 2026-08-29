@@ -1,0 +1,8 @@
+{
+  "available_ram_bytes": 525745111040,
+  "required_available_ram_bytes": 34359738368,
+  "cuda_available": true,
+  "free_gpu_bytes": 24972558336,
+  "total_gpu_bytes": 25393692672,
+  "required_free_gpu_bytes": 8589934592
+}
