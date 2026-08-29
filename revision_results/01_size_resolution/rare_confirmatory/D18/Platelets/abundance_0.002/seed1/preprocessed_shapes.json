@@ -1,0 +1,21 @@
+{
+  "input_dims": [
+    3750,
+    30000,
+    46
+  ],
+  "n_cells": 2000,
+  "x_dtypes": [
+    "torch.float32",
+    "torch.float32",
+    "torch.float32"
+  ],
+  "raw_dtypes": [
+    "torch.float32",
+    "torch.float32",
+    "torch.float32"
+  ],
+  "train_batch_size_after_legacy_override": 256,
+  "train_drop_last": true,
+  "eval_batch_size": 1024
+}

@@ -1,0 +1,20 @@
+dataset,method,seed,implementation_tag,resolution,cell_type,abundance,abundance_class,support,cell_precision,cell_recall,cell_f1,dominant_metacell_count,purity_unweighted,purity_weighted,involved_metacell_size_median,involved_metacell_size_p95,involved_metacell_size_max,strict_recovery,majority_recovery,majority_retention_metacell_count,majority_retention,high_purity_recovery_metacell_count,high_purity_recovery
+D11,GARQ,3,diagnostic_variant_rare_subsampling,0.02,B1 B,0.043,Intermediate,86,0.125,0.011627906976744186,0.02127659574468085,1,0.125,0.125,56.0,226.99999999999997,265.0,0.0,0.011627906976744186,0,0.0,0,0.0
+D11,GARQ,3,diagnostic_variant_rare_subsampling,0.02,CD14+ Mono,0.002,Rare,4,0.0,0.0,0.0,0,,,51.5,250.64999999999992,285.0,0.0,0.0,0,0.0,0,0.0
+D11,GARQ,3,diagnostic_variant_rare_subsampling,0.02,CD16+ Mono,0.0085,Rare,17,0.16666666666666666,0.058823529411764705,0.08695652173913045,1,0.16666666666666666,0.16666666666666666,28.5,106.04999999999995,133.0,0.0,0.058823529411764705,0,0.0,0,0.0
+D11,GARQ,3,diagnostic_variant_rare_subsampling,0.02,CD4+ T activated,0.08,Intermediate,160,0.42592592592592593,0.14375,0.21495327102803738,6,0.441919191919192,0.42592592592592593,22.0,246.39999999999975,285.0,0.0,0.14375,0,0.0,0,0.0
+D11,GARQ,3,diagnostic_variant_rare_subsampling,0.02,CD4+ T naive,0.025,Intermediate,50,0.0,0.0,0.0,0,,,24.0,268.0,285.0,0.0,0.0,0,0.0,0,0.0
+D11,GARQ,3,diagnostic_variant_rare_subsampling,0.02,CD8+ T,0.4185,Common,837,0.7427536231884058,0.9796893667861409,0.844925296239052,19,0.6469213104381191,0.7427536231884058,20.0,241.75,285.0,0.0,0.9796893667861409,14,0.5384615384615384,9,0.34615384615384615
+D11,GARQ,3,diagnostic_variant_rare_subsampling,0.02,Erythroblast,0.031,Intermediate,62,0.0,0.0,0.0,0,,,133.0,138.4,139.0,0.0,0.0,0,0.0,0,0.0
+D11,GARQ,3,diagnostic_variant_rare_subsampling,0.02,G/M prog,0.007,Rare,14,0.0,0.0,0.0,0,,,36.5,132.25,133.0,0.0,0.0,0,0.0,0,0.0
+D11,GARQ,3,diagnostic_variant_rare_subsampling,0.02,HSC,0.012,Intermediate,24,0.2602739726027397,0.7916666666666666,0.39175257731958757,2,0.2794599018003273,0.2602739726027397,88.5,137.5,139.0,0.0,0.7916666666666666,0,0.0,0,0.0
+D11,GARQ,3,diagnostic_variant_rare_subsampling,0.02,Lymph prog,0.035,Intermediate,70,0.45454545454545453,0.21428571428571427,0.2912621359223301,2,0.47580645161290325,0.45454545454545453,43.0,203.24999999999997,265.0,0.0,0.21428571428571427,0,0.0,0,0.0
+D11,GARQ,3,diagnostic_variant_rare_subsampling,0.02,MK/E prog,0.0145,Intermediate,29,0.0,0.0,0.0,0,,,47.0,137.8,139.0,0.0,0.0,0,0.0,0,0.0
+D11,GARQ,3,diagnostic_variant_rare_subsampling,0.02,NK,0.0515,Intermediate,103,0.0,0.0,0.0,0,,,25.0,269.0,285.0,0.0,0.0,0,0.0,0,0.0
+D11,GARQ,3,diagnostic_variant_rare_subsampling,0.02,Naive CD20+ B,0.0905,Intermediate,181,0.4766666666666667,0.7900552486187845,0.5945945945945946,2,0.4613122171945701,0.4766666666666667,130.0,163.4,170.0,0.0,0.7900552486187845,1,0.2,0,0.0
+D11,GARQ,3,diagnostic_variant_rare_subsampling,0.02,Normoblast,0.0075,Rare,15,0.0,0.0,0.0,0,,,133.0,138.4,139.0,0.0,0.0,0,0.0,0,0.0
+D11,GARQ,3,diagnostic_variant_rare_subsampling,0.02,Plasma cell,0.0045,Rare,9,0.0,0.0,0.0,0,,,130.0,171.6,172.0,0.0,0.0,0,0.0,0,0.0
+D11,GARQ,3,diagnostic_variant_rare_subsampling,0.02,Proerythroblast,0.0895,Intermediate,179,0.6102941176470589,0.9273743016759777,0.7361419068736141,2,0.6128630929842592,0.6102941176470589,88.5,276.0,285.0,0.0,0.9273743016759777,1,0.1,1,0.1
+D11,GARQ,3,diagnostic_variant_rare_subsampling,0.02,Transitional B,0.0585,Intermediate,117,0.44525547445255476,0.5213675213675214,0.4803149606299213,1,0.44525547445255476,0.44525547445255476,130.0,163.4,170.0,0.0,0.5213675213675214,0,0.0,0,0.0
+D11,GARQ,3,diagnostic_variant_rare_subsampling,0.02,cDC2,0.019,Intermediate,38,0.46153846153846156,0.15789473684210525,0.23529411764705882,2,0.7083333333333334,0.46153846153846156,39.0,138.1,139.0,0.02631578947368421,0.15789473684210525,1,0.1,1,0.1
+D11,GARQ,3,diagnostic_variant_rare_subsampling,0.02,pDC,0.0025,Rare,5,0.0,0.0,0.0,0,,,137.0,166.7,170.0,0.0,0.0,0,0.0,0,0.0

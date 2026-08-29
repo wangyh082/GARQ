@@ -1,0 +1,46 @@
+{
+  "subset_applied": true,
+  "sampling": "targeted_abundance_without_replacement",
+  "subset_seed": 1729,
+  "source_n_cells": 25517,
+  "n_cells": 2000,
+  "selected_obs_names_sha256": "edc7a7dc96b4fdf70d0158c61cb7cfa7ffe2a4715461d7c398679c7f8bbcf5c7",
+  "modality_checks": [
+    {
+      "source": "/home/zhangpeiru/data/RNA_ATAC_ADT/GSE158013/GSE158013_rna.h5ad",
+      "canonicalization_rule": null,
+      "names_changed": false,
+      "same_obs_names_and_order": true,
+      "subset": "revision_results/cache/subsets/D18_GSE158013_rna_2000cells_seed1729_rare-Platelets-abundance0.001-seed936978.h5ad",
+      "matrix_source": "X",
+      "perturbation": null
+    },
+    {
+      "source": "/home/zhangpeiru/data/RNA_ATAC_ADT/GSE158013/GSE158013_atac.h5ad",
+      "canonicalization_rule": null,
+      "names_changed": false,
+      "same_obs_names_and_order": true,
+      "subset": "revision_results/cache/subsets/D18_GSE158013_atac_2000cells_seed1729_rare-Platelets-abundance0.001-seed936978.h5ad",
+      "matrix_source": "X",
+      "perturbation": null
+    },
+    {
+      "source": "/home/zhangpeiru/data/RNA_ATAC_ADT/GSE158013/GSE158013_adt.h5ad",
+      "canonicalization_rule": {
+        "pattern": "\\.([0-9]+)$",
+        "replacement": "-\\1"
+      },
+      "names_changed": true,
+      "same_obs_names_and_order": true,
+      "subset": "revision_results/cache/subsets/D18_GSE158013_adt_2000cells_seed1729_rare-Platelets-abundance0.001-seed936978.h5ad",
+      "matrix_source": "X",
+      "perturbation": null
+    }
+  ],
+  "target_label": "Platelets",
+  "target_abundance_requested": 0.001,
+  "target_abundance_realized": 0.001,
+  "target_count": 2,
+  "source_target_count": 63,
+  "source_target_abundance": 0.0024689422737782653
+}

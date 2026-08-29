@@ -1,0 +1,47 @@
+file,column,description,unit
+rare_confirmatory_smoke_long.csv,dataset,Recovered dataset identifier,categorical
+rare_confirmatory_smoke_long.csv,method,Metacell method,categorical
+rare_confirmatory_smoke_long.csv,seed,Training seed,integer
+rare_confirmatory_smoke_long.csv,subset_seed,Independent deterministic rare-subset selection seed,integer
+rare_confirmatory_smoke_long.csv,target_cell_type,Cell type downsampled before retraining,categorical
+rare_confirmatory_smoke_long.csv,source_abundance,Target type fraction before rare downsampling,fraction
+rare_confirmatory_smoke_long.csv,target_abundance,Requested target type fraction,fraction
+rare_confirmatory_smoke_long.csv,realized_abundance,Realized target type fraction after downsampling,fraction
+rare_confirmatory_smoke_long.csv,support,Target cells in the 2000-cell subset,cells
+rare_confirmatory_smoke_long.csv,requested_K,Requested anchor count,anchors
+rare_confirmatory_smoke_long.csv,realized_K,Nonempty realized metacell count,metacells
+rare_confirmatory_smoke_long.csv,cell_precision,Majority-label cell-level precision,fraction
+rare_confirmatory_smoke_long.csv,cell_recall,Majority-label cell-level recall,fraction
+rare_confirmatory_smoke_long.csv,cell_f1,Harmonic mean of cell_precision and cell_recall,fraction
+rare_confirmatory_smoke_long.csv,purity_unweighted,Mean purity over target-dominated metacells,fraction
+rare_confirmatory_smoke_long.csv,purity_weighted,Size-weighted purity over target-dominated metacells,fraction
+rare_confirmatory_smoke_long.csv,majority_retention,Target recovery using purity greater than 0.5,fraction
+rare_confirmatory_smoke_long.csv,high_purity_recovery,Target recovery using purity at least 0.7,fraction
+rare_confirmatory_smoke_long.csv,run_id,Unique traceable run identifier,string
+rare_confirmatory_smoke_summary.csv,dataset,Recovered dataset identifier,categorical
+rare_confirmatory_smoke_summary.csv,method,Metacell method,categorical
+rare_confirmatory_smoke_summary.csv,target_cell_type,Cell type downsampled before retraining,categorical
+rare_confirmatory_smoke_summary.csv,target_abundance,Requested target type fraction,fraction
+rare_confirmatory_smoke_summary.csv,n_seeds,Distinct training seeds in the condition,count
+rare_confirmatory_smoke_summary.csv,support,Target cells per subset,cells
+rare_confirmatory_smoke_summary.csv,realized_abundance_mean,Mean realized abundance across seeds,fraction
+rare_confirmatory_smoke_summary.csv,realized_abundance_sd,Sample SD of realized abundance across seeds,fraction
+rare_confirmatory_smoke_summary.csv,realized_K_mean,Mean realized metacell count across seeds,metacells
+rare_confirmatory_smoke_summary.csv,realized_K_sd,Sample SD of realized metacell count across seeds,metacells
+rare_confirmatory_smoke_summary.csv,cell_precision_mean,Mean cell precision across seeds,fraction
+rare_confirmatory_smoke_summary.csv,cell_precision_sd,Sample SD of cell precision across seeds,fraction
+rare_confirmatory_smoke_summary.csv,cell_recall_mean,Mean cell recall across seeds,fraction
+rare_confirmatory_smoke_summary.csv,cell_recall_sd,Sample SD of cell recall across seeds,fraction
+rare_confirmatory_smoke_summary.csv,cell_f1_mean,Mean cell F1 across seeds,fraction
+rare_confirmatory_smoke_summary.csv,cell_f1_sd,Sample SD of cell F1 across seeds,fraction
+rare_confirmatory_smoke_summary.csv,purity_unweighted_mean,Mean unweighted purity across seeds,fraction
+rare_confirmatory_smoke_summary.csv,purity_unweighted_sd,Sample SD of unweighted purity across seeds,fraction
+rare_confirmatory_smoke_summary.csv,purity_weighted_mean,Mean weighted purity across seeds,fraction
+rare_confirmatory_smoke_summary.csv,purity_weighted_sd,Sample SD of weighted purity across seeds,fraction
+rare_confirmatory_smoke_summary.csv,majority_retention_mean,Mean majority retention across seeds,fraction
+rare_confirmatory_smoke_summary.csv,majority_retention_sd,Sample SD of majority retention across seeds,fraction
+rare_confirmatory_smoke_summary.csv,high_purity_recovery_mean,Mean high-purity recovery across seeds,fraction
+rare_confirmatory_smoke_summary.csv,high_purity_recovery_sd,Sample SD of high-purity recovery across seeds,fraction
+rare_confirmatory_smoke_summary.csv,nonzero_f1_runs,Seeds with target-cell F1 greater than zero,count
+rare_confirmatory_smoke_summary.csv,majority_retention_runs,Seeds with majority retention greater than zero,count
+rare_confirmatory_smoke_summary.csv,high_purity_recovery_runs,Seeds with high-purity recovery greater than zero,count

@@ -1,0 +1,34 @@
+{
+  "subset_applied": true,
+  "sampling": "targeted_abundance_without_replacement",
+  "subset_seed": 1729,
+  "source_n_cells": 16143,
+  "n_cells": 2000,
+  "selected_obs_names_sha256": "c55c753062a1dca95d4a0db69130d6c34102c1208dd069f5655a302871e0c2a2",
+  "modality_checks": [
+    {
+      "source": "/home/zhangpeiru/data/analysis/new/kidney_rna_updated.h5ad",
+      "canonicalization_rule": null,
+      "names_changed": false,
+      "same_obs_names_and_order": true,
+      "subset": "revision_results/cache/subsets/D17_kidney_rna_updated_2000cells_seed1729_rare-Myeloid-Cells-abundance0.02-seed694436.h5ad",
+      "matrix_source": "X",
+      "perturbation": null
+    },
+    {
+      "source": "/home/zhangpeiru/data/analysis/new/kidney_atac_updated.h5ad",
+      "canonicalization_rule": null,
+      "names_changed": false,
+      "same_obs_names_and_order": true,
+      "subset": "revision_results/cache/subsets/D17_kidney_atac_updated_2000cells_seed1729_rare-Myeloid-Cells-abundance0.02-seed694436.h5ad",
+      "matrix_source": "X",
+      "perturbation": null
+    }
+  ],
+  "target_label": "Myeloid Cells",
+  "target_abundance_requested": 0.02,
+  "target_abundance_realized": 0.02,
+  "target_count": 40,
+  "source_target_count": 682,
+  "source_target_abundance": 0.042247413739701416
+}

@@ -1,0 +1,34 @@
+{
+  "subset_applied": true,
+  "sampling": "targeted_abundance_without_replacement",
+  "subset_seed": 1729,
+  "source_n_cells": 9876,
+  "n_cells": 2000,
+  "selected_obs_names_sha256": "2680840bde5e28a1f580d2f22f2fe92a1cc82fbf87c0462841590f065d0af73e",
+  "modality_checks": [
+    {
+      "source": "/home/zhangpeiru/data/11_GSE194122/11_GSE194122_rna.h5ad",
+      "canonicalization_rule": null,
+      "names_changed": false,
+      "same_obs_names_and_order": true,
+      "subset": "revision_results/cache/subsets/D11_11_GSE194122_rna_2000cells_seed1729_rare-cDC2-abundance0.002-seed758979.h5ad",
+      "matrix_source": "X",
+      "perturbation": null
+    },
+    {
+      "source": "/home/zhangpeiru/data/11_GSE194122/11_GSE194122_atac.h5ad",
+      "canonicalization_rule": null,
+      "names_changed": false,
+      "same_obs_names_and_order": true,
+      "subset": "revision_results/cache/subsets/D11_11_GSE194122_atac_2000cells_seed1729_rare-cDC2-abundance0.002-seed758979.h5ad",
+      "matrix_source": "X",
+      "perturbation": null
+    }
+  ],
+  "target_label": "cDC2",
+  "target_abundance_requested": 0.002,
+  "target_abundance_realized": 0.002,
+  "target_count": 4,
+  "source_target_count": 160,
+  "source_target_abundance": 0.016200891049007696
+}

@@ -1,0 +1,12 @@
+dataset,method,seed,implementation_tag,resolution,cell_type,abundance,abundance_class,support,cell_precision,cell_recall,cell_f1,dominant_metacell_count,purity_unweighted,purity_weighted,involved_metacell_size_median,involved_metacell_size_p95,involved_metacell_size_max,strict_recovery,majority_recovery,majority_retention_metacell_count,majority_retention,high_purity_recovery_metacell_count,high_purity_recovery
+D18,GARQ,2,diagnostic_variant_rare_subsampling,0.02,B.Activated,0.005,Rare,10,0.0,0.0,0.0,0,,,170.0,242.9,251.0,0.0,0.0,0,0.0,0,0.0
+D18,GARQ,2,diagnostic_variant_rare_subsampling,0.02,B.Naive,0.1655,Common,331,0.9678362573099415,1.0,0.9836552748885586,3,0.9805571720608204,0.9678362573099415,89.0,234.79999999999998,251.0,0.006042296072507553,1.0,3,1.0,3,1.0
+D18,GARQ,2,diagnostic_variant_rare_subsampling,0.02,Mono.CD14,0.144,Common,288,0.96,1.0,0.9795918367346939,2,0.9674768914755221,0.96,150.0,243.6,254.0,0.0,1.0,2,1.0,2,1.0
+D18,GARQ,2,diagnostic_variant_rare_subsampling,0.02,Mono.CD16,0.006,Rare,12,0.0,0.0,0.0,0,,,150.0,243.6,254.0,0.0,0.0,0,0.0,0,0.0
+D18,GARQ,2,diagnostic_variant_rare_subsampling,0.02,NK,0.053,Intermediate,106,0.7076923076923077,0.4339622641509434,0.5380116959064327,6,0.8368055555555557,0.7076923076923077,17.5,151.69999999999993,176.0,0.12264150943396226,0.4339622641509434,5,0.5,4,0.4
+D18,GARQ,2,diagnostic_variant_rare_subsampling,0.02,Platelets,0.002,Rare,4,0.0,0.0,0.0,0,,,76.0,167.89999999999998,176.0,0.0,0.0,0,0.0,0,0.0
+D18,GARQ,2,diagnostic_variant_rare_subsampling,0.02,T.CD4.Memory,0.222,Common,444,0.6472019464720195,0.5990990990990991,0.6222222222222222,7,0.6343019543132576,0.6472019464720195,27.0,269.69999999999993,324.0,0.006756756756756757,0.5990990990990991,6,0.25,1,0.041666666666666664
+D18,GARQ,2,diagnostic_variant_rare_subsampling,0.02,T.CD4.Naive,0.232,Common,464,0.5925324675324676,0.7866379310344828,0.6759259259259259,14,0.742280435108304,0.5925324675324676,22.0,263.29999999999984,324.0,0.03879310344827586,0.7866379310344828,11,0.4782608695652174,8,0.34782608695652173
+D18,GARQ,2,diagnostic_variant_rare_subsampling,0.02,T.CD8.Effector,0.111,Common,222,0.47368421052631576,0.5675675675675675,0.5163934426229508,5,0.5359204830257462,0.47368421052631576,30.5,285.75,324.0,0.0,0.5675675675675675,2,0.125,1,0.0625
+D18,GARQ,2,diagnostic_variant_rare_subsampling,0.02,T.CD8.Naive,0.059,Intermediate,118,0.0,0.0,0.0,0,,,24.0,283.2,324.0,0.0,0.0,0,0.0,0,0.0
+D18,GARQ,2,diagnostic_variant_rare_subsampling,0.02,T.DoubleNegative,0.0005,Rare,1,0.0,0.0,0.0,0,,,36.0,36.0,36.0,0.0,0.0,0,0.0,0,0.0

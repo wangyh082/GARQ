@@ -1,0 +1,4 @@
+2026-08-29 15:45:36,477 INFO Loading faiss with AVX512 support.
+2026-08-29 15:45:36,498 INFO Successfully loaded faiss with AVX512 support.
+2026-08-29 15:45:36,501 INFO Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2026-08-29 16:04:33,997 INFO Cached run already complete: revision_results/01_size_resolution/rare_confirmatory/D17/Mast-Cells/abundance_0.001/seed4/E1_D17_rare_Mast-Cells_abundance_0.001_confirmatory_smoke_seed4_v1-f19fbb4d3307.done.json

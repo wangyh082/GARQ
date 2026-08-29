@@ -1,0 +1,46 @@
+{
+  "subset_applied": true,
+  "sampling": "targeted_abundance_without_replacement",
+  "subset_seed": 1729,
+  "source_n_cells": 25517,
+  "n_cells": 2000,
+  "selected_obs_names_sha256": "204b314d6dc8a242a572fea7b212c085f1353486da8cd1d8445c9cbb2cc47d12",
+  "modality_checks": [
+    {
+      "source": "/home/zhangpeiru/data/RNA_ATAC_ADT/GSE158013/GSE158013_rna.h5ad",
+      "canonicalization_rule": null,
+      "names_changed": false,
+      "same_obs_names_and_order": true,
+      "subset": "revision_results/cache/subsets/D18_GSE158013_rna_2000cells_seed1729_rare-B.Activated-abundance0.01-seed872460.h5ad",
+      "matrix_source": "X",
+      "perturbation": null
+    },
+    {
+      "source": "/home/zhangpeiru/data/RNA_ATAC_ADT/GSE158013/GSE158013_atac.h5ad",
+      "canonicalization_rule": null,
+      "names_changed": false,
+      "same_obs_names_and_order": true,
+      "subset": "revision_results/cache/subsets/D18_GSE158013_atac_2000cells_seed1729_rare-B.Activated-abundance0.01-seed872460.h5ad",
+      "matrix_source": "X",
+      "perturbation": null
+    },
+    {
+      "source": "/home/zhangpeiru/data/RNA_ATAC_ADT/GSE158013/GSE158013_adt.h5ad",
+      "canonicalization_rule": {
+        "pattern": "\\.([0-9]+)$",
+        "replacement": "-\\1"
+      },
+      "names_changed": true,
+      "same_obs_names_and_order": true,
+      "subset": "revision_results/cache/subsets/D18_GSE158013_adt_2000cells_seed1729_rare-B.Activated-abundance0.01-seed872460.h5ad",
+      "matrix_source": "X",
+      "perturbation": null
+    }
+  ],
+  "target_label": "B.Activated",
+  "target_abundance_requested": 0.01,
+  "target_abundance_realized": 0.01,
+  "target_count": 20,
+  "source_target_count": 845,
+  "source_target_abundance": 0.03311517811654975
+}

@@ -1,0 +1,271 @@
+dataset,method,seed,subset_seed,target_cell_type,source_abundance,target_abundance,realized_abundance,support,requested_K,realized_K,cell_precision,cell_recall,cell_f1,purity_unweighted,purity_weighted,majority_retention,high_purity_recovery,run_id
+D11,GARQ,0,438642,CD14+ Mono,0.04637505062778453,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_CD14+-Mono_abundance_0.001_confirmatory_smoke_seed0_v1-b289403ae5e4
+D11,GARQ,1,115631,CD14+ Mono,0.04637505062778453,0.001,0.001,2,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_CD14+-Mono_abundance_0.001_confirmatory_smoke_seed1_v1-f358db88d218
+D11,GARQ,2,358530,CD14+ Mono,0.04637505062778453,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_CD14+-Mono_abundance_0.001_confirmatory_smoke_seed2_v1-de407a6b3b43
+D11,GARQ,3,529322,CD14+ Mono,0.04637505062778453,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_CD14+-Mono_abundance_0.001_confirmatory_smoke_seed3_v1-ca5c4748a6f0
+D11,GARQ,4,747074,CD14+ Mono,0.04637505062778453,0.001,0.001,2,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_CD14+-Mono_abundance_0.001_confirmatory_smoke_seed4_v1-f4dad55ffa23
+D11,GARQ,0,765069,CD14+ Mono,0.04637505062778453,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_CD14+-Mono_abundance_0.002_confirmatory_smoke_seed0_v1-f03c0f513578
+D11,GARQ,1,347343,CD14+ Mono,0.04637505062778453,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_CD14+-Mono_abundance_0.002_confirmatory_smoke_seed1_v1-81c9ea356f06
+D11,GARQ,2,851144,CD14+ Mono,0.04637505062778453,0.002,0.002,4,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_CD14+-Mono_abundance_0.002_confirmatory_smoke_seed2_v1-23b8b9dd80ba
+D11,GARQ,3,785211,CD14+ Mono,0.04637505062778453,0.002,0.002,4,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_CD14+-Mono_abundance_0.002_confirmatory_smoke_seed3_v1-0304b7ac96c6
+D11,GARQ,4,156674,CD14+ Mono,0.04637505062778453,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_CD14+-Mono_abundance_0.002_confirmatory_smoke_seed4_v1-0a753cbf687d
+D11,GARQ,0,771014,CD14+ Mono,0.04637505062778453,0.005,0.005,10,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_CD14+-Mono_abundance_0.005_confirmatory_smoke_seed0_v1-40fafadae85b
+D11,GARQ,1,520690,CD14+ Mono,0.04637505062778453,0.005,0.005,10,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_CD14+-Mono_abundance_0.005_confirmatory_smoke_seed1_v1-eeaf6f8756cb
+D11,GARQ,2,171967,CD14+ Mono,0.04637505062778453,0.005,0.005,10,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_CD14+-Mono_abundance_0.005_confirmatory_smoke_seed2_v1-8eeba04198bd
+D11,GARQ,3,875308,CD14+ Mono,0.04637505062778453,0.005,0.005,10,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_CD14+-Mono_abundance_0.005_confirmatory_smoke_seed3_v1-5b2ad4b59088
+D11,GARQ,4,238100,CD14+ Mono,0.04637505062778453,0.005,0.005,10,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_CD14+-Mono_abundance_0.005_confirmatory_smoke_seed4_v1-a3011d6a8b39
+D11,GARQ,0,827892,CD14+ Mono,0.04637505062778453,0.01,0.01,20,40,38,0.3333333333333333,0.05,0.0869565217391304,0.3333333333333333,0.3333333333333333,0.0,0.0,E1_D11_rare_CD14+-Mono_abundance_0.01_confirmatory_smoke_seed0_v1-4359ada180e8
+D11,GARQ,1,209161,CD14+ Mono,0.04637505062778453,0.01,0.01,20,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_CD14+-Mono_abundance_0.01_confirmatory_smoke_seed1_v1-cdc8d7e5a7a5
+D11,GARQ,2,593857,CD14+ Mono,0.04637505062778453,0.01,0.01,20,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_CD14+-Mono_abundance_0.01_confirmatory_smoke_seed2_v1-68b8ec4d43e9
+D11,GARQ,3,798967,CD14+ Mono,0.04637505062778453,0.01,0.01,20,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_CD14+-Mono_abundance_0.01_confirmatory_smoke_seed3_v1-81fd39309310
+D11,GARQ,4,399842,CD14+ Mono,0.04637505062778453,0.01,0.01,20,40,40,0.3333333333333333,0.9,0.4864864864864864,0.3333333333333333,0.3333333333333333,0.0,0.0,E1_D11_rare_CD14+-Mono_abundance_0.01_confirmatory_smoke_seed4_v1-c871499b3eea
+D11,GARQ,0,165357,CD14+ Mono,0.04637505062778453,0.02,0.02,40,40,40,0.4666666666666667,0.875,0.608695652173913,0.4666666666666667,0.4666666666666667,0.0,0.0,E1_D11_rare_CD14+-Mono_abundance_0.02_confirmatory_smoke_seed0_v1-b6c252fd11c2
+D11,GARQ,1,538086,CD14+ Mono,0.04637505062778453,0.02,0.02,40,40,40,0.5555555555555556,0.25,0.3448275862068966,0.5416666666666667,0.5555555555555556,0.1111111111111111,0.0,E1_D11_rare_CD14+-Mono_abundance_0.02_confirmatory_smoke_seed1_v1-508fa5cef801
+D11,GARQ,2,197632,CD14+ Mono,0.04637505062778453,0.02,0.02,40,40,38,0.2846153846153846,0.925,0.4352941176470588,0.423728813559322,0.2846153846153846,0.2,0.0,E1_D11_rare_CD14+-Mono_abundance_0.02_confirmatory_smoke_seed2_v1-e171e431fabe
+D11,GARQ,3,62747,CD14+ Mono,0.04637505062778453,0.02,0.02,40,40,39,0.3679245283018867,0.975,0.5342465753424658,0.3679245283018867,0.3679245283018867,0.0,0.0,E1_D11_rare_CD14+-Mono_abundance_0.02_confirmatory_smoke_seed3_v1-4ce0a749ad16
+D11,GARQ,4,338459,CD14+ Mono,0.04637505062778453,0.02,0.02,40,40,39,0.1937984496124031,0.625,0.2958579881656805,0.1967741935483871,0.1937984496124031,0.0,0.0,E1_D11_rare_CD14+-Mono_abundance_0.02_confirmatory_smoke_seed4_v1-51dfd3eeaf9d
+D11,GARQ,0,785963,NK,0.042628594572701496,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_NK_abundance_0.001_confirmatory_smoke_seed0_v1-ea23a6296fc1
+D11,GARQ,1,525153,NK,0.042628594572701496,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_NK_abundance_0.001_confirmatory_smoke_seed1_v1-dcd731f972b4
+D11,GARQ,2,181207,NK,0.042628594572701496,0.001,0.001,2,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_NK_abundance_0.001_confirmatory_smoke_seed2_v1-f224c4b3de4f
+D11,GARQ,3,205045,NK,0.042628594572701496,0.001,0.001,2,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_NK_abundance_0.001_confirmatory_smoke_seed3_v1-579c9f3ea1e3
+D11,GARQ,4,402218,NK,0.042628594572701496,0.001,0.001,2,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_NK_abundance_0.001_confirmatory_smoke_seed4_v1-997dbac83734
+D11,GARQ,0,286579,NK,0.042628594572701496,0.002,0.002,4,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_NK_abundance_0.002_confirmatory_smoke_seed0_v1-0057e0f1143a
+D11,GARQ,1,355611,NK,0.042628594572701496,0.002,0.002,4,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_NK_abundance_0.002_confirmatory_smoke_seed1_v1-b883ca6af3ad
+D11,GARQ,2,723693,NK,0.042628594572701496,0.002,0.002,4,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_NK_abundance_0.002_confirmatory_smoke_seed2_v1-84c9b7374cfd
+D11,GARQ,3,689859,NK,0.042628594572701496,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_NK_abundance_0.002_confirmatory_smoke_seed3_v1-4bf8c332f4f6
+D11,GARQ,4,1009328,NK,0.042628594572701496,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_NK_abundance_0.002_confirmatory_smoke_seed4_v1-401d67bda641
+D11,GARQ,0,971877,NK,0.042628594572701496,0.005,0.005,10,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_NK_abundance_0.005_confirmatory_smoke_seed0_v1-fbb920679c39
+D11,GARQ,1,434107,NK,0.042628594572701496,0.005,0.005,10,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_NK_abundance_0.005_confirmatory_smoke_seed1_v1-47bac2147d38
+D11,GARQ,2,835742,NK,0.042628594572701496,0.005,0.005,10,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_NK_abundance_0.005_confirmatory_smoke_seed2_v1-b1dc234dd299
+D11,GARQ,3,546198,NK,0.042628594572701496,0.005,0.005,10,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_NK_abundance_0.005_confirmatory_smoke_seed3_v1-f83682eeecc7
+D11,GARQ,4,122667,NK,0.042628594572701496,0.005,0.005,10,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_NK_abundance_0.005_confirmatory_smoke_seed4_v1-963c09730387
+D11,GARQ,0,852588,NK,0.042628594572701496,0.01,0.01,20,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_NK_abundance_0.01_confirmatory_smoke_seed0_v1-d65c752cbcb8
+D11,GARQ,1,410764,NK,0.042628594572701496,0.01,0.01,20,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_NK_abundance_0.01_confirmatory_smoke_seed1_v1-8f4634aea981
+D11,GARQ,2,831351,NK,0.042628594572701496,0.01,0.01,20,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_NK_abundance_0.01_confirmatory_smoke_seed2_v1-981b32d8ecbc
+D11,GARQ,3,667739,NK,0.042628594572701496,0.01,0.01,20,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_NK_abundance_0.01_confirmatory_smoke_seed3_v1-2456fc784a06
+D11,GARQ,4,989190,NK,0.042628594572701496,0.01,0.01,20,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_NK_abundance_0.01_confirmatory_smoke_seed4_v1-dd3a22243e9b
+D11,GARQ,0,615718,NK,0.042628594572701496,0.02,0.02,40,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_NK_abundance_0.02_confirmatory_smoke_seed0_v1-43bdb205537a
+D11,GARQ,1,412488,NK,0.042628594572701496,0.02,0.02,40,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_NK_abundance_0.02_confirmatory_smoke_seed1_v1-3f02b4c30908
+D11,GARQ,2,354836,NK,0.042628594572701496,0.02,0.02,40,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_NK_abundance_0.02_confirmatory_smoke_seed2_v1-85889d5c51c7
+D11,GARQ,3,814444,NK,0.042628594572701496,0.02,0.02,40,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_NK_abundance_0.02_confirmatory_smoke_seed3_v1-4eac474a28a6
+D11,GARQ,4,845545,NK,0.042628594572701496,0.02,0.02,40,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_NK_abundance_0.02_confirmatory_smoke_seed4_v1-2e5a2083d01b
+D11,GARQ,0,44938,Plasma cell,0.0026326447954637504,0.001,0.001,2,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_Plasma-cell_abundance_0.001_confirmatory_smoke_seed0_v1-28642c81ec9e
+D11,GARQ,1,313269,Plasma cell,0.0026326447954637504,0.001,0.001,2,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_Plasma-cell_abundance_0.001_confirmatory_smoke_seed1_v1-0446e590994a
+D11,GARQ,2,634161,Plasma cell,0.0026326447954637504,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_Plasma-cell_abundance_0.001_confirmatory_smoke_seed2_v1-2be41173fe2d
+D11,GARQ,3,64004,Plasma cell,0.0026326447954637504,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_Plasma-cell_abundance_0.001_confirmatory_smoke_seed3_v1-5c4a53e08ccc
+D11,GARQ,4,339838,Plasma cell,0.0026326447954637504,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_Plasma-cell_abundance_0.001_confirmatory_smoke_seed4_v1-8f5fac06b607
+D11,GARQ,0,872968,Plasma cell,0.0026326447954637504,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_Plasma-cell_abundance_0.002_confirmatory_smoke_seed0_v1-618650a8fc27
+D11,GARQ,1,1009150,Plasma cell,0.0026326447954637504,0.002,0.002,4,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_Plasma-cell_abundance_0.002_confirmatory_smoke_seed1_v1-c8c7730e17ff
+D11,GARQ,2,969152,Plasma cell,0.0026326447954637504,0.002,0.002,4,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_Plasma-cell_abundance_0.002_confirmatory_smoke_seed2_v1-8b4ff2cb9b90
+D11,GARQ,3,624037,Plasma cell,0.0026326447954637504,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_Plasma-cell_abundance_0.002_confirmatory_smoke_seed3_v1-e30b1e712a4c
+D11,GARQ,4,194926,Plasma cell,0.0026326447954637504,0.002,0.002,4,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_Plasma-cell_abundance_0.002_confirmatory_smoke_seed4_v1-ed90fb181c2b
+D11,GARQ,0,159878,cDC2,0.016200891049007696,0.001,0.001,2,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_cDC2_abundance_0.001_confirmatory_smoke_seed0_v1-820b123a24ee
+D11,GARQ,1,262600,cDC2,0.016200891049007696,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_cDC2_abundance_0.001_confirmatory_smoke_seed1_v1-e7dfa1319baa
+D11,GARQ,2,711330,cDC2,0.016200891049007696,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_cDC2_abundance_0.001_confirmatory_smoke_seed2_v1-95fa4a5ebf1e
+D11,GARQ,3,886130,cDC2,0.016200891049007696,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_cDC2_abundance_0.001_confirmatory_smoke_seed3_v1-9a65bf9caf14
+D11,GARQ,4,880090,cDC2,0.016200891049007696,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_cDC2_abundance_0.001_confirmatory_smoke_seed4_v1-0c7f45895359
+D11,GARQ,0,35168,cDC2,0.016200891049007696,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_cDC2_abundance_0.002_confirmatory_smoke_seed0_v1-9713bd9228d9
+D11,GARQ,1,293334,cDC2,0.016200891049007696,0.002,0.002,4,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_cDC2_abundance_0.002_confirmatory_smoke_seed1_v1-7c553155d03d
+D11,GARQ,2,448068,cDC2,0.016200891049007696,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_cDC2_abundance_0.002_confirmatory_smoke_seed2_v1-a15e1f664b69
+D11,GARQ,3,275495,cDC2,0.016200891049007696,0.002,0.002,4,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_cDC2_abundance_0.002_confirmatory_smoke_seed3_v1-d9132613d40b
+D11,GARQ,4,758979,cDC2,0.016200891049007696,0.002,0.002,4,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_cDC2_abundance_0.002_confirmatory_smoke_seed4_v1-3177a8b26bcd
+D11,GARQ,0,396089,cDC2,0.016200891049007696,0.005,0.005,10,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_cDC2_abundance_0.005_confirmatory_smoke_seed0_v1-41be7e6ccffe
+D11,GARQ,1,119396,cDC2,0.016200891049007696,0.005,0.005,10,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_cDC2_abundance_0.005_confirmatory_smoke_seed1_v1-6a12dd25e2dd
+D11,GARQ,2,962845,cDC2,0.016200891049007696,0.005,0.005,10,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_cDC2_abundance_0.005_confirmatory_smoke_seed2_v1-425b0f9776c1
+D11,GARQ,3,192282,cDC2,0.016200891049007696,0.005,0.005,10,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_cDC2_abundance_0.005_confirmatory_smoke_seed3_v1-83575b353884
+D11,GARQ,4,765689,cDC2,0.016200891049007696,0.005,0.005,10,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_cDC2_abundance_0.005_confirmatory_smoke_seed4_v1-64a5ca3e6cda
+D11,GARQ,0,656952,cDC2,0.016200891049007696,0.01,0.01,20,40,40,0.2432432432432432,0.45,0.3157894736842105,0.2432432432432432,0.2432432432432432,0.0,0.0,E1_D11_rare_cDC2_abundance_0.01_confirmatory_smoke_seed0_v1-4a0a5c56a966
+D11,GARQ,1,883818,cDC2,0.016200891049007696,0.01,0.01,20,40,40,0.4,0.1,0.16,0.4,0.4,0.0,0.0,E1_D11_rare_cDC2_abundance_0.01_confirmatory_smoke_seed1_v1-8bd74c45343f
+D11,GARQ,2,52473,cDC2,0.016200891049007696,0.01,0.01,20,40,40,1.0,0.05,0.0952380952380952,1.0,1.0,0.2,0.2,E1_D11_rare_cDC2_abundance_0.01_confirmatory_smoke_seed2_v1-9b6dfc51c2c6
+D11,GARQ,3,625062,cDC2,0.016200891049007696,0.01,0.01,20,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D11_rare_cDC2_abundance_0.01_confirmatory_smoke_seed3_v1-4260418efef3
+D11,GARQ,4,960622,cDC2,0.016200891049007696,0.01,0.01,20,40,40,0.2666666666666666,0.2,0.2285714285714286,0.2666666666666666,0.2666666666666666,0.0,0.0,E1_D11_rare_cDC2_abundance_0.01_confirmatory_smoke_seed4_v1-030c2cbb0526
+D17,GARQ,0,789840,Mast Cells,0.004584030229820975,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Mast-Cells_abundance_0.001_confirmatory_smoke_seed0_v1-ec007951e9be
+D17,GARQ,1,411294,Mast Cells,0.004584030229820975,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Mast-Cells_abundance_0.001_confirmatory_smoke_seed1_v1-3e9f1ecc3245
+D17,GARQ,2,289142,Mast Cells,0.004584030229820975,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Mast-Cells_abundance_0.001_confirmatory_smoke_seed2_v1-ac97eee42012
+D17,GARQ,3,823279,Mast Cells,0.004584030229820975,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Mast-Cells_abundance_0.001_confirmatory_smoke_seed3_v1-d33a5077f5dc
+D17,GARQ,4,166557,Mast Cells,0.004584030229820975,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Mast-Cells_abundance_0.001_confirmatory_smoke_seed4_v1-f19fbb4d3307
+D17,GARQ,0,11320,Mast Cells,0.004584030229820975,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Mast-Cells_abundance_0.002_confirmatory_smoke_seed0_v1-c4f0ed693583
+D17,GARQ,1,994408,Mast Cells,0.004584030229820975,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Mast-Cells_abundance_0.002_confirmatory_smoke_seed1_v1-a7adfb145696
+D17,GARQ,2,437937,Mast Cells,0.004584030229820975,0.002,0.002,4,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Mast-Cells_abundance_0.002_confirmatory_smoke_seed2_v1-dc51bf85e740
+D17,GARQ,3,480638,Mast Cells,0.004584030229820975,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Mast-Cells_abundance_0.002_confirmatory_smoke_seed3_v1-2307a843f4e0
+D17,GARQ,4,682655,Mast Cells,0.004584030229820975,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Mast-Cells_abundance_0.002_confirmatory_smoke_seed4_v1-b23eac4f87b6
+D17,GARQ,0,695672,Myeloid Cells,0.042247413739701416,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Myeloid-Cells_abundance_0.001_confirmatory_smoke_seed0_v1-70203d7bbdd6
+D17,GARQ,1,968059,Myeloid Cells,0.042247413739701416,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Myeloid-Cells_abundance_0.001_confirmatory_smoke_seed1_v1-f0e63e43378f
+D17,GARQ,2,640738,Myeloid Cells,0.042247413739701416,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Myeloid-Cells_abundance_0.001_confirmatory_smoke_seed2_v1-39c93023d3bd
+D17,GARQ,3,494434,Myeloid Cells,0.042247413739701416,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Myeloid-Cells_abundance_0.001_confirmatory_smoke_seed3_v1-cdc66b07f21c
+D17,GARQ,4,198366,Myeloid Cells,0.042247413739701416,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Myeloid-Cells_abundance_0.001_confirmatory_smoke_seed4_v1-5e0698dc604c
+D17,GARQ,0,603526,Myeloid Cells,0.042247413739701416,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Myeloid-Cells_abundance_0.002_confirmatory_smoke_seed0_v1-7644c6a392c9
+D17,GARQ,1,838651,Myeloid Cells,0.042247413739701416,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Myeloid-Cells_abundance_0.002_confirmatory_smoke_seed1_v1-3300fbbe8de7
+D17,GARQ,2,251278,Myeloid Cells,0.042247413739701416,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Myeloid-Cells_abundance_0.002_confirmatory_smoke_seed2_v1-39047b668c5b
+D17,GARQ,3,549450,Myeloid Cells,0.042247413739701416,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Myeloid-Cells_abundance_0.002_confirmatory_smoke_seed3_v1-9ab5acb85326
+D17,GARQ,4,710055,Myeloid Cells,0.042247413739701416,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Myeloid-Cells_abundance_0.002_confirmatory_smoke_seed4_v1-f02062f1277b
+D17,GARQ,0,831398,Myeloid Cells,0.042247413739701416,0.005,0.005,10,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Myeloid-Cells_abundance_0.005_confirmatory_smoke_seed0_v1-4937b3f04e09
+D17,GARQ,1,495655,Myeloid Cells,0.042247413739701416,0.005,0.005,10,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Myeloid-Cells_abundance_0.005_confirmatory_smoke_seed1_v1-b629df6e8ae2
+D17,GARQ,2,381664,Myeloid Cells,0.042247413739701416,0.005,0.005,10,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Myeloid-Cells_abundance_0.005_confirmatory_smoke_seed2_v1-2d17eafcb97e
+D17,GARQ,3,576268,Myeloid Cells,0.042247413739701416,0.005,0.005,10,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Myeloid-Cells_abundance_0.005_confirmatory_smoke_seed3_v1-1535a2b528da
+D17,GARQ,4,696590,Myeloid Cells,0.042247413739701416,0.005,0.005,10,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Myeloid-Cells_abundance_0.005_confirmatory_smoke_seed4_v1-3d91ee5428f6
+D17,GARQ,0,745502,Myeloid Cells,0.042247413739701416,0.01,0.01,20,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Myeloid-Cells_abundance_0.01_confirmatory_smoke_seed0_v1-0f9c64545a98
+D17,GARQ,1,163640,Myeloid Cells,0.042247413739701416,0.01,0.01,20,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Myeloid-Cells_abundance_0.01_confirmatory_smoke_seed1_v1-c337d057a1d5
+D17,GARQ,2,625298,Myeloid Cells,0.042247413739701416,0.01,0.01,20,40,39,0.3333333333333333,0.3,0.3157894736842105,0.4821428571428571,0.3333333333333333,0.1428571428571428,0.1428571428571428,E1_D17_rare_Myeloid-Cells_abundance_0.01_confirmatory_smoke_seed2_v1-0f5c5a8a052d
+D17,GARQ,3,396214,Myeloid Cells,0.042247413739701416,0.01,0.01,20,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Myeloid-Cells_abundance_0.01_confirmatory_smoke_seed3_v1-83e60775c0a9
+D17,GARQ,4,535966,Myeloid Cells,0.042247413739701416,0.01,0.01,20,40,40,0.5,0.15,0.2307692307692307,0.5,0.5,0.0,0.0,E1_D17_rare_Myeloid-Cells_abundance_0.01_confirmatory_smoke_seed4_v1-ce6bf1674791
+D17,GARQ,0,106106,Myeloid Cells,0.042247413739701416,0.02,0.02,40,40,39,0.3,0.075,0.12,0.3,0.3,0.0,0.0,E1_D17_rare_Myeloid-Cells_abundance_0.02_confirmatory_smoke_seed0_v1-df233ca9dcd6
+D17,GARQ,1,964074,Myeloid Cells,0.042247413739701416,0.02,0.02,40,40,40,0.4615384615384615,0.15,0.2264150943396226,0.5333333333333333,0.4615384615384615,0.0909090909090909,0.0,E1_D17_rare_Myeloid-Cells_abundance_0.02_confirmatory_smoke_seed1_v1-abc7ff967d73
+D17,GARQ,2,178399,Myeloid Cells,0.042247413739701416,0.02,0.02,40,40,40,0.5357142857142857,0.375,0.4411764705882353,0.5357142857142857,0.5357142857142857,0.1,0.0,E1_D17_rare_Myeloid-Cells_abundance_0.02_confirmatory_smoke_seed2_v1-64a4982af8b3
+D17,GARQ,3,115646,Myeloid Cells,0.042247413739701416,0.02,0.02,40,40,40,0.3870967741935484,0.3,0.3380281690140845,0.3870967741935484,0.3870967741935484,0.0,0.0,E1_D17_rare_Myeloid-Cells_abundance_0.02_confirmatory_smoke_seed3_v1-77ab7549cf39
+D17,GARQ,4,694436,Myeloid Cells,0.042247413739701416,0.02,0.02,40,40,40,0.6666666666666666,0.2,0.3076923076923076,0.6666666666666666,0.6666666666666666,0.0769230769230769,0.0,E1_D17_rare_Myeloid-Cells_abundance_0.02_confirmatory_smoke_seed4_v1-19c2198d8ea1
+D17,GARQ,0,679311,Parietal Epithelial Cells,0.038840364244564204,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Parietal-Epithelial-Cells_abundance_0.001_confirmatory_smoke_seed0_v1-aee7294dccc0
+D17,GARQ,1,937973,Parietal Epithelial Cells,0.038840364244564204,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Parietal-Epithelial-Cells_abundance_0.001_confirmatory_smoke_seed1_v1-41121e07393f
+D17,GARQ,2,453635,Parietal Epithelial Cells,0.038840364244564204,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Parietal-Epithelial-Cells_abundance_0.001_confirmatory_smoke_seed2_v1-799297cc7411
+D17,GARQ,3,259974,Parietal Epithelial Cells,0.038840364244564204,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Parietal-Epithelial-Cells_abundance_0.001_confirmatory_smoke_seed3_v1-d4713417807b
+D17,GARQ,4,493284,Parietal Epithelial Cells,0.038840364244564204,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Parietal-Epithelial-Cells_abundance_0.001_confirmatory_smoke_seed4_v1-ce2a3a5e7f3e
+D17,GARQ,0,629969,Parietal Epithelial Cells,0.038840364244564204,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Parietal-Epithelial-Cells_abundance_0.002_confirmatory_smoke_seed0_v1-6c882352f8f4
+D17,GARQ,1,310546,Parietal Epithelial Cells,0.038840364244564204,0.002,0.002,4,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Parietal-Epithelial-Cells_abundance_0.002_confirmatory_smoke_seed1_v1-ff909856f5d6
+D17,GARQ,2,704026,Parietal Epithelial Cells,0.038840364244564204,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Parietal-Epithelial-Cells_abundance_0.002_confirmatory_smoke_seed2_v1-907ccbf6ba0f
+D17,GARQ,3,244591,Parietal Epithelial Cells,0.038840364244564204,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Parietal-Epithelial-Cells_abundance_0.002_confirmatory_smoke_seed3_v1-d17da6d71916
+D17,GARQ,4,637008,Parietal Epithelial Cells,0.038840364244564204,0.002,0.002,4,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Parietal-Epithelial-Cells_abundance_0.002_confirmatory_smoke_seed4_v1-3d5d21d5f9eb
+D17,GARQ,0,823129,Parietal Epithelial Cells,0.038840364244564204,0.005,0.005,10,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Parietal-Epithelial-Cells_abundance_0.005_confirmatory_smoke_seed0_v1-290f3b3e935c
+D17,GARQ,1,714042,Parietal Epithelial Cells,0.038840364244564204,0.005,0.005,10,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Parietal-Epithelial-Cells_abundance_0.005_confirmatory_smoke_seed1_v1-fac300c1ff32
+D17,GARQ,2,131108,Parietal Epithelial Cells,0.038840364244564204,0.005,0.005,10,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Parietal-Epithelial-Cells_abundance_0.005_confirmatory_smoke_seed2_v1-6ad24348bf91
+D17,GARQ,3,653716,Parietal Epithelial Cells,0.038840364244564204,0.005,0.005,10,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Parietal-Epithelial-Cells_abundance_0.005_confirmatory_smoke_seed3_v1-039c84671fa4
+D17,GARQ,4,586563,Parietal Epithelial Cells,0.038840364244564204,0.005,0.005,10,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Parietal-Epithelial-Cells_abundance_0.005_confirmatory_smoke_seed4_v1-1e599c05640d
+D17,GARQ,0,645320,Parietal Epithelial Cells,0.038840364244564204,0.01,0.01,20,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Parietal-Epithelial-Cells_abundance_0.01_confirmatory_smoke_seed0_v1-961c1b2f5fb6
+D17,GARQ,1,222591,Parietal Epithelial Cells,0.038840364244564204,0.01,0.01,20,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Parietal-Epithelial-Cells_abundance_0.01_confirmatory_smoke_seed1_v1-10e69e67e2dc
+D17,GARQ,2,980595,Parietal Epithelial Cells,0.038840364244564204,0.01,0.01,20,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Parietal-Epithelial-Cells_abundance_0.01_confirmatory_smoke_seed2_v1-088aba1d7e4d
+D17,GARQ,3,804064,Parietal Epithelial Cells,0.038840364244564204,0.01,0.01,20,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Parietal-Epithelial-Cells_abundance_0.01_confirmatory_smoke_seed3_v1-14c57e8337d0
+D17,GARQ,4,227151,Parietal Epithelial Cells,0.038840364244564204,0.01,0.01,20,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Parietal-Epithelial-Cells_abundance_0.01_confirmatory_smoke_seed4_v1-4de96d9f595a
+D17,GARQ,0,895928,Parietal Epithelial Cells,0.038840364244564204,0.02,0.02,40,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Parietal-Epithelial-Cells_abundance_0.02_confirmatory_smoke_seed0_v1-b9df8016f41d
+D17,GARQ,1,371908,Parietal Epithelial Cells,0.038840364244564204,0.02,0.02,40,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Parietal-Epithelial-Cells_abundance_0.02_confirmatory_smoke_seed1_v1-b32c4d01f8e2
+D17,GARQ,2,290006,Parietal Epithelial Cells,0.038840364244564204,0.02,0.02,40,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Parietal-Epithelial-Cells_abundance_0.02_confirmatory_smoke_seed2_v1-e50fb82aa08e
+D17,GARQ,3,15705,Parietal Epithelial Cells,0.038840364244564204,0.02,0.02,40,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D17_rare_Parietal-Epithelial-Cells_abundance_0.02_confirmatory_smoke_seed3_v1-9d5ff93a7437
+D17,GARQ,4,546426,Parietal Epithelial Cells,0.038840364244564204,0.02,0.02,40,40,40,0.2222222222222222,0.05,0.0816326530612245,0.2222222222222222,0.2222222222222222,0.0,0.0,E1_D17_rare_Parietal-Epithelial-Cells_abundance_0.02_confirmatory_smoke_seed4_v1-9f4801e4a500
+D18,GARQ,0,860121,B.Activated,0.03311517811654975,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_B.Activated_abundance_0.001_confirmatory_smoke_seed0_v1-f31f02705ec5
+D18,GARQ,1,694372,B.Activated,0.03311517811654975,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_B.Activated_abundance_0.001_confirmatory_smoke_seed1_v1-7874f3182e93
+D18,GARQ,2,241327,B.Activated,0.03311517811654975,0.001,0.001,2,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_B.Activated_abundance_0.001_confirmatory_smoke_seed2_v1-f62f40159fd7
+D18,GARQ,3,257875,B.Activated,0.03311517811654975,0.001,0.001,2,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_B.Activated_abundance_0.001_confirmatory_smoke_seed3_v1-02265f693f60
+D18,GARQ,4,655835,B.Activated,0.03311517811654975,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_B.Activated_abundance_0.001_confirmatory_smoke_seed4_v1-7ffdfcd4c488
+D18,GARQ,0,236842,B.Activated,0.03311517811654975,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_B.Activated_abundance_0.002_confirmatory_smoke_seed0_v1-d631578d44f4
+D18,GARQ,1,78961,B.Activated,0.03311517811654975,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_B.Activated_abundance_0.002_confirmatory_smoke_seed1_v1-7e46a67516a3
+D18,GARQ,2,115954,B.Activated,0.03311517811654975,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_B.Activated_abundance_0.002_confirmatory_smoke_seed2_v1-6acf7f34ec77
+D18,GARQ,3,301285,B.Activated,0.03311517811654975,0.002,0.002,4,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_B.Activated_abundance_0.002_confirmatory_smoke_seed3_v1-217ecab154c2
+D18,GARQ,4,999954,B.Activated,0.03311517811654975,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_B.Activated_abundance_0.002_confirmatory_smoke_seed4_v1-1de78e45d0dd
+D18,GARQ,0,581342,B.Activated,0.03311517811654975,0.005,0.005,10,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_B.Activated_abundance_0.005_confirmatory_smoke_seed0_v1-9df8293fed4c
+D18,GARQ,1,534760,B.Activated,0.03311517811654975,0.005,0.005,10,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_B.Activated_abundance_0.005_confirmatory_smoke_seed1_v1-3594af89ceca
+D18,GARQ,2,556876,B.Activated,0.03311517811654975,0.005,0.005,10,40,37,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_B.Activated_abundance_0.005_confirmatory_smoke_seed2_v1-434a1c3f7d6b
+D18,GARQ,3,767858,B.Activated,0.03311517811654975,0.005,0.005,10,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_B.Activated_abundance_0.005_confirmatory_smoke_seed3_v1-d364fd908be3
+D18,GARQ,4,613989,B.Activated,0.03311517811654975,0.005,0.005,10,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_B.Activated_abundance_0.005_confirmatory_smoke_seed4_v1-a28761c45753
+D18,GARQ,0,314347,B.Activated,0.03311517811654975,0.01,0.01,20,40,37,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_B.Activated_abundance_0.01_confirmatory_smoke_seed0_v1-7a79d158f203
+D18,GARQ,1,452954,B.Activated,0.03311517811654975,0.01,0.01,20,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_B.Activated_abundance_0.01_confirmatory_smoke_seed1_v1-e600b3b27182
+D18,GARQ,2,286990,B.Activated,0.03311517811654975,0.01,0.01,20,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_B.Activated_abundance_0.01_confirmatory_smoke_seed2_v1-ee2d5e05a3b0
+D18,GARQ,3,872460,B.Activated,0.03311517811654975,0.01,0.01,20,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_B.Activated_abundance_0.01_confirmatory_smoke_seed3_v1-c175bcdef561
+D18,GARQ,4,822420,B.Activated,0.03311517811654975,0.01,0.01,20,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_B.Activated_abundance_0.01_confirmatory_smoke_seed4_v1-000eb1b95d6f
+D18,GARQ,0,389294,B.Activated,0.03311517811654975,0.02,0.02,40,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_B.Activated_abundance_0.02_confirmatory_smoke_seed0_v1-dec64f96c7ca
+D18,GARQ,1,673625,B.Activated,0.03311517811654975,0.02,0.02,40,40,39,0.5714285714285714,0.1,0.1702127659574468,0.5714285714285714,0.5714285714285714,0.5,0.0,E1_D18_rare_B.Activated_abundance_0.02_confirmatory_smoke_seed1_v1-331360507a39
+D18,GARQ,2,627725,B.Activated,0.03311517811654975,0.02,0.02,40,40,39,0.5,0.075,0.1304347826086956,0.5,0.5,0.0,0.0,E1_D18_rare_B.Activated_abundance_0.02_confirmatory_smoke_seed2_v1-c3d3021f2e24
+D18,GARQ,3,268675,B.Activated,0.03311517811654975,0.02,0.02,40,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_B.Activated_abundance_0.02_confirmatory_smoke_seed3_v1-a88ce1cd922c
+D18,GARQ,4,162140,B.Activated,0.03311517811654975,0.02,0.02,40,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_B.Activated_abundance_0.02_confirmatory_smoke_seed4_v1-6428330da72e
+D18,GARQ,0,1009364,Mono.CD16,0.006231140024297527,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_Mono.CD16_abundance_0.001_confirmatory_smoke_seed0_v1-67a15b80e128
+D18,GARQ,1,704950,Mono.CD16,0.006231140024297527,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_Mono.CD16_abundance_0.001_confirmatory_smoke_seed1_v1-b50c160b814a
+D18,GARQ,2,901418,Mono.CD16,0.006231140024297527,0.001,0.001,2,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_Mono.CD16_abundance_0.001_confirmatory_smoke_seed2_v1-5b5fb74844ff
+D18,GARQ,3,807088,Mono.CD16,0.006231140024297527,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_Mono.CD16_abundance_0.001_confirmatory_smoke_seed3_v1-c67bbb62dcd0
+D18,GARQ,4,971602,Mono.CD16,0.006231140024297527,0.001,0.001,2,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_Mono.CD16_abundance_0.001_confirmatory_smoke_seed4_v1-c78781b553d8
+D18,GARQ,0,820966,Mono.CD16,0.006231140024297527,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_Mono.CD16_abundance_0.002_confirmatory_smoke_seed0_v1-41ea50b319f4
+D18,GARQ,1,481482,Mono.CD16,0.006231140024297527,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_Mono.CD16_abundance_0.002_confirmatory_smoke_seed1_v1-ddc79dc0bb8d
+D18,GARQ,2,833938,Mono.CD16,0.006231140024297527,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_Mono.CD16_abundance_0.002_confirmatory_smoke_seed2_v1-f1ac4e341c92
+D18,GARQ,3,172714,Mono.CD16,0.006231140024297527,0.002,0.002,4,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_Mono.CD16_abundance_0.002_confirmatory_smoke_seed3_v1-35cd824ef426
+D18,GARQ,4,75008,Mono.CD16,0.006231140024297527,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_Mono.CD16_abundance_0.002_confirmatory_smoke_seed4_v1-1aeeee370243
+D18,GARQ,0,744485,Mono.CD16,0.006231140024297527,0.005,0.005,10,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_Mono.CD16_abundance_0.005_confirmatory_smoke_seed0_v1-7f044f9f9cbc
+D18,GARQ,1,873228,Mono.CD16,0.006231140024297527,0.005,0.005,10,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_Mono.CD16_abundance_0.005_confirmatory_smoke_seed1_v1-b8657fe27534
+D18,GARQ,2,208216,Mono.CD16,0.006231140024297527,0.005,0.005,10,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_Mono.CD16_abundance_0.005_confirmatory_smoke_seed2_v1-f2677ceef283
+D18,GARQ,3,320988,Mono.CD16,0.006231140024297527,0.005,0.005,10,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_Mono.CD16_abundance_0.005_confirmatory_smoke_seed3_v1-dfdd4783a741
+D18,GARQ,4,562247,Mono.CD16,0.006231140024297527,0.005,0.005,10,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_Mono.CD16_abundance_0.005_confirmatory_smoke_seed4_v1-a2a27ba028db
+D18,GARQ,0,87040,Platelets,0.0024689422737782653,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_Platelets_abundance_0.001_confirmatory_smoke_seed0_v1-7d7e74b8d7a3
+D18,GARQ,1,679550,Platelets,0.0024689422737782653,0.001,0.001,2,40,40,0.5,1.0,0.6666666666666666,0.6666666666666666,0.5,0.5,0.5,E1_D18_rare_Platelets_abundance_0.001_confirmatory_smoke_seed1_v1-04bee45021a6
+D18,GARQ,2,936978,Platelets,0.0024689422737782653,0.001,0.001,2,40,35,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_Platelets_abundance_0.001_confirmatory_smoke_seed2_v1-95ddf5f8b816
+D18,GARQ,3,289655,Platelets,0.0024689422737782653,0.001,0.001,2,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_Platelets_abundance_0.001_confirmatory_smoke_seed3_v1-234d313829df
+D18,GARQ,4,686092,Platelets,0.0024689422737782653,0.001,0.001,2,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_Platelets_abundance_0.001_confirmatory_smoke_seed4_v1-2cbeda09fcdc
+D18,GARQ,0,506000,Platelets,0.0024689422737782653,0.002,0.002,4,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_Platelets_abundance_0.002_confirmatory_smoke_seed0_v1-6866cf6ec36f
+D18,GARQ,1,210197,Platelets,0.0024689422737782653,0.002,0.002,4,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_Platelets_abundance_0.002_confirmatory_smoke_seed1_v1-032ef11cb9c1
+D18,GARQ,2,224040,Platelets,0.0024689422737782653,0.002,0.002,4,40,39,1.0,0.25,0.4,1.0,1.0,0.25,0.25,E1_D18_rare_Platelets_abundance_0.002_confirmatory_smoke_seed2_v1-6fcbfd05c471
+D18,GARQ,3,725498,Platelets,0.0024689422737782653,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_Platelets_abundance_0.002_confirmatory_smoke_seed3_v1-8c54995ceafa
+D18,GARQ,4,757116,Platelets,0.0024689422737782653,0.002,0.002,4,40,37,0.0,0.0,0.0,,,0.0,0.0,E1_D18_rare_Platelets_abundance_0.002_confirmatory_smoke_seed4_v1-e6015395df06
+D5,GARQ,0,282593,Non classical monocytes,0.04728950403690888,0.001,0.001,2,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Non-classical-monocytes_abundance_0.001_confirmatory_smoke_seed0_v1-5ce0fb779fd0
+D5,GARQ,1,694277,Non classical monocytes,0.04728950403690888,0.001,0.001,2,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Non-classical-monocytes_abundance_0.001_confirmatory_smoke_seed1_v1-e92d38e58196
+D5,GARQ,2,182018,Non classical monocytes,0.04728950403690888,0.001,0.001,2,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Non-classical-monocytes_abundance_0.001_confirmatory_smoke_seed2_v1-6863b340c245
+D5,GARQ,3,777740,Non classical monocytes,0.04728950403690888,0.001,0.001,2,40,36,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Non-classical-monocytes_abundance_0.001_confirmatory_smoke_seed3_v1-882dc7e434a3
+D5,GARQ,4,449980,Non classical monocytes,0.04728950403690888,0.001,0.001,2,40,36,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Non-classical-monocytes_abundance_0.001_confirmatory_smoke_seed4_v1-83dfe4b72e0d
+D5,GARQ,0,870335,Non classical monocytes,0.04728950403690888,0.002,0.002,4,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Non-classical-monocytes_abundance_0.002_confirmatory_smoke_seed0_v1-4916060505f5
+D5,GARQ,1,90527,Non classical monocytes,0.04728950403690888,0.002,0.002,4,40,37,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Non-classical-monocytes_abundance_0.002_confirmatory_smoke_seed1_v1-d366c14e1f83
+D5,GARQ,2,35577,Non classical monocytes,0.04728950403690888,0.002,0.002,4,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Non-classical-monocytes_abundance_0.002_confirmatory_smoke_seed2_v1-08889bf079ec
+D5,GARQ,3,142088,Non classical monocytes,0.04728950403690888,0.002,0.002,4,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Non-classical-monocytes_abundance_0.002_confirmatory_smoke_seed3_v1-898999ff20c1
+D5,GARQ,4,145875,Non classical monocytes,0.04728950403690888,0.002,0.002,4,40,37,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Non-classical-monocytes_abundance_0.002_confirmatory_smoke_seed4_v1-ab3768452f1c
+D5,GARQ,0,554820,Non classical monocytes,0.04728950403690888,0.005,0.005,10,40,40,1.0,0.1,0.1818181818181818,1.0,1.0,0.3333333333333333,0.3333333333333333,E1_D5_rare_Non-classical-monocytes_abundance_0.005_confirmatory_smoke_seed0_v1-cd0a884b06e2
+D5,GARQ,1,260349,Non classical monocytes,0.04728950403690888,0.005,0.005,10,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Non-classical-monocytes_abundance_0.005_confirmatory_smoke_seed1_v1-b8aa6eaba7de
+D5,GARQ,2,662273,Non classical monocytes,0.04728950403690888,0.005,0.005,10,40,37,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Non-classical-monocytes_abundance_0.005_confirmatory_smoke_seed2_v1-f64c63d02885
+D5,GARQ,3,21481,Non classical monocytes,0.04728950403690888,0.005,0.005,10,40,34,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Non-classical-monocytes_abundance_0.005_confirmatory_smoke_seed3_v1-df0ff45b4e12
+D5,GARQ,4,502664,Non classical monocytes,0.04728950403690888,0.005,0.005,10,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Non-classical-monocytes_abundance_0.005_confirmatory_smoke_seed4_v1-caaaf77d10a9
+D5,GARQ,0,325889,Non classical monocytes,0.04728950403690888,0.01,0.01,20,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Non-classical-monocytes_abundance_0.01_confirmatory_smoke_seed0_v1-996047a2a3bc
+D5,GARQ,1,405980,Non classical monocytes,0.04728950403690888,0.01,0.01,20,40,39,0.3571428571428571,0.25,0.2941176470588235,0.3571428571428571,0.3571428571428571,0.0,0.0,E1_D5_rare_Non-classical-monocytes_abundance_0.01_confirmatory_smoke_seed1_v1-acf14b718778
+D5,GARQ,2,876761,Non classical monocytes,0.04728950403690888,0.01,0.01,20,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Non-classical-monocytes_abundance_0.01_confirmatory_smoke_seed2_v1-1836182e0a76
+D5,GARQ,3,747639,Non classical monocytes,0.04728950403690888,0.01,0.01,20,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Non-classical-monocytes_abundance_0.01_confirmatory_smoke_seed3_v1-0a57f2317047
+D5,GARQ,4,462937,Non classical monocytes,0.04728950403690888,0.01,0.01,20,40,39,0.4054054054054054,0.75,0.5263157894736842,0.4054054054054054,0.4054054054054054,0.0,0.0,E1_D5_rare_Non-classical-monocytes_abundance_0.01_confirmatory_smoke_seed4_v1-c7e2e9380b15
+D5,GARQ,0,844450,Non classical monocytes,0.04728950403690888,0.02,0.02,40,40,35,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Non-classical-monocytes_abundance_0.02_confirmatory_smoke_seed0_v1-2e649c63b6c7
+D5,GARQ,1,436800,Non classical monocytes,0.04728950403690888,0.02,0.02,40,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Non-classical-monocytes_abundance_0.02_confirmatory_smoke_seed1_v1-189b543f6de6
+D5,GARQ,2,778274,Non classical monocytes,0.04728950403690888,0.02,0.02,40,40,39,0.7,0.175,0.2799999999999999,0.7083333333333333,0.7,0.6666666666666666,0.3333333333333333,E1_D5_rare_Non-classical-monocytes_abundance_0.02_confirmatory_smoke_seed2_v1-8587f587b8e4
+D5,GARQ,3,224332,Non classical monocytes,0.04728950403690888,0.02,0.02,40,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Non-classical-monocytes_abundance_0.02_confirmatory_smoke_seed3_v1-93b6ef85b24d
+D5,GARQ,4,796253,Non classical monocytes,0.04728950403690888,0.02,0.02,40,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Non-classical-monocytes_abundance_0.02_confirmatory_smoke_seed4_v1-783b91b6910a
+D5,GARQ,0,475767,Regulatory T cells,0.008189158016147636,0.001,0.001,2,40,37,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Regulatory-T-cells_abundance_0.001_confirmatory_smoke_seed0_v1-23bcbdd2fc55
+D5,GARQ,1,88793,Regulatory T cells,0.008189158016147636,0.001,0.001,2,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Regulatory-T-cells_abundance_0.001_confirmatory_smoke_seed1_v1-cf0ec7083fda
+D5,GARQ,2,471646,Regulatory T cells,0.008189158016147636,0.001,0.001,2,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Regulatory-T-cells_abundance_0.001_confirmatory_smoke_seed2_v1-bd9417ef1015
+D5,GARQ,3,550612,Regulatory T cells,0.008189158016147636,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Regulatory-T-cells_abundance_0.001_confirmatory_smoke_seed3_v1-6c70e875d644
+D5,GARQ,4,196353,Regulatory T cells,0.008189158016147636,0.001,0.001,2,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Regulatory-T-cells_abundance_0.001_confirmatory_smoke_seed4_v1-7f67161f85d6
+D5,GARQ,0,231834,Regulatory T cells,0.008189158016147636,0.002,0.002,4,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Regulatory-T-cells_abundance_0.002_confirmatory_smoke_seed0_v1-668c43729a4b
+D5,GARQ,1,924850,Regulatory T cells,0.008189158016147636,0.002,0.002,4,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Regulatory-T-cells_abundance_0.002_confirmatory_smoke_seed1_v1-e17206e6a201
+D5,GARQ,2,301737,Regulatory T cells,0.008189158016147636,0.002,0.002,4,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Regulatory-T-cells_abundance_0.002_confirmatory_smoke_seed2_v1-bcc40ae1faeb
+D5,GARQ,3,915851,Regulatory T cells,0.008189158016147636,0.002,0.002,4,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Regulatory-T-cells_abundance_0.002_confirmatory_smoke_seed3_v1-95fc1b35fe1b
+D5,GARQ,4,719238,Regulatory T cells,0.008189158016147636,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Regulatory-T-cells_abundance_0.002_confirmatory_smoke_seed4_v1-5ce1ba75b219
+D5,GARQ,0,401870,Regulatory T cells,0.008189158016147636,0.005,0.005,10,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Regulatory-T-cells_abundance_0.005_confirmatory_smoke_seed0_v1-1b9024f17ad7
+D5,GARQ,1,403041,Regulatory T cells,0.008189158016147636,0.005,0.005,10,40,33,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Regulatory-T-cells_abundance_0.005_confirmatory_smoke_seed1_v1-2137ba0c46b8
+D5,GARQ,2,557347,Regulatory T cells,0.008189158016147636,0.005,0.005,10,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Regulatory-T-cells_abundance_0.005_confirmatory_smoke_seed2_v1-e1d220022948
+D5,GARQ,3,727745,Regulatory T cells,0.008189158016147636,0.005,0.005,10,40,36,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Regulatory-T-cells_abundance_0.005_confirmatory_smoke_seed3_v1-57cb434028e9
+D5,GARQ,4,258251,Regulatory T cells,0.008189158016147636,0.005,0.005,10,40,37,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_Regulatory-T-cells_abundance_0.005_confirmatory_smoke_seed4_v1-5d8490d6f46c
+D5,GARQ,0,906022,conventional DC,0.007727797001153403,0.001,0.001,2,40,37,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_conventional-DC_abundance_0.001_confirmatory_smoke_seed0_v1-4188035c5a35
+D5,GARQ,1,758591,conventional DC,0.007727797001153403,0.001,0.001,2,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_conventional-DC_abundance_0.001_confirmatory_smoke_seed1_v1-f102811772fb
+D5,GARQ,2,846342,conventional DC,0.007727797001153403,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_conventional-DC_abundance_0.001_confirmatory_smoke_seed2_v1-91e5da99b759
+D5,GARQ,3,929811,conventional DC,0.007727797001153403,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_conventional-DC_abundance_0.001_confirmatory_smoke_seed3_v1-5ffbe3a484f7
+D5,GARQ,4,775256,conventional DC,0.007727797001153403,0.001,0.001,2,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_conventional-DC_abundance_0.001_confirmatory_smoke_seed4_v1-3e260e8c54db
+D5,GARQ,0,401100,conventional DC,0.007727797001153403,0.002,0.002,4,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_conventional-DC_abundance_0.002_confirmatory_smoke_seed0_v1-a02401851fc7
+D5,GARQ,1,482938,conventional DC,0.007727797001153403,0.002,0.002,4,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_conventional-DC_abundance_0.002_confirmatory_smoke_seed1_v1-e3b5c907303c
+D5,GARQ,2,972684,conventional DC,0.007727797001153403,0.002,0.002,4,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_conventional-DC_abundance_0.002_confirmatory_smoke_seed2_v1-1cd12b66f4c2
+D5,GARQ,3,622248,conventional DC,0.007727797001153403,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_conventional-DC_abundance_0.002_confirmatory_smoke_seed3_v1-4e0b8fa2eec6
+D5,GARQ,4,140940,conventional DC,0.007727797001153403,0.002,0.002,4,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_conventional-DC_abundance_0.002_confirmatory_smoke_seed4_v1-fd5e356fbb76
+D5,GARQ,0,721605,conventional DC,0.007727797001153403,0.005,0.005,10,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_conventional-DC_abundance_0.005_confirmatory_smoke_seed0_v1-7fcfad394a99
+D5,GARQ,1,505207,conventional DC,0.007727797001153403,0.005,0.005,10,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_conventional-DC_abundance_0.005_confirmatory_smoke_seed1_v1-abf4c147f507
+D5,GARQ,2,339252,conventional DC,0.007727797001153403,0.005,0.005,10,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_conventional-DC_abundance_0.005_confirmatory_smoke_seed2_v1-b80161fcfc3d
+D5,GARQ,3,718218,conventional DC,0.007727797001153403,0.005,0.005,10,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_conventional-DC_abundance_0.005_confirmatory_smoke_seed3_v1-a2cba2a71f58
+D5,GARQ,4,896531,conventional DC,0.007727797001153403,0.005,0.005,10,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_conventional-DC_abundance_0.005_confirmatory_smoke_seed4_v1-5fe2ae1f7077
+D5,GARQ,0,628498,gdT cells,0.0461361014994233,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_gdT-cells_abundance_0.001_confirmatory_smoke_seed0_v1-4105f7cfbebb
+D5,GARQ,1,463826,gdT cells,0.0461361014994233,0.001,0.001,2,40,37,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_gdT-cells_abundance_0.001_confirmatory_smoke_seed1_v1-e05509eb7b29
+D5,GARQ,2,75655,gdT cells,0.0461361014994233,0.001,0.001,2,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_gdT-cells_abundance_0.001_confirmatory_smoke_seed2_v1-fb352fe4ccb2
+D5,GARQ,3,23089,gdT cells,0.0461361014994233,0.001,0.001,2,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_gdT-cells_abundance_0.001_confirmatory_smoke_seed3_v1-674e6b707fca
+D5,GARQ,4,788648,gdT cells,0.0461361014994233,0.001,0.001,2,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_gdT-cells_abundance_0.001_confirmatory_smoke_seed4_v1-4f341c0724b0
+D5,GARQ,0,510685,gdT cells,0.0461361014994233,0.002,0.002,4,40,40,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_gdT-cells_abundance_0.002_confirmatory_smoke_seed0_v1-f2bb456bb1e4
+D5,GARQ,1,82788,gdT cells,0.0461361014994233,0.002,0.002,4,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_gdT-cells_abundance_0.002_confirmatory_smoke_seed1_v1-674d19e96cf5
+D5,GARQ,2,866327,gdT cells,0.0461361014994233,0.002,0.002,4,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_gdT-cells_abundance_0.002_confirmatory_smoke_seed2_v1-66fbb8bb5067
+D5,GARQ,3,693313,gdT cells,0.0461361014994233,0.002,0.002,4,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_gdT-cells_abundance_0.002_confirmatory_smoke_seed3_v1-0a547a5342d5
+D5,GARQ,4,202927,gdT cells,0.0461361014994233,0.002,0.002,4,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_gdT-cells_abundance_0.002_confirmatory_smoke_seed4_v1-237e3e94b523
+D5,GARQ,0,827414,gdT cells,0.0461361014994233,0.005,0.005,10,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_gdT-cells_abundance_0.005_confirmatory_smoke_seed0_v1-e32419cca64c
+D5,GARQ,1,496422,gdT cells,0.0461361014994233,0.005,0.005,10,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_gdT-cells_abundance_0.005_confirmatory_smoke_seed1_v1-2bff81638728
+D5,GARQ,2,368898,gdT cells,0.0461361014994233,0.005,0.005,10,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_gdT-cells_abundance_0.005_confirmatory_smoke_seed2_v1-ad6824661bed
+D5,GARQ,3,371718,gdT cells,0.0461361014994233,0.005,0.005,10,40,38,1.0,0.1,0.1818181818181818,1.0,1.0,0.2,0.2,E1_D5_rare_gdT-cells_abundance_0.005_confirmatory_smoke_seed3_v1-2d79d256d0cf
+D5,GARQ,4,225513,gdT cells,0.0461361014994233,0.005,0.005,10,40,36,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_gdT-cells_abundance_0.005_confirmatory_smoke_seed4_v1-24ee5e296b8f
+D5,GARQ,0,634400,gdT cells,0.0461361014994233,0.01,0.01,20,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_gdT-cells_abundance_0.01_confirmatory_smoke_seed0_v1-3cbf602f3436
+D5,GARQ,1,790124,gdT cells,0.0461361014994233,0.01,0.01,20,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_gdT-cells_abundance_0.01_confirmatory_smoke_seed1_v1-12e64de2c7aa
+D5,GARQ,2,782327,gdT cells,0.0461361014994233,0.01,0.01,20,40,37,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_gdT-cells_abundance_0.01_confirmatory_smoke_seed2_v1-5842525942a2
+D5,GARQ,3,732481,gdT cells,0.0461361014994233,0.01,0.01,20,40,38,1.0,0.1,0.1818181818181818,1.0,1.0,0.1111111111111111,0.1111111111111111,E1_D5_rare_gdT-cells_abundance_0.01_confirmatory_smoke_seed3_v1-9473d703ced6
+D5,GARQ,4,799582,gdT cells,0.0461361014994233,0.01,0.01,20,40,38,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_gdT-cells_abundance_0.01_confirmatory_smoke_seed4_v1-86db42347500
+D5,GARQ,0,668704,gdT cells,0.0461361014994233,0.02,0.02,40,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_gdT-cells_abundance_0.02_confirmatory_smoke_seed0_v1-2905676ae7ac
+D5,GARQ,1,700681,gdT cells,0.0461361014994233,0.02,0.02,40,40,37,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_gdT-cells_abundance_0.02_confirmatory_smoke_seed1_v1-3dc9f0863d1c
+D5,GARQ,2,102861,gdT cells,0.0461361014994233,0.02,0.02,40,40,39,0.0,0.0,0.0,,,0.0,0.0,E1_D5_rare_gdT-cells_abundance_0.02_confirmatory_smoke_seed2_v1-eb98f046c2d7
+D5,GARQ,3,100718,gdT cells,0.0461361014994233,0.02,0.02,40,40,39,0.4054054054054054,0.375,0.3896103896103896,0.4054054054054054,0.4054054054054054,0.0,0.0,E1_D5_rare_gdT-cells_abundance_0.02_confirmatory_smoke_seed3_v1-7a49d72b950e
+D5,GARQ,4,988593,gdT cells,0.0461361014994233,0.02,0.02,40,40,35,0.7777777777777778,0.175,0.2857142857142857,0.7777777777777778,0.7777777777777778,0.1111111111111111,0.1111111111111111,E1_D5_rare_gdT-cells_abundance_0.02_confirmatory_smoke_seed4_v1-183f687d2189

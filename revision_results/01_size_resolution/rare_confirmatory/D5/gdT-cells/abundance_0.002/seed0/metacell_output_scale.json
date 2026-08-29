@@ -1,0 +1,24 @@
+[
+  {
+    "data_type": "RNA",
+    "source_matrix": "adata_ copy after normalize_total+log1p and before HVG selection/scale",
+    "shape": [
+      40,
+      11003
+    ],
+    "x_min": 0.0,
+    "x_max": 9.02667606038246,
+    "x_mean": 0.21667933126323938
+  },
+  {
+    "data_type": "ADT",
+    "source_matrix": "adata_ copy after normalize_total+log1p and before HVG selection/scale",
+    "shape": [
+      40,
+      189
+    ],
+    "x_min": 0.0,
+    "x_max": 8.086782678560448,
+    "x_mean": 2.706193853058238
+  }
+]

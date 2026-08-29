@@ -1,0 +1,9 @@
+{
+  "python_seed": 1,
+  "numpy_seed": 1,
+  "torch_seed": 1,
+  "faiss_seed": "released faiss.Kmeans default; not set by legacy code",
+  "deterministic_algorithms": true,
+  "cudnn_deterministic": true,
+  "cudnn_benchmark": false
+}

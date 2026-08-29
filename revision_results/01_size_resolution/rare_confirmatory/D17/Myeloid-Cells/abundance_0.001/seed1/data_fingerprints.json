@@ -1,0 +1,16 @@
+[
+  {
+    "path": "/home/zhangpeiru/data/analysis/new/kidney_rna_updated.h5ad",
+    "bytes": 2100340468,
+    "mtime_ns": 1781418832883858828,
+    "head_tail_sha256": "c058d9123f2c3abc2ad32bc9a5bb9695b0bcd7b9548c440d22d966817834e2af",
+    "fingerprint_scope": "first_and_last_1MiB_plus_size_and_mtime"
+  },
+  {
+    "path": "/home/zhangpeiru/data/analysis/new/kidney_atac_updated.h5ad",
+    "bytes": 4346075920,
+    "mtime_ns": 1781418844271955962,
+    "head_tail_sha256": "e9bfd3623de5f7f0b6f01f30a98b50a23a54a08b0889211383254b99f62da92e",
+    "fingerprint_scope": "first_and_last_1MiB_plus_size_and_mtime"
+  }
+]

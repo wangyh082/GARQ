@@ -1,0 +1,29 @@
+dataset,method,seed,implementation_tag,resolution,cell_type,abundance,abundance_class,support,cell_precision,cell_recall,cell_f1,dominant_metacell_count,purity_unweighted,purity_weighted,involved_metacell_size_median,involved_metacell_size_p95,involved_metacell_size_max,strict_recovery,majority_recovery,majority_retention_metacell_count,majority_retention,high_purity_recovery_metacell_count,high_purity_recovery
+D5,GARQ,0,diagnostic_variant_rare_subsampling,0.02,CD4 and CD8 activated memory,0.0045,Rare,9,0.5,0.1111111111111111,0.1818181818181818,1,0.5,0.5,162.0,340.49999999999994,360.0,0.0,0.1111111111111111,0,0.0,0,0.0
+D5,GARQ,0,diagnostic_variant_rare_subsampling,0.02,CD4 memory,0.078,Intermediate,156,0.36363636363636365,0.9487179487179487,0.5257548845470693,4,0.3491452991452991,0.36363636363636365,44.5,266.89999999999986,360.0,0.0,0.9487179487179487,0,0.0,0,0.0
+D5,GARQ,0,diagnostic_variant_rare_subsampling,0.02,CD4 naive I,0.077,Intermediate,154,0.5555555555555556,0.3246753246753247,0.4098360655737705,4,0.6698412698412699,0.5555555555555556,22.0,266.89999999999986,360.0,0.025974025974025976,0.3246753246753247,4,0.5,1,0.125
+D5,GARQ,0,diagnostic_variant_rare_subsampling,0.02,CD4 naive II,0.0185,Intermediate,37,0.0,0.0,0.0,0,,,22.0,266.89999999999986,360.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,0,diagnostic_variant_rare_subsampling,0.02,CD56bright CD16dim NK,0.02,Intermediate,40,0.5454545454545454,0.15,0.2352941176470588,3,0.5333333333333333,0.5454545454545454,29.0,232.5999999999999,331.0,0.0,0.15,1,0.1111111111111111,0,0.0
+D5,GARQ,0,diagnostic_variant_rare_subsampling,0.02,CD56dim CD16bright NK,0.2235,Common,447,0.7621527777777778,0.9821029082774049,0.858260019550342,13,0.8534021751138806,0.7621527777777778,11.0,134.19999999999982,331.0,0.020134228187919462,0.9821029082774049,12,0.7058823529411765,12,0.7058823529411765
+D5,GARQ,0,diagnostic_variant_rare_subsampling,0.02,CD8 effector,0.0605,Intermediate,121,0.5142857142857142,0.1487603305785124,0.23076923076923078,1,0.5142857142857142,0.5142857142857142,35.0,342.59999999999997,360.0,0.0,0.1487603305785124,1,0.07692307692307693,0,0.0
+D5,GARQ,0,diagnostic_variant_rare_subsampling,0.02,CD8 memory,0.0425,Intermediate,85,0.4225352112676056,0.35294117647058826,0.3846153846153847,1,0.4225352112676056,0.4225352112676056,71.0,348.4,360.0,0.0,0.35294117647058826,0,0.0,0,0.0
+D5,GARQ,0,diagnostic_variant_rare_subsampling,0.02,CD8 naive,0.0475,Intermediate,95,0.24468085106382978,0.24210526315789474,0.24338624338624337,1,0.24468085106382978,0.24468085106382978,44.5,293.5,360.0,0.0,0.24210526315789474,0,0.0,0,0.0
+D5,GARQ,0,diagnostic_variant_rare_subsampling,0.02,Classical monocytes,0.097,Intermediate,194,0.5254901960784314,0.6907216494845361,0.5968819599109131,2,0.4339130434782609,0.5254901960784314,116.0,220.84999999999997,230.0,0.0,0.6907216494845361,1,0.25,0,0.0
+D5,GARQ,0,diagnostic_variant_rare_subsampling,0.02,Erythroid ,0.0045,Rare,9,1.0,1.0,1.0,1,1.0,1.0,9.0,9.0,9.0,1.0,1.0,1,1.0,1,1.0
+D5,GARQ,0,diagnostic_variant_rare_subsampling,0.02,MAIT-NKT cells,0.0525,Intermediate,105,0.7538461538461538,0.4666666666666667,0.5764705882352941,3,0.7993295019157088,0.7538461538461538,35.0,253.5999999999999,360.0,0.11428571428571428,0.4666666666666667,3,0.3333333333333333,2,0.2222222222222222
+D5,GARQ,0,diagnostic_variant_rare_subsampling,0.02,Memory B,0.0195,Intermediate,39,0.0,0.0,0.0,0,,,101.5,180.25,189.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,0,diagnostic_variant_rare_subsampling,0.02,NK-T doublets,0.02,Intermediate,40,0.0,0.0,0.0,0,,,78.0,293.5,360.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,0,diagnostic_variant_rare_subsampling,0.02,NK-monocyte doublets,0.0125,Intermediate,25,0.0,0.0,0.0,0,,,199.5,226.95,230.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,0,diagnostic_variant_rare_subsampling,0.02,Naive B,0.055,Intermediate,110,0.582010582010582,1.0,0.7357859531772576,1,0.582010582010582,0.582010582010582,189.0,189.0,189.0,0.0,1.0,1,1.0,0,0.0
+D5,GARQ,0,diagnostic_variant_rare_subsampling,0.02,Neutrophils,0.0225,Intermediate,45,0.0,0.0,0.0,0,,,199.5,226.95,230.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,0,diagnostic_variant_rare_subsampling,0.02,Non classical monocytes,0.05,Intermediate,100,0.42011834319526625,0.71,0.5278810408921933,1,0.42011834319526625,0.42011834319526625,169.0,300.69999999999993,331.0,0.0,0.71,0,0.0,0,0.0
+D5,GARQ,0,diagnostic_variant_rare_subsampling,0.02,Plasma cells,0.0025,Rare,5,0.0,0.0,0.0,0,,,14.0,171.5,189.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,0,diagnostic_variant_rare_subsampling,0.02,Platelet-T cell doublets,0.0045,Rare,9,0.0,0.0,0.0,0,,,25.0,239.99999999999986,331.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,0,diagnostic_variant_rare_subsampling,0.02,Platelet-bound monocytes,0.02,Intermediate,40,0.0,0.0,0.0,0,,,169.0,223.9,230.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,0,diagnostic_variant_rare_subsampling,0.02,Platelets,0.004,Rare,8,0.38461538461538464,0.625,0.4761904761904762,1,0.38461538461538464,0.38461538461538464,169.0,223.9,230.0,0.0,0.625,0,0.0,0,0.0
+D5,GARQ,0,diagnostic_variant_rare_subsampling,0.02,Proliferating T and NK cell,0.0055,Rare,11,0.0,0.0,0.0,0,,,44.0,283.59999999999997,331.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,0,diagnostic_variant_rare_subsampling,0.02,Regulatory T cells,0.008,Rare,16,0.0,0.0,0.0,0,,,26.0,334.0,360.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,0,diagnostic_variant_rare_subsampling,0.02,T-NK-B cell doublets,0.0265,Intermediate,53,0.0,0.0,0.0,0,,,44.0,185.0,189.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,0,diagnostic_variant_rare_subsampling,0.02,conventional DC,0.007,Rare,14,0.0,0.0,0.0,0,,,179.0,223.85,230.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,0,diagnostic_variant_rare_subsampling,0.02,gdT cells,0.01,Intermediate,20,0.0,0.0,0.0,0,,,53.0,346.95,360.0,0.0,0.0,0,0.0,0,0.0
+D5,GARQ,0,diagnostic_variant_rare_subsampling,0.02,plasmacytoid DC,0.0065,Rare,13,0.5714285714285714,0.6153846153846154,0.5925925925925927,1,0.5714285714285714,0.5714285714285714,13.0,13.9,14.0,0.0,0.6153846153846154,1,0.3333333333333333,0,0.0
