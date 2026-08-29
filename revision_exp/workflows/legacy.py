@@ -152,8 +152,13 @@ def _write_tables(tables: dict[str, pd.DataFrame], output_dir: Path) -> None:
 
 
 def run_legacy_experiment(config: dict[str, Any], output_dir: Path, result_root: Path) -> None:
-    if config["implementation_tag"] != "instrumented_legacy":
-        raise ValueError("This workflow is restricted to implementation_tag=instrumented_legacy")
+    allowed_tags = {
+        "instrumented_legacy",
+        "diagnostic_variant_no_dynamic_update",
+        "diagnostic_variant_reposition_interval",
+    }
+    if config["implementation_tag"] not in allowed_tags:
+        raise ValueError(f"Unsupported implementation_tag: {config['implementation_tag']}")
     output_dir.mkdir(parents=True, exist_ok=True)
     source_paths = [Path(path) for path in config["data_files"]]
     for path in source_paths:
@@ -204,6 +209,12 @@ def run_legacy_experiment(config: dict[str, Any], output_dir: Path, result_root:
         entry_num=args.n_GARQs,
         k_knn=args.k_knn,
     ).to(device)
+    anchor_settings = config.get("anchor_dynamics", {})
+    model.quantizer.configure_anchor_diagnostics(
+        enabled=bool(anchor_settings.get("trace", False)),
+        dynamic_update_enabled=bool(anchor_settings.get("manual_reposition_enabled", True)),
+        reposition_interval=int(anchor_settings.get("reposition_interval", 1)),
+    )
     optimizer = torch.optim.AdamW(model.parameters(), lr=1e-3, weight_decay=1e-2)
     parameters_before = [name for name, _ in model.named_parameters()]
     with monitor.stage("anchor_initialization_before_warmup"):
@@ -217,9 +228,13 @@ def run_legacy_experiment(config: dict[str, Any], output_dir: Path, result_root:
     with monitor.stage("warmup_and_full_training"):
         for epoch in range(args.epoch):
             if epoch < warm_epochs:
+                model.quantizer.diagnostic_epoch = epoch
+                model.quantizer.diagnostic_phase = "warmup_no_quantization"
                 loss_rec = warm_one_epoch(model, args.data_type, dataloader_train, optimizer, epoch, device)
                 history.append({"epoch": epoch, "phase": "warmup", "loss_rec": loss_rec, "loss_vq": ""})
             else:
+                model.quantizer.diagnostic_epoch = epoch
+                model.quantizer.diagnostic_phase = "quantized_training"
                 loss_rec, loss_vq = train_one_epoch(model, args.data_type, dataloader_train, optimizer, epoch, device)
                 history.append({"epoch": epoch, "phase": "quantized", "loss_rec": loss_rec, "loss_vq": loss_vq})
                 converge = abs(loss_vq_his - loss_vq) <= 1e-5 and abs(loss_rec_his - loss_rec) <= 1e-5
@@ -231,6 +246,10 @@ def run_legacy_experiment(config: dict[str, Any], output_dir: Path, result_root:
                     stable_epochs = 0
                     loss_rec_his, loss_vq_his = loss_rec, loss_vq
     pd.DataFrame(history).to_csv(output_dir / "training_history.csv", index=False)
+    if model.quantizer.diagnostics_enabled:
+        pd.DataFrame(model.quantizer.diagnostic_trace).to_csv(
+            output_dir / "anchor_dynamics_step.csv", index=False
+        )
     with monitor.stage("inference"):
         embeds, ids, delta_confs, rec_q_percent, loss_anchor = inference(
             model, args.data_type, dataloader_eval, device
@@ -346,5 +365,11 @@ def run_legacy_experiment(config: dict[str, Any], output_dir: Path, result_root:
             "realized_K": int(len(np.unique(ids))),
             "empty_anchor_count": int(args.n_GARQs - len(np.unique(ids))),
             "anchor_usage": model.quantizer.anchor_usage.detach().cpu().tolist(),
+            "anchor_dynamics": {
+                "trace_enabled": model.quantizer.diagnostics_enabled,
+                "manual_reposition_enabled": model.quantizer.dynamic_update_enabled,
+                "reposition_interval": model.quantizer.reposition_interval,
+                "quantized_training_steps": model.quantizer._quantized_training_step,
+            },
         },
     )
