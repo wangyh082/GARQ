@@ -6,7 +6,7 @@ Status: **PARTIAL, substantive evidence freeze**. Results below are full-data un
 
 Gate 0 corrected the two dataset identities that invalidated the Phase-1 biological interpretation: D5 is BMMC_batch1 (12,103 cells, RNA+ADT), and D11 is 10Xpbmc10k (9,631 cells, RNA+ATAC). All 6,600 historical files labelled D5/D11 were quarantined from manuscript biological claims. On the corrected inputs, GARQ completed 300-epoch, three-seed full-data runs for D5, D11, D17 and D18 at requested K/n=0.02. Requested/realized K stayed within 5% in all 12 runs. Official EpiCarousel 0.0.2 completed full D11 and D17 ATAC assignments after documented API/data-container compatibility shims.
 
-The requested-K matched comparison is now complete for GARQ, official SEACells 0.3.3, official MetaQ 1.0.6, and KMeans on the same fixed equal-weight PCA/LSI/CLR representation: 48/48 dataset-method-seed runs passed the common evaluator. The rare-state evidence is mixed and frequently unfavorable to GARQ. GARQ was below every comparator for D5 Treg, below MetaQ and SEACells for D17 Mast Cells, and below all comparators for D18 DC.Myeloid; no method recovered D18 T.DoubleNegative. GARQ was close to MetaQ for D11 Plasma and slightly above MetaQ/SEACells for D18 Platelets, but seed instability and only three seeds preclude a superiority claim. Full-length GARQ runs show the local anchor branch first executes at quantized step 88. D18 GARQ is computationally feasible but CPU-memory-heavy (about 82.45 GB peak RSS per seed), while peak GPU allocation was about 1.71 GB.
+The primary-resolution comparison is now realized-K matched within ±5% for GARQ, official SEACells 0.3.3, official MetaQ 1.0.6, and KMeans: 48/48 dataset-method-seed runs passed the common evaluator. MetaQ calibration used only the seed-0 requested/realized K relation and froze the mapping for seeds 1–2; no labels or biological metrics entered calibration. The rare-state evidence is mixed and frequently unfavorable to GARQ. GARQ was below KMeans/SEACells for D5 Treg, below MetaQ/SEACells for D17 Mast Cells, and below KMeans/SEACells for D18 DC.Myeloid; no method recovered D18 T.DoubleNegative. Full-length GARQ runs show the local anchor branch first executes at quantized step 88. D18 GARQ is computationally feasible but CPU-memory-heavy (about 82.45 GB peak RSS per seed), while peak GPU allocation was about 1.71 GB.
 
 ## 2. Git, environments and hardware
 
@@ -44,7 +44,7 @@ Primary resolution is requested K/n=0.02. Labels do not enter GARQ training or K
 
 - E1: full-data instrumented legacy GARQ plus requested-K matched SEACells, MetaQ and fixed-representation KMeans, seeds 0–2, K/n=0.02 on corrected D5/D11/D17/D18; common assignment, size and per-type evaluator (48/48 runs).
 - E2: block contribution traces were exported for all 12 runs; the full modality grid and perturbation grid remain pending.
-- E3: fixed-representation SEACells/KMeans and official MetaQ requested-K controls on four datasets, plus official EpiCarousel full ATAC assignments for D11/D17. Realized-K calibration and 0.01/0.05 frontiers remain pending.
+- E3: fixed-representation SEACells/KMeans and official MetaQ controls on four datasets, with all realized K within target ±5%, plus official EpiCarousel full ATAC assignments for D11/D17. The 0.01/0.05 frontiers remain pending.
 - E4: full-length legacy traces establish actual branch execution; matched-K schedule variants remain pending.
 - E5: registry mapping is complete; unified MOFA+ multi-batch runs are pending.
 - E6: D17 assignments exist for GARQ and EpiCarousel; common Slingshot/UCell comparison is pending.
@@ -57,7 +57,7 @@ Twelve GARQ runs passed. D5 realized K=237/239/236 for requested 242; D11=193/19
 
 Rare results: D5 Treg abundance 0.1652%, F1=0 for all seeds; D5 cDC2 F1=0.868/0.847/0.857. D11 Plasma abundance 0.1246%, F1=1/0/1; gdT F1=0.729/0.665/0.602. D17 Mast Cells abundance 0.4584%, F1=0 and no majority/high-purity recovery for all seeds. D18 seed0 T.DoubleNegative and DC.Myeloid F1=0; Platelets F1=0.803 and seed1 0.814.
 
-Across three seeds, mean focal F1 (GARQ / KMeans / MetaQ / SEACells) was: D5 Treg 0 / 0.453 / 0.180 / 0.365; D5 cDC2 0.858 / 0.880 / 0.542 / 0.853; D11 Plasma 0.667 / 0.333 / 0.652 / 0.907; D11 gdT 0.665 / 0.769 / 0.717 / 0.724; D17 Mast Cells 0 / 0 / 0.345 / 0.087; D18 DC.Myeloid 0 / 0.222 / 0.022 / 0.640; D18 Platelets 0.794 / 0.842 / 0.780 / 0.775; and D18 T.DoubleNegative 0 for all methods. These are descriptive paired three-seed requested-K comparisons, not inferential evidence. Favorable GARQ contrasts were narrow: cDC2 versus MetaQ (+0.316 mean F1), Plasma versus MetaQ (+0.014), Platelets versus MetaQ (+0.014) and SEACells (+0.018). Negative contrasts were larger for several focal states, especially D18 DC.Myeloid versus SEACells (-0.640), D5 Treg versus KMeans (-0.453), and D17 Mast Cells versus MetaQ (-0.345).
+Across three seeds, mean focal F1 (GARQ / KMeans / realized-K-calibrated MetaQ / SEACells) was: D5 Treg 0 / 0.453 / 0 / 0.365; D5 cDC2 0.858 / 0.880 / 0.769 / 0.853; D11 Plasma 0.667 / 0.333 / 0.959 / 0.907; D11 gdT 0.665 / 0.769 / 0.711 / 0.724; D17 Mast Cells 0 / 0 / 0.345 / 0.087; D18 DC.Myeloid 0 / 0.222 / 0 / 0.640; D18 Platelets 0.794 / 0.842 / 0.791 / 0.775; and D18 T.DoubleNegative 0 for all methods. These are descriptive paired three-seed realized-K-within-±5% comparisons, not inferential evidence. GARQ was modestly above MetaQ for D5 cDC2 (+0.088) and nearly identical for D18 Platelets (+0.003); negative contrasts include D18 DC.Myeloid versus SEACells (-0.640), D5 Treg versus KMeans (-0.453), D17 Mast Cells versus MetaQ (-0.345), and D11 Plasma versus MetaQ (-0.292).
 
 All corrected full-length runs first executed the local anchor branch at quantized step 88 and recorded no anchor NaN/Inf. Therefore the Phase-1 35-step observation was a short-run limitation, not evidence that the branch never executes.
 
@@ -67,11 +67,11 @@ Sources: `revision_results/phase2/01_size_resolution/full_benchmark_long.csv`, `
 
 ## 9. Negative results and uncertainty
 
-Rare-state recovery is not consistently positive, and the completed requested-K baselines directly contradict a broad GARQ superiority claim. D5 seed1/2 used an incorrect evaluation label key; training was label-blind and unchanged, and all 12,103 IDs were matched for post-hoc evaluator correction. Baseline failures and compatibility retries were retained. EpiCarousel required documented compatibility shims and its native pipeline is not a fixed-representation comparison. D18 CPU memory is high. Requested K was matched, but GARQ realized K varied and a separately calibrated realized-K comparison is still missing; this limits causal attribution to aggregation alone.
+Rare-state recovery is not consistently positive, and the realized-K-within-±5% baselines directly contradict a broad GARQ superiority claim. D5 seed1/2 used an incorrect evaluation label key; training was label-blind and unchanged, and all 12,103 IDs were matched for post-hoc evaluator correction. Baseline failures and compatibility retries were retained. EpiCarousel required documented compatibility shims and its native pipeline is not a fixed-representation comparison. D18 CPU memory is high. Representation remains partly confounded because GARQ and MetaQ are native pipelines while KMeans and SEACells share the fixed representation.
 
 ## 10. Central claim verdicts
 
-- Rare-state preservation: **NOT SUPPORTED as a broad superiority claim** by the completed requested-K four-method comparison; results are cell-type dependent and often favor a baseline. A narrower statement that GARQ preserves some states remains descriptive. Realized-K matching and full rare-state subsampling are still missing.
+- Rare-state preservation: **NOT SUPPORTED as a broad superiority claim** by the realized-K-within-±5% four-method comparison; results are cell-type dependent and often favor a baseline. Full rare-state subsampling is still missing.
 - Multimodal fidelity: **INCONCLUSIVE**; block diagnostics exist but the full modality/perturbation grid is missing.
 - Scalability: **PARTIALLY_SUPPORTED** for execution on D5/D11/D17/D18, but D13/D16 scaling and sparse-safe comparison are missing; CPU memory must be stated explicitly.
 - GARQ-specific downstream advantage: **INCONCLUSIVE**; D17 trajectory and D18 held-out cross-fit comparisons are not complete.
@@ -86,7 +86,7 @@ Correct D5/D11 identities everywhere; remove Phase-1 biological numbers derived 
 
 ## 13. Blockers and deferred work
 
-Completed Tier-1 item: requested-K matched GARQ/SEACells/MetaQ/KMeans on corrected D5/D11/D17/D18 (three seeds; 48/48 common-evaluator passes). Deferred Tier-1 items are focal full-data subsampling, realized-K calibration and resolution frontiers, matched-K E4 variants, D17 trajectory, D18 MOFA+/cross-fit, and D13/D16 full profile. Details and package failures are in `BLOCKED_OR_DEFERRED_PHASE2.md` and `FAILURE_LOG_PHASE2.md`.
+Completed Tier-1 item: primary-resolution realized-K-within-±5% GARQ/SEACells/MetaQ/KMeans on corrected D5/D11/D17/D18 (three seeds; 48/48 common-evaluator passes). Deferred Tier-1 items are focal full-data subsampling, 0.01/0.05 resolution frontiers, matched-K E4 variants, D17 trajectory, D18 MOFA+/cross-fit, and D13/D16 full profile. Details and package failures are in `BLOCKED_OR_DEFERRED_PHASE2.md` and `FAILURE_LOG_PHASE2.md`.
 
 ## 14. Reproducibility commands
 

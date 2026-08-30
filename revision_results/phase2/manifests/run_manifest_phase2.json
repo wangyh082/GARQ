@@ -3,7 +3,7 @@
   "branch": "revision/major-review-experiments-phase2",
   "base_commit": "5da45adcd62f1be8ee318d8742c80c59cb242ca2",
   "phase1_commit": "cfaf79bdcbc26840b6cbf67e3531d6fab6540a09",
-  "pre_delivery_head": "4ac3d9b676ec523bb154d5f03a0a33de2b9160ea",
+  "pre_delivery_head": "601bd03f63b4217b107310386e0f835722008ee6",
   "matched_requested_k_runs": 48,
   "matched_methods": [
     "GARQ",
@@ -100,6 +100,11 @@
       "sha256": "afd57f1d4be35e3a35cbfddcd62ef731550ce495a43fd0bdcf37daa9e1c027a0"
     },
     {
+      "path": "revision_exp/workflows/metaq_realized_k_calibration.py",
+      "bytes": 2584,
+      "sha256": "459a4611a25d853b398a9eff4dbaeb16709bae34940daaf4982440716275895a"
+    },
+    {
       "path": "revision_exp/workflows/neighborhood_mapping.py",
       "bytes": 5512,
       "sha256": "7b51839ad5325edaf3ea6e1026b5f61c46b7823f162e3820df7ba15ec0727901"
@@ -161,33 +166,33 @@
     },
     {
       "path": "revision_results/phase2/01_size_resolution/full_benchmark_long.csv",
-      "bytes": 21216,
-      "sha256": "313d54bba8235041d3f6d0504783ec2a922b93c1bb6b635668fc24d83cb33590"
+      "bytes": 21242,
+      "sha256": "b995de810bb36b744dac705ed640033294257a1fd7838f5879b5171055e88cb8"
     },
     {
       "path": "revision_results/phase2/01_size_resolution/matchedK_focal_rare_long.csv",
-      "bytes": 22492,
-      "sha256": "157d07818e392a26f95b28964dd14c84af2b32aa2fff66588bac290e9b834a49"
+      "bytes": 22602,
+      "sha256": "b6aaf859b6e0adfd15213bf006fb1fb1225693a223cb829852f63fc18a2bdc1e"
     },
     {
       "path": "revision_results/phase2/01_size_resolution/matchedK_focal_rare_paired_contrasts.csv",
-      "bytes": 1721,
-      "sha256": "162d12dc6bce876f2063475fb5eca6c273968efe2bc119e841cdba30f81e1d55"
+      "bytes": 1657,
+      "sha256": "dc751bb42e43597609e6409b3c883f5279e620d972017e7a6699d14388b7db92"
     },
     {
       "path": "revision_results/phase2/01_size_resolution/matchedK_focal_rare_summary.csv",
-      "bytes": 3747,
-      "sha256": "0c436f2a5427c85dfa7801a633b0850005c7560b275fdfeb0f72b73face16134"
+      "bytes": 3663,
+      "sha256": "0e514d4ec836e2ffd5243a63b931af9c9e66093d82f983544a240eb248641de9"
     },
     {
       "path": "revision_results/phase2/01_size_resolution/metacell_size_summary.csv",
-      "bytes": 15471,
-      "sha256": "996d58ae4640b3dfb68428528e4c9803d9f78a3d753c196bc83a03437debc54d"
+      "bytes": 15495,
+      "sha256": "2d503c71bc68ea9d261b81e8cac52a31045732f1d1d7e8bbb69271ac72ecba2f"
     },
     {
       "path": "revision_results/phase2/01_size_resolution/per_type_metrics_long.csv",
-      "bytes": 241456,
-      "sha256": "a4fd3c84ea9496b995ece3464691fecf0b44a5ab2828ed3b46741f81816a9e80"
+      "bytes": 242367,
+      "sha256": "5f82caa2cf4427cb428f3822fd29824a122a1fe95add3ad6622f992ecf2f2ead"
     },
     {
       "path": "revision_results/phase2/audit/data_inventory.csv",
@@ -231,8 +236,8 @@
     },
     {
       "path": "revision_results/phase2/reports/BLOCKED_OR_DEFERRED_PHASE2.md",
-      "bytes": 633,
-      "sha256": "f1773228d4aa732c60d652136de1d4cf5b2022adb9afd7b0fb8dc5edc5753f64"
+      "bytes": 627,
+      "sha256": "c8f6fa56c4f0579e93e25a6558670dd01f14906a6e86550acacafcc4d460dbac"
     },
     {
       "path": "revision_results/phase2/reports/FAILURE_LOG_PHASE2.md",
@@ -246,8 +251,18 @@
     },
     {
       "path": "revision_results/phase2/reports/PHASE2_EXPERIMENT_REPORT.md",
-      "bytes": 12390,
-      "sha256": "e98e2683e20af6fa51129a1a7ae21f5dee36b854c9c32a98d52fcec12522e9ae"
+      "bytes": 12187,
+      "sha256": "0f96f3b45513cfbc40b63f5b3d8a4a75a9d999ea12a274c35bba7f1737b67301"
+    },
+    {
+      "path": "revision_results/phase2/reports/PHASE2_PARTIAL_SUCCESS_REVIEWER_MAP_ZH.md",
+      "bytes": 6935,
+      "sha256": "3d1649dee9b9c447ddb2420a76b56a000a89480e028e4f854904c10f364ae734"
+    },
+    {
+      "path": "revision_results/phase2/reports/R1_MAJOR1_SIZE_RESOLUTION_REPORT.md",
+      "bytes": 4835,
+      "sha256": "a560f3ed538850a45f641df2a943bc1ab3237f4ed1fb06b4605d8db4723b018a"
     },
     {
       "path": "revision_results/phase2/reports/REBUTTAL_EVIDENCE_DRAFT_PHASE2.md",
@@ -261,8 +276,8 @@
     },
     {
       "path": "revision_results/phase2/reports/REVIEWER_EVIDENCE_MATRIX_PHASE2.md",
-      "bytes": 4225,
-      "sha256": "442d7c3f4ec2b57e9600054ca72f7db1470a1e1a5544d9c4e71c8b03709a2c5b"
+      "bytes": 4184,
+      "sha256": "773e7748057afd47d088490f043be403e72ac352257f3783a5c3742353ee5dde"
     }
   ]
 }
