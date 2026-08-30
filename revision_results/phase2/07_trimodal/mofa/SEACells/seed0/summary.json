@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "dataset": "D18",
+  "method": "SEACells",
+  "seed": 0,
+  "cells": 25517,
+  "realized_K": 510,
+  "factors": 15,
+  "dominant_cell_types": 11,
+  "ARI": 0.656369431923184,
+  "NMI": 0.7753364013797573,
+  "AMI": 0.764938866174144,
+  "ACC": 0.7470588235294118,
+  "balanced_accuracy": 0.7179772367164924,
+  "wall_time_seconds": 45.976570286322385
+}
