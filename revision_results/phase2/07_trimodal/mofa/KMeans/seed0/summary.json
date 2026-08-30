@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "dataset": "D18",
+  "method": "KMeans",
+  "seed": 0,
+  "cells": 25517,
+  "realized_K": 510,
+  "factors": 15,
+  "dominant_cell_types": 10,
+  "ARI": 0.6136955388070724,
+  "NMI": 0.7509833521704957,
+  "AMI": 0.741118852834243,
+  "ACC": 0.6882352941176471,
+  "balanced_accuracy": 0.5744719839908519,
+  "wall_time_seconds": 48.36372345685959
+}

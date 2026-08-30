@@ -1,0 +1,14 @@
+{
+  "rna_features": 2000,
+  "atac_features": 5000,
+  "adt_features": "all",
+  "factors": 15,
+  "mofa_seed": 0,
+  "max_iterations": 1000,
+  "convergence_mode": "medium",
+  "scale_views": true,
+  "scale_groups": false,
+  "spikeslab_weights": true,
+  "ard_factors": true,
+  "ard_weights": true
+}
