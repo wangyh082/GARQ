@@ -1,0 +1,13 @@
+method,seed,path,cells,unique_cells,exact_source_order,id_set_equal,realized_K
+GARQ,0,revision_results/phase2/01_size_resolution/D18/GARQ/full_seed0_K002/cell_assignments.csv,25517,25517,True,True,497
+GARQ,1,revision_results/phase2/01_size_resolution/D18/GARQ/full_seed1_K002/cell_assignments.csv,25517,25517,True,True,493
+GARQ,2,revision_results/phase2/01_size_resolution/D18/GARQ/full_seed2_K002/cell_assignments.csv,25517,25517,True,True,486
+KMeans,0,revision_results/phase2/01_size_resolution/D18/KMeans/full_seed0_K002/cell_assignments.csv,25517,25517,True,True,510
+KMeans,1,revision_results/phase2/01_size_resolution/D18/KMeans/full_seed1_K002/cell_assignments.csv,25517,25517,True,True,510
+KMeans,2,revision_results/phase2/01_size_resolution/D18/KMeans/full_seed2_K002/cell_assignments.csv,25517,25517,True,True,510
+MetaQ,0,revision_results/phase2/01_size_resolution/D18/MetaQ/full_seed0_K002_realizedmatched/cell_assignments.csv,25517,25517,True,True,511
+MetaQ,1,revision_results/phase2/01_size_resolution/D18/MetaQ/full_seed1_K002_realizedmatched/cell_assignments.csv,25517,25517,True,True,505
+MetaQ,2,revision_results/phase2/01_size_resolution/D18/MetaQ/full_seed2_K002_realizedmatched/cell_assignments.csv,25517,25517,True,True,517
+SEACells,0,revision_results/phase2/01_size_resolution/D18/SEACells/full_seed0_K002/cell_assignments.csv,25517,25517,True,True,510
+SEACells,1,revision_results/phase2/01_size_resolution/D18/SEACells/full_seed1_K002/cell_assignments.csv,25517,25517,True,True,510
+SEACells,2,revision_results/phase2/01_size_resolution/D18/SEACells/full_seed2_K002/cell_assignments.csv,25517,25517,True,True,510

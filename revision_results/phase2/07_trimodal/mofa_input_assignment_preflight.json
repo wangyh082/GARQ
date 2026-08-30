@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "runs": 12,
+  "cells_per_run": 25517,
+  "rna_atac_exact_order": true,
+  "rna_adt_exact_after_canonicalization": true,
+  "all_assignment_id_sets_equal": true
+}
