@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "dataset": "D18",
+  "method": "GARQ",
+  "seed": 1,
+  "cells": 25517,
+  "realized_K": 493,
+  "factors": 15,
+  "dominant_cell_types": 10,
+  "ARI": 0.6277477435017572,
+  "NMI": 0.752198786593892,
+  "AMI": 0.7428010874078383,
+  "ACC": 0.7565922920892495,
+  "balanced_accuracy": 0.6394497915877226,
+  "wall_time_seconds": 40.93193981004879
+}

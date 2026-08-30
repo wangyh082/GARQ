@@ -1,13 +1,13 @@
-# P2-E7 D18 MOFA+ — GARQ seed 0
+# P2-E7 D18 MOFA+ — GARQ seeds 0–2
 
 ## Status and reviewer mapping
 
-**PASS after two compatibility-equivalent retries.** This is one completed run within the D18 cross-method MOFA+ evidence requested for the trimodal reviewer comment. The reviewer comment is not reply-ready until the remaining methods and seeds are run under the same frozen settings.
+**PASS for all three GARQ seeds.** Seed 0 passed after two compatibility-equivalent retries. This completes the GARQ arm within the D18 cross-method MOFA+ evidence requested for the trimodal reviewer comment. The reviewer comment is not reply-ready until the remaining methods and seeds are run under the same frozen settings.
 
 ## Frozen experiment
 
 - Dataset: corrected D18, 25,517 cells.
-- Assignment: GARQ seed 0, realized K = 497.
+- Assignments: GARQ seeds 0–2, realized K = 497, 493, and 486.
 - Views: RNA top 2,000 dispersion features; ATAC top 5,000 prevalence features; all ADT features.
 - Preprocessing: metacell aggregation; RNA library-size normalization plus log1p; ATAC TF-IDF plus log1p; ADT CLR; feature z-scoring.
 - MOFA+: mofapy2 0.7.2; 15 factors; MOFA seed 0; maximum 1,000 iterations; convergence mode `medium`; `scale_views=true`; `scale_groups=false`; spike-slab weights, ARD factors, and ARD weights enabled.
@@ -15,11 +15,13 @@
 
 ## Exact result
 
-| status | ARI | NMI | AMI | ACC | balanced accuracy | wall time | peak RSS |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| PASS | 0.6534031714 | 0.7470417197 | 0.7379512035 | 0.7464788732 | 0.4765117726 | 44.08 s | 2,589,492 KiB |
+| seed | K | status | ARI | NMI | AMI | ACC | balanced accuracy | wall time | peak RSS |
+|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|
+| 0 | 497 | PASS | 0.6534031714 | 0.7470417197 | 0.7379512035 | 0.7464788732 | 0.4765117726 | 44.08 s | 2,589,492 KiB |
+| 1 | 493 | PASS | 0.6277477435 | 0.7521987866 | 0.7428010874 | 0.7565922921 | 0.6394497916 | 40.93 s | 2,588,988 KiB |
+| 2 | 486 | PASS | 0.5885872803 | 0.7137637234 | 0.7035992146 | 0.7119341564 | 0.3748307656 | 33.12 s | 2,589,620 KiB |
 
-MOFA converged at iteration 91. There were 10 dominant cell-type classes.
+All three MOFA fits converged. There were 10 dominant cell-type classes.
 
 ## Preserved failures and resolution
 
@@ -31,14 +33,14 @@ Acceptance evidence for retry 2: exit status 0, 497 factor rows matching 497 met
 ## Evidence paths
 
 - Workflow: `revision_exp/workflows/d18_mofa_benchmark.py`
-- PASS directory: `/data/zhangpeiru/GARQ_revision/revision_results/phase2/07_trimodal/mofa/GARQ/seed0_retry2`
+- PASS directories: `/data/zhangpeiru/GARQ_revision/revision_results/phase2/07_trimodal/mofa/GARQ/seed0_retry2`, `seed1`, and `seed2`
 - PASS log: `/data/zhangpeiru/GARQ_revision/revision_results/phase2/logs/P2_E7_D18_MOFA_GARQ_seed0_retry2.driver.log`
 - Initial failure log: `/data/zhangpeiru/GARQ_revision/revision_results/phase2/logs/P2_E7_D18_MOFA_GARQ_seed0.driver.log`
 - Retry-1 failure log: `/data/zhangpeiru/GARQ_revision/revision_results/phase2/logs/P2_E7_D18_MOFA_GARQ_seed0_retry1.driver.log`
-- Small local artifacts: `phase2_reports/07_trimodal/mofa/GARQ/seed0_retry2/`
+- Small local artifacts: `phase2_reports/07_trimodal/mofa/GARQ/{seed0_retry2,seed1,seed2}/`
 
 ## Scientific limitations and safe wording
 
-Safe interim wording: “For corrected D18 GARQ seed 0, the frozen 15-factor MOFA+ analysis converged and produced ARI 0.6534 and balanced accuracy 0.4765 against dominant metacell cell type.”
+Safe interim wording: “Across three corrected-D18 GARQ assignments, the frozen 15-factor MOFA+ analyses all converged; ARI ranged from 0.5886 to 0.6534 and balanced accuracy from 0.3748 to 0.6394 against dominant metacell cell type.”
 
-Do not claim cross-method superiority, robustness across seeds, or completion of the D18 MOFA+ reviewer response. This is one of twelve planned method/seed runs and uses dominant metacell labels only for evaluation and downstream factor clustering, not for MOFA training.
+Do not claim cross-method superiority or completion of the D18 MOFA+ reviewer response. These are three of twelve planned method/seed runs and use dominant metacell labels only for evaluation and downstream factor clustering, not for MOFA training. The spread in balanced accuracy must not be hidden.
