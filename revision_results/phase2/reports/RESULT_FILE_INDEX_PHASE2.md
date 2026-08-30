@@ -1,43 +1,14 @@
 # Result file index — Phase 2
 
-Manifest entries: 39
+The authoritative machine-readable inventory is `revision_results/phase2/manifests/run_manifest_phase2.json` (48 entries). SHA256 integrity is recorded in `revision_results/phase2/manifests/MANIFEST_PHASE2.sha256`.
 
-- `revision_exp/configs/methods_phase2/p2_D11_full_seed0.yaml` (750 bytes)
-- `revision_exp/configs/methods_phase2/p2_D11_full_seed1.yaml` (750 bytes)
-- `revision_exp/configs/methods_phase2/p2_D11_full_seed2.yaml` (750 bytes)
-- `revision_exp/configs/methods_phase2/p2_D17_full_seed0.yaml` (729 bytes)
-- `revision_exp/configs/methods_phase2/p2_D17_full_seed1.yaml` (729 bytes)
-- `revision_exp/configs/methods_phase2/p2_D17_full_seed2.yaml` (729 bytes)
-- `revision_exp/configs/methods_phase2/p2_D18_full_seed0.yaml` (910 bytes)
-- `revision_exp/configs/methods_phase2/p2_D18_full_seed1.yaml` (910 bytes)
-- `revision_exp/configs/methods_phase2/p2_D18_full_seed2.yaml` (910 bytes)
-- `revision_exp/configs/methods_phase2/p2_D5_full_seed0.yaml` (696 bytes)
-- `revision_exp/configs/methods_phase2/p2_D5_full_seed1.yaml` (697 bytes)
-- `revision_exp/configs/methods_phase2/p2_D5_full_seed2.yaml` (697 bytes)
-- `revision_exp/methods/epicarousel_adapter.py` (5749 bytes)
-- `revision_results/phase2/01_size_resolution/full_benchmark_long.csv` (7288 bytes)
-- `revision_results/phase2/01_size_resolution/metacell_size_summary.csv` (3771 bytes)
-- `revision_results/phase2/01_size_resolution/per_type_metrics_long.csv` (53948 bytes)
-- `revision_results/phase2/02_modality/modality_block_contribution_full.csv` (5121 bytes)
-- `revision_results/phase2/03_controlled_benchmark/epicarousel_D11_full_seed0_K002_retry3/summary.json` (314 bytes)
-- `revision_results/phase2/03_controlled_benchmark/epicarousel_D17_full_seed0_K002_retry1/summary.json` (315 bytes)
-- `revision_results/phase2/08_scalability/stage_profile.csv` (9934 bytes)
-- `revision_results/phase2/audit/DATASET_IDENTITY_AUDIT_PHASE2.md` (1441 bytes)
-- `revision_results/phase2/audit/INPUT_MATRIX_PROVENANCE.csv` (5904 bytes)
-- `revision_results/phase2/audit/data_inventory.csv` (5611 bytes)
-- `revision_results/phase2/audit/dataset_registry_conflicts.csv` (539 bytes)
-- `revision_results/phase2/audit/phase1_result_validity.csv` (2087936 bytes)
-- `revision_results/phase2/logs/P2_E3_EpiCarousel_D11_full_seed0.driver.log` (125 bytes)
-- `revision_results/phase2/logs/P2_E3_EpiCarousel_D11_full_seed0_retry1.driver.log` (898 bytes)
-- `revision_results/phase2/logs/P2_E3_EpiCarousel_D11_full_seed0_retry2.driver.log` (898 bytes)
-- `revision_results/phase2/logs/P2_E3_EpiCarousel_D11_full_seed0_retry3.driver.log` (1550 bytes)
-- `revision_results/phase2/logs/P2_E3_EpiCarousel_D17_full_seed0.driver.log` (7083 bytes)
-- `revision_results/phase2/logs/P2_E3_EpiCarousel_D17_full_seed0_retry1.driver.log` (2135 bytes)
-- `revision_results/phase2/reports/BASELINE_IMPLEMENTATION_TABLE_PHASE2.md` (2375 bytes)
-- `revision_results/phase2/reports/BLOCKED_OR_DEFERRED_PHASE2.md` (379 bytes)
-- `revision_results/phase2/reports/FAILURE_LOG_PHASE2.md` (2082 bytes)
-- `revision_results/phase2/reports/HANDOFF_FOR_CHATGPT_PHASE2.md` (3798 bytes)
-- `revision_results/phase2/reports/PHASE2_EXPERIMENT_REPORT.md` (9868 bytes)
-- `revision_results/phase2/reports/REBUTTAL_EVIDENCE_DRAFT_PHASE2.md` (146 bytes)
-- `revision_results/phase2/reports/RESULT_FILE_INDEX_PHASE2.md` (110 bytes)
-- `revision_results/phase2/reports/REVIEWER_EVIDENCE_MATRIX_PHASE2.md` (3405 bytes)
+## Requested-K matched benchmark
+
+- `01_size_resolution/full_benchmark_long.csv`: 48 runs (4 datasets × 4 methods × 3 seeds).
+- `01_size_resolution/metacell_size_summary.csv`: 48 common-evaluator size summaries.
+- `01_size_resolution/per_type_metrics_long.csv`: 840 dataset/method/seed/type rows.
+- `01_size_resolution/matchedK_focal_rare_long.csv`: 96 focal rare-state rows.
+- `01_size_resolution/matchedK_focal_rare_summary.csv`: 32 method/type summaries.
+- `01_size_resolution/matchedK_focal_rare_paired_contrasts.csv`: 24 paired GARQ-minus-baseline contrasts.
+
+Large cell-level assignments, source H5ADs, official MetaQ metacell H5ADs, and reconstructable matrices are intentionally excluded from Git and the bundle. Server-side logs retain failed and successful retries. The ZIP contains reports, source adapters/workflows, audit/environment records, small summary tables, manifest and checksum.

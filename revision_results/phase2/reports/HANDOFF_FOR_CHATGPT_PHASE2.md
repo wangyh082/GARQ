@@ -9,8 +9,8 @@
 - Correct D5: `/home/zhangpeiru/data/RNA+ADT/D8/D8_rna.h5ad` + `D8_adt.h5ad`; fingerprints in `audit/data_inventory.csv`.
 - Correct D11: `/home/zhangpeiru/data/RNA+ATAC/pbmc10k/10x-Multiome-Pbmc10k-RNA.h5ad` + ATAC counterpart; fingerprints in the same audit.
 - Invalidated Phase-1 evidence: 6,600 historical D5/D11-labelled file rows are excluded from corresponding manuscript biological claims.
-- Completed P0/Tier-1 components: Gate 0, quarantine, tests, corrected full GARQ D5/D11/D17/D18 ×3 seeds at K/n=0.02, official EpiCarousel full D11/D17, common GARQ size/per-type/stage summaries.
-- Missing: matched-K SEACells/MetaQ/KMeans, focal full-data subsampling, matched-K full E4 variants, D17 common trajectory, D18 MOFA+/held-out cross-fit, D13/D16 full scaling.
+- Completed P0/Tier-1 components: Gate 0, quarantine, tests, corrected full GARQ D5/D11/D17/D18 ×3 seeds, requested-K matched official SEACells/MetaQ and KMeans ×3 seeds (48/48 common-evaluator passes), official EpiCarousel full D11/D17, combined size/per-type summaries.
+- Missing: realized-K calibration and resolution frontiers, focal full-data subsampling, matched-K full E4 variants, D17 common trajectory, D18 MOFA+/held-out cross-fit, D13/D16 full scaling.
 
 ## Twenty most important results/checks
 
@@ -33,18 +33,20 @@
 17. No anchor NaN/Inf was recorded in corrected full runs.
 18. D18 seed0 size median/P95/max is 49/91/572, a substantial upper tail.
 19. D18 peak CPU RSS is about 82.45 GB, while peak GPU allocation is about 1.71 GB.
-20. Official EpiCarousel full D11 and D17 pass at realized K 192 and 322 respectively, with documented compatibility shims.
+20. Requested-K focal rare-state evidence does not show consistent GARQ superiority: large negative mean-F1 contrasts include DC.Myeloid vs SEACells -0.640, Treg vs KMeans -0.453, and Mast Cells vs MetaQ -0.345; cDC2 vs MetaQ is favorable at +0.316.
+
+Official EpiCarousel full D11 and D17 also pass at realized K 192 and 322 respectively, with documented compatibility shims. All 12 SEACells, 12 MetaQ and 12 KMeans corrected-data baseline runs passed the common evaluator. No method recovered D18 T.DoubleNegative in any seed.
 
 ## Four claim verdicts
 
-- Rare-state preservation: **INCONCLUSIVE**, with mixed/negative GARQ-only evidence and no matched-K baseline yet.
+- Rare-state preservation: **NOT SUPPORTED as a broad superiority claim** by requested-K four-method evidence; results are cell-type dependent. Realized-K and subsampling analyses remain incomplete.
 - Multimodal fidelity: **INCONCLUSIVE**, because full modality and perturbation grids remain absent.
 - Scalability: **PARTIALLY_SUPPORTED** for the four corrected datasets; D13/D16 series remains absent and CPU memory is substantial.
 - GARQ-specific downstream advantage: **INCONCLUSIVE**, pending kidney trajectory and D18 held-out analysis.
 
 ## Disputes and required checks
 
-Check that manuscript terminology never says anchors are created/split. Check all memory claims distinguish CPU RSS, GPU allocated and GPU reserved. Check D5 seed1/2 label-key correction language: training/assignments were unchanged because labels are evaluator-only; 12,103 IDs matched. Check that native EpiCarousel is described as pipeline-level and that its four compatibility shims are disclosed. Do not transform PARTIAL evidence into a superiority conclusion.
+Check that manuscript terminology never says anchors are created/split. Check all memory claims distinguish CPU RSS, GPU allocated and GPU reserved. Check D5 seed1/2 label-key correction language: training/assignments were unchanged because labels are evaluator-only; 12,103 IDs matched. Check that native EpiCarousel is described as pipeline-level and that all compatibility shims for EpiCarousel, SEACells and MetaQ are disclosed. Do not transform requested-K matching into realized-K matching or the negative/mixed evidence into a superiority conclusion.
 
 ## Key files
 

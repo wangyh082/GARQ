@@ -17,7 +17,7 @@ from sklearn.preprocessing import StandardScaler, normalize
 
 from revision_exp.metrics.metacell import evaluate_assignments
 from revision_exp.utils.provenance import peak_rss_bytes, write_json
-from revision_exp.workflows.legacy import _prepare_uniform_subset
+from revision_exp.workflows.legacy import _canonicalize_obs_names, _prepare_uniform_subset
 
 
 def _dense(matrix: Any) -> np.ndarray:
@@ -116,6 +116,11 @@ def run_fixed_representation_benchmark(
         )
     write_json(output_dir / "subset_provenance.json", subset_info)
     adatas = [ad.read_h5ad(path) for path in paths]
+    rules = config.get("obs_name_canonicalization") or [None] * len(adatas)
+    if len(rules) != len(adatas):
+        raise ValueError("obs_name_canonicalization must match data_files length")
+    for item, rule in zip(adatas, rules):
+        item.obs_names = _canonicalize_obs_names(item.obs_names.astype(str).to_numpy(), rule)
     reference_names = adatas[0].obs_names.astype(str).to_numpy()
     if any(not np.array_equal(reference_names, item.obs_names.astype(str).to_numpy()) for item in adatas[1:]):
         raise ValueError("Paired modalities do not have identical canonical cell order")

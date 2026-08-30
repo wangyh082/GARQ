@@ -1,3 +1,3 @@
 # Blocked or deferred — Phase 2
 
-This delivery is PARTIAL. Deferred Tier-1 work: matched-K SEACells/MetaQ/KMeans; focal full-data subsampling; matched-K full E4 variants; common D17 trajectory; D18 MOFA+ and held-out/cross-fit analyses; D13/D16 full scaling. These omissions prevent claims of rare-state superiority, multimodal fidelity, or GARQ-specific downstream advantage.
+This delivery remains PARTIAL, but the requested-K matched GARQ/SEACells/MetaQ/KMeans benchmark is complete on corrected D5/D11/D17/D18 (3 seeds; 48/48 evaluated runs). Deferred Tier-1 work: realized-K calibration and 0.01/0.05 resolution frontiers; focal full-data subsampling; matched-K full E4 variants; common D17 trajectory; D18 MOFA+ and held-out/cross-fit analyses; D13/D16 full scaling. The completed baseline results do not support broad rare-state superiority, while the remaining omissions prevent strong multimodal-fidelity, scalability, or GARQ-specific downstream-advantage claims.

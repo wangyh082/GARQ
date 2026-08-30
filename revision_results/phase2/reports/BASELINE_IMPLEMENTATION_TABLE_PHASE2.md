@@ -5,8 +5,9 @@ Audit date: 2026-08-29
 | Method | Official source/package | Version | Environment | Gate status | Notes |
 |---|---|---:|---|---|---|
 | GARQ | repository under revision | Phase 1 `cfaf79b` | `MetqQ2` | PASS | Full tests: 28 passed, 13 warnings. |
-| MetaQ | `XLearning-SCU/MetaQ`, package `metaq-sc` | 1.0.6 | `MetqQ2` | IMPORT PASS; correct-data smoke pending | Existing `MetaQ` env has NumPy/Pandas ABI failures and is not used. |
-| SEACells | `dpeerlab/SEACells` | 0.3.3 | `seacells` | IMPORT PASS; correct-data smoke pending | Official PyPI/source implementation. |
+| MetaQ | `XLearning-SCU/MetaQ`, package `metaq-sc` | 1.0.6 | `MetqQ2` | FULL PASS: 12/12 | Corrected D5/D11/D17/D18 × seeds 0–2; official implementation with disclosed import/path/plot compatibility handling and external common evaluator. |
+| SEACells | `dpeerlab/SEACells` | 0.3.3 | `seacells` | FULL PASS: 12/12 | Corrected D5/D11/D17/D18 × seeds 0–2 on the fixed representation; writable-array compatibility copy disclosed. |
+| KMeans | scikit-learn | environment version recorded in freeze | `MetqQ2` | FULL PASS: 12/12 | Same fixed equal-weight PCA/LSI/CLR representation and requested K as SEACells. |
 | EpiCarousel | `BioX-NKU/EpiCarousel`, PyPI `epicarousel` | 0.0.2 | project `.venvs/epicarousel_py311` | D11 correct-data smoke PASS | Official ATAC construction; 2,000 cells, requested/realized K=40, wall 28.60 s, peak RSS 888,652 KiB. Compatibility-only adapter is disclosed below. |
 | MetaCell V2 | Python package `metacells` | 0.9.5 | `metacells2` | IMPORT PASS; smoke pending | Native/end-to-end comparison only where appropriate. |
 | SuperCell | `GfellerLab/SuperCell` | — | — | NOT INSTALLED | Installation deferred until primary Tier 1 baselines are complete. |
