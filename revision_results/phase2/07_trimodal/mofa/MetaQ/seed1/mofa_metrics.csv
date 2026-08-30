@@ -1,0 +1,2 @@
+status,dataset,method,seed,cells,realized_K,factors,dominant_cell_types,ARI,NMI,AMI,ACC,balanced_accuracy,wall_time_seconds
+PASS,D18,MetaQ,1,25517,505,15,10,0.42453748309976647,0.591362888206394,0.5753258215856462,0.5801980198019802,0.48984247554623384,43.881223489996046

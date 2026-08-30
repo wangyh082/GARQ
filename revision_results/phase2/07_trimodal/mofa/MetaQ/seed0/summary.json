@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "dataset": "D18",
+  "method": "MetaQ",
+  "seed": 0,
+  "cells": 25517,
+  "realized_K": 511,
+  "factors": 15,
+  "dominant_cell_types": 10,
+  "ARI": 0.6106568530578497,
+  "NMI": 0.7089863458875671,
+  "AMI": 0.6979644345493251,
+  "ACC": 0.7181996086105675,
+  "balanced_accuracy": 0.4347188995215311,
+  "wall_time_seconds": 42.51702048629522
+}
