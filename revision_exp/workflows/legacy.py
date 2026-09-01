@@ -154,7 +154,9 @@ def _prepare_uniform_subset(
             raise KeyError(f"Missing rare-subsampling label column {label_key!r}")
         first_labels = first.obs[label_key].astype(str).to_numpy()
     first.file.close()
-    if n_cells >= total and rare_subsampling is None:
+    if n_cells >= total and rare_subsampling is None and not any(perturbations) and all(
+        source == "X" for source in matrix_sources
+    ):
         return [str(path) for path in source_paths], {"subset_applied": False, "n_cells": total}
     rare_info: dict[str, Any] = {}
     sampling_variant = ""
@@ -173,6 +175,8 @@ def _prepare_uniform_subset(
             f"_rare-{safe_label}-abundance{rare_info['target_abundance_requested']:g}"
             f"-seed{int(rare_subsampling.get('seed', seed))}"
         )
+    elif n_cells >= total:
+        indices = np.arange(total)
     else:
         rng = np.random.default_rng(seed)
         indices = np.sort(rng.choice(total, size=n_cells, replace=False))
@@ -302,13 +306,24 @@ def run_legacy_experiment(config: dict[str, Any], output_dir: Path, result_root:
     write_json(output_dir / "resource_preflight.json", preflight)
     paths = [str(path) for path in source_paths]
     subset_info = {"subset_applied": False}
-    if config.get("cell_limit"):
+    needs_materialization = bool(
+        config.get("cell_limit")
+        or config.get("rare_subsampling")
+        or any(config.get("modality_perturbations") or [])
+        or any(source != "X" for source in (config.get("matrix_sources") or []))
+    )
+    if needs_materialization:
+        cell_limit = config.get("cell_limit")
+        if cell_limit is None:
+            first_backed = ad.read_h5ad(source_paths[0], backed="r")
+            cell_limit = int(first_backed.n_obs)
+            first_backed.file.close()
         with monitor.stage("subset_materialization"):
             paths, subset_info = _prepare_uniform_subset(
                 source_paths,
                 result_root / "cache" / "subsets",
                 config["dataset"],
-                int(config["cell_limit"]),
+                int(cell_limit),
                 int(config.get("subset_seed", config["seed"])),
                 config.get("obs_name_canonicalization"),
                 config.get("matrix_sources"),
