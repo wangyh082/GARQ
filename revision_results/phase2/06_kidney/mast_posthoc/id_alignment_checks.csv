@@ -1,0 +1,13 @@
+method,seed,n_metadata,n_assignment,n_matched,n_missing,n_extra,duplicate_count,id_set_equal,order_equal
+GARQ,0,16143,16143,16143,0,0,0,True,True
+GARQ,1,16143,16143,16143,0,0,0,True,True
+GARQ,2,16143,16143,16143,0,0,0,True,True
+MetaQ,0,16143,16143,16143,0,0,0,True,True
+MetaQ,1,16143,16143,16143,0,0,0,True,True
+MetaQ,2,16143,16143,16143,0,0,0,True,True
+SEACells,0,16143,16143,16143,0,0,0,True,True
+SEACells,1,16143,16143,16143,0,0,0,True,True
+SEACells,2,16143,16143,16143,0,0,0,True,True
+KMeans,0,16143,16143,16143,0,0,0,True,True
+KMeans,1,16143,16143,16143,0,0,0,True,True
+KMeans,2,16143,16143,16143,0,0,0,True,True

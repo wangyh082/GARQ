@@ -1,0 +1,25 @@
+dataset: D17 Human_Kidney_Cancer
+target_label: Mast Cells
+label_key: celltype
+metadata_path: /home/zhangpeiru/data/analysis/new/kidney_rna_updated.h5ad
+requested_k: 323
+permutations: 10000
+random_seed: 170917
+result_dir: revision_results/phase2/06_kidney/mast_posthoc
+methods:
+  GARQ: revision_results/phase2/01_size_resolution/D17/GARQ/full_seed{seed}_K002/cell_assignments.csv
+  MetaQ: revision_results/phase2/01_size_resolution/D17/MetaQ/full_seed{seed}_K002/cell_assignments.csv
+  SEACells: revision_results/phase2/01_size_resolution/D17/SEACells/full_seed{seed}_K002/cell_assignments.csv
+  KMeans: revision_results/phase2/01_size_resolution/D17/KMeans/full_seed{seed}_K002/cell_assignments.csv
+missing_methods:
+- MetaCell V2
+- SuperCell
+seeds:
+- 0
+- 1
+- 2
+metadata_sha256: c2f4bc8313fa68c7e1c670fce74f287dca3865b0c039070babb10bd1f4125e25
+target_count: 74
+target_abundance: 0.004584030229820975
+exact_label_variants:
+- Mast Cells
