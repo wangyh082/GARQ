@@ -63,7 +63,7 @@ datasets:
     feature_dimensions:
       RNA: 21478
       ATAC: 340341
-    label_key_candidate: celltype
+    label_key_candidate: cell_type
     paired_id_set_equality: true
     paired_row_order_verified: true
     canonicalization: {}
