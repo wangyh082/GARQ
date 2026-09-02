@@ -3,7 +3,7 @@
   "branch": "revision/major-review-experiments-phase2",
   "base_commit": "5da45adcd62f1be8ee318d8742c80c59cb242ca2",
   "phase1_commit": "cfaf79bdcbc26840b6cbf67e3531d6fab6540a09",
-  "pre_delivery_head": "601bd03f63b4217b107310386e0f835722008ee6",
+  "pre_delivery_head": "9a8f5d6b487d6dcbbeb25e6454626f56c8df515a",
   "matched_requested_k_runs": 48,
   "matched_methods": [
     "GARQ",
@@ -60,6 +60,21 @@
       "sha256": "98e401e3c597636da5ff0a8b8ef054a048cbfaed04ace50a88b5092c3baecf46"
     },
     {
+      "path": "revision_exp/workflows/d18_modality_neighborhood_full.py",
+      "bytes": 4250,
+      "sha256": "d4904fd9bfd739c442c231bf4af7e9ded383531b9fbd5f5b793a2f677c71cd09"
+    },
+    {
+      "path": "revision_exp/workflows/d18_mofa_benchmark.py",
+      "bytes": 6787,
+      "sha256": "995a8597465cb421f4feb1a3e7ba953af526ebff04144d70ca303bcf08277a2e"
+    },
+    {
+      "path": "revision_exp/workflows/d18_rna_protein_benchmark.py",
+      "bytes": 4468,
+      "sha256": "bfe07e93140ebf8e8cb383b9b6c93d1f22d8ec9ee3654edaf04c5d4b93f83548"
+    },
+    {
       "path": "revision_exp/workflows/fixed_representation.py",
       "bytes": 10084,
       "sha256": "7a8d67801594f7376dd55354a0bb1acd340240a6ead66927e8e17f14849058d5"
@@ -68,6 +83,16 @@
       "path": "revision_exp/workflows/generate_anchor_multiseed_configs.py",
       "bytes": 1610,
       "sha256": "faff85619316116bd5791d8c4b7d345ce640fcb40e26aa9136693731977a712d"
+    },
+    {
+      "path": "revision_exp/workflows/generate_d18_modality_full_configs.py",
+      "bytes": 1858,
+      "sha256": "7bedbad3910bcfa8fe0442e5b9102cd13831bb172202f3ee6e8988ae2a0c8882"
+    },
+    {
+      "path": "revision_exp/workflows/generate_d18_noise_full_configs.py",
+      "bytes": 1908,
+      "sha256": "8b763ba47622dfe0878db8aa651482922d2b449ca0246d286ad6aac8bab1a3c7"
     },
     {
       "path": "revision_exp/workflows/generate_noise_configs.py",
@@ -91,8 +116,8 @@
     },
     {
       "path": "revision_exp/workflows/legacy.py",
-      "bytes": 24310,
-      "sha256": "1e179c63f6253d185f09098dcf96460d78dc76b551d9c7dfac06bd621566749a"
+      "bytes": 24930,
+      "sha256": "048b108ebab809526034c532b44d9d1699adc7252b240e0aaea7a8039b321d1f"
     },
     {
       "path": "revision_exp/workflows/matched_baseline_fixed.py",
@@ -118,6 +143,11 @@
       "path": "revision_exp/workflows/summarize_anchor.py",
       "bytes": 4154,
       "sha256": "77861de7ba5b7eb8a9c5870c3c682067be9c75fa1a75b52abc1b108596b9db64"
+    },
+    {
+      "path": "revision_exp/workflows/summarize_d18_noise_full.py",
+      "bytes": 2749,
+      "sha256": "78e8b239bd074967206da05d3bb265d4f9bfbddb3e1c7f7e4b8d0e61686034f2"
     },
     {
       "path": "revision_exp/workflows/summarize_fixed.py",
@@ -250,9 +280,74 @@
       "sha256": "8b3d9075cc9cc939eb2247fa97c3d1ae5b415ca656788419a2a8a44d1b7f78e1"
     },
     {
+      "path": "revision_results/phase2/reports/P2_E6_D17_TRAJECTORY_ENVIRONMENT_REPORT.md",
+      "bytes": 1085,
+      "sha256": "63b00665aecc7546d94d41fd0fec8f72b8f6b4a9172fa15638f7981e67ea3037"
+    },
+    {
+      "path": "revision_results/phase2/reports/P2_E6_D17_TRAJECTORY_LABEL_AUDIT_REPORT.md",
+      "bytes": 2660,
+      "sha256": "4877f957f3243aaf20ae7ef4ce1857bda704a3d8b5c09975ad2c16155bcce83a"
+    },
+    {
+      "path": "revision_results/phase2/reports/P2_E7_D18_MOFA_ENVIRONMENT_SMOKE_REPORT.md",
+      "bytes": 1691,
+      "sha256": "9d1eabbbc9bc7d853c8b5ff32d493dcbd68f9f1c45ed90445b549655be0c310a"
+    },
+    {
+      "path": "revision_results/phase2/reports/P2_E7_D18_MOFA_GARQ_SEED0_REPORT.md",
+      "bytes": 3844,
+      "sha256": "d0ef837a29c6db5870a9339a4cc452021e1907a90261989c68efb01acf774d7a"
+    },
+    {
+      "path": "revision_results/phase2/reports/P2_E7_D18_MOFA_INPUT_PREFLIGHT_REPORT.md",
+      "bytes": 1738,
+      "sha256": "afe66a980c2cec6cd09c8aa318f3711bdb8258299b0638843f73a270a835d027"
+    },
+    {
+      "path": "revision_results/phase2/reports/P2_E7_D18_MOFA_KMEANS_REPORT.md",
+      "bytes": 2662,
+      "sha256": "608c0bda34405df056d2053821e3aaba7fb1c2eb17e33c5602e1630e48de2e3c"
+    },
+    {
+      "path": "revision_results/phase2/reports/P2_E7_D18_MOFA_METAQ_REPORT.md",
+      "bytes": 2448,
+      "sha256": "4add36d5352c8946175b70fa20512b3954b6a055734096eb310a3f671cfba44d"
+    },
+    {
+      "path": "revision_results/phase2/reports/P2_E7_D18_MOFA_SEACELLS_REPORT.md",
+      "bytes": 2521,
+      "sha256": "de8388a153eb7951c8fc486e378f886b2ec2123540199152ecc11a52ccc4d401"
+    },
+    {
+      "path": "revision_results/phase2/reports/P2_E7_D18_RNA_PROTEIN_GARQ_SEED0_REPORT.md",
+      "bytes": 2868,
+      "sha256": "2d55c89c1b6c45cc7a3b9349bb991c7d61efc989fbf00025e4355f94ce2b2080"
+    },
+    {
+      "path": "revision_results/phase2/reports/P2_E7_D18_RNA_PROTEIN_KMEANS_REPORT.md",
+      "bytes": 1884,
+      "sha256": "fa368bc5920ece5f35af1ad1e72eac2d216b275b62a2574da9610fe9f3e739d5"
+    },
+    {
+      "path": "revision_results/phase2/reports/P2_E7_D18_RNA_PROTEIN_METAQ_REPORT.md",
+      "bytes": 2032,
+      "sha256": "09361cc1649645c6ad5d978a0d0416963eaad2866e05638203d2d1111444d1f7"
+    },
+    {
+      "path": "revision_results/phase2/reports/P2_E7_D18_RNA_PROTEIN_SEACELLS_REPORT.md",
+      "bytes": 1676,
+      "sha256": "dae68f735141fda7f838bda1666d2c77b66d5e87af070d443a2c82ce7b40a68c"
+    },
+    {
+      "path": "revision_results/phase2/reports/P2_E8_D16_FULL_PROFILE_FAILURE_REPORT.md",
+      "bytes": 4378,
+      "sha256": "e16ee4132d988c9d5f8ea9a5dfd5cfc2231810fe59e2fd668af017e1921f50a4"
+    },
+    {
       "path": "revision_results/phase2/reports/PHASE2_EXPERIMENT_REPORT.md",
-      "bytes": 12187,
-      "sha256": "0f96f3b45513cfbc40b63f5b3d8a4a75a9d999ea12a274c35bba7f1737b67301"
+      "bytes": 12950,
+      "sha256": "87aacaf5f3755c736c1827cc89e4b23af5ee488d10b6d790ab5cefb4df1c7f96"
     },
     {
       "path": "revision_results/phase2/reports/PHASE2_PARTIAL_SUCCESS_REVIEWER_MAP_ZH.md",
@@ -265,9 +360,134 @@
       "sha256": "a560f3ed538850a45f641df2a943bc1ab3237f4ed1fb06b4605d8db4723b018a"
     },
     {
+      "path": "revision_results/phase2/reports/R2_MAJOR1_D18_ADT_ONLY_FULL_REPORT.md",
+      "bytes": 1920,
+      "sha256": "8ccf9e629c9fd698699d2d0f65eb17165c01fc59501d2bd808c20b0ae4757ca4"
+    },
+    {
+      "path": "revision_results/phase2/reports/R2_MAJOR1_D18_ADT_PERMUTATION_REPORT.md",
+      "bytes": 1746,
+      "sha256": "1307f9886b6043eb186def4d1056a184a5b43f354df11fa9c2581436e966aa4a"
+    },
+    {
+      "path": "revision_results/phase2/reports/R2_MAJOR1_D18_ADT_THIN25_REPORT.md",
+      "bytes": 1487,
+      "sha256": "103eb88e4a882990b46caaba0d551ce7045e539193b3ef3776475536e46448b8"
+    },
+    {
+      "path": "revision_results/phase2/reports/R2_MAJOR1_D18_ADT_THIN50_REPORT.md",
+      "bytes": 1579,
+      "sha256": "509272611a684f3a0afd0c7a0687f85beb7264eb060e40f65f95c3e1927e8318"
+    },
+    {
+      "path": "revision_results/phase2/reports/R2_MAJOR1_D18_ADT_THIN75_REPORT.md",
+      "bytes": 1786,
+      "sha256": "c37100a33fc2ef5a95f7b6b729d69f6bd52a3c2315cbdd584629f6177083354a"
+    },
+    {
+      "path": "revision_results/phase2/reports/R2_MAJOR1_D18_ATAC_ADT_FULL_REPORT.md",
+      "bytes": 2393,
+      "sha256": "278d4a312746afcf3db07f34bd28d1eeebebd68b42f4558427429f03a1dad215"
+    },
+    {
+      "path": "revision_results/phase2/reports/R2_MAJOR1_D18_ATAC_ONLY_FULL_REPORT.md",
+      "bytes": 1975,
+      "sha256": "0b2b14ef7fed22d6ad5e5804f47e4ab292c85994a2189f91e1d53197e5bad2b6"
+    },
+    {
+      "path": "revision_results/phase2/reports/R2_MAJOR1_D18_ATAC_PERMUTATION_REPORT.md",
+      "bytes": 2234,
+      "sha256": "fe5a0d8c7f9e2774085ae9a010216fbf917a9b79901829284bc8df3b56730b1d"
+    },
+    {
+      "path": "revision_results/phase2/reports/R2_MAJOR1_D18_ATAC_THIN25_REPORT.md",
+      "bytes": 1545,
+      "sha256": "66e3666b192329789959d37679cc9648b5a294c8a69fa868bedb5c4e075f40df"
+    },
+    {
+      "path": "revision_results/phase2/reports/R2_MAJOR1_D18_ATAC_THIN50_REPORT.md",
+      "bytes": 1577,
+      "sha256": "d1a057564f5f815ad0e29cbad4953b04fec84b9e07c50c00fe581cd44f35379d"
+    },
+    {
+      "path": "revision_results/phase2/reports/R2_MAJOR1_D18_ATAC_THIN75_REPORT.md",
+      "bytes": 1592,
+      "sha256": "f602db6e8ee5b4054f996fd954f2eedb1f689090fae06cbaae4a52c36679e609"
+    },
+    {
+      "path": "revision_results/phase2/reports/R2_MAJOR1_D18_FULL_TRIMODAL_REPORT.md",
+      "bytes": 2730,
+      "sha256": "258c343f91f0848842281874136e56f878967b47568f20cd4e6f59486160dda2"
+    },
+    {
+      "path": "revision_results/phase2/reports/R2_MAJOR1_D18_NEIGHBORHOOD_HOMOGENEITY_REPORT.md",
+      "bytes": 4035,
+      "sha256": "1c24dc2fcfa4b6f9883d31f64d48f5aa01b99c4b61219ab0bc329c0ab556e7c8"
+    },
+    {
+      "path": "revision_results/phase2/reports/R2_MAJOR1_D18_RNA_ADT_FULL_REPORT.md",
+      "bytes": 1926,
+      "sha256": "31bd46d46a4a6f2b8f99ec0913e248dc45b4b99e12b41094c71a3e96242dfe66"
+    },
+    {
+      "path": "revision_results/phase2/reports/R2_MAJOR1_D18_RNA_ATAC_FULL_REPORT.md",
+      "bytes": 1937,
+      "sha256": "c52f5849ab972f34fb46fefb2b37862153538bab9d0b121354c736db52660f21"
+    },
+    {
+      "path": "revision_results/phase2/reports/R2_MAJOR1_D18_RNA_ONLY_FULL_REPORT.md",
+      "bytes": 2077,
+      "sha256": "39843e60e77089289bc6c420f24097ed5f1c1a29170370d637b7879247a04fb8"
+    },
+    {
+      "path": "revision_results/phase2/reports/R2_MAJOR1_D18_RNA_PERMUTATION_REPORT.md",
+      "bytes": 3564,
+      "sha256": "aa17ddec6d8fc4dbd15c3acc2998597d1ca0de0504eed4982540da7706088787"
+    },
+    {
+      "path": "revision_results/phase2/reports/R2_MAJOR1_D18_RNA_THIN25_REPORT.md",
+      "bytes": 1704,
+      "sha256": "40b6e524ed6447c743fb311171fe7e8a7feb85a3c4bf0508c660d9b89ee1308b"
+    },
+    {
+      "path": "revision_results/phase2/reports/R2_MAJOR1_D18_RNA_THIN50_REPORT.md",
+      "bytes": 1902,
+      "sha256": "5f1eb9bbddccf653fffe0fd4d42b5e95f7de300edc719afc0c9d9f47d93147f8"
+    },
+    {
+      "path": "revision_results/phase2/reports/R2_MAJOR1_D18_RNA_THIN75_REPORT.md",
+      "bytes": 1593,
+      "sha256": "dbd032c1079e31705fceca81fa05437307a4216913915e06e4b122c3ee537bb8"
+    },
+    {
+      "path": "revision_results/phase2/reports/R2_MAJOR1_MODALITY_BLOCK_CONTRIBUTION_REPORT.md",
+      "bytes": 1964,
+      "sha256": "79b6fa60b28e51f886c6f8160ce8d7f6a1ba15c5b2917614840c3c3fbf295df0"
+    },
+    {
+      "path": "revision_results/phase2/reports/R2_MAJOR1_MULTIMODAL_ANCHOR_REPLY_REPORT.md",
+      "bytes": 6774,
+      "sha256": "da100a9f42c6507150af92331fd22b695c22f6486670cb02dd992556213abce6"
+    },
+    {
+      "path": "revision_results/phase2/reports/R2_MAJOR4_D18_MOFA_COMPONENT_REPORT.md",
+      "bytes": 3373,
+      "sha256": "b9f1de8f69f11e77928f8c29d080bcef174407967c78f388d73b295d9210cbc7"
+    },
+    {
+      "path": "revision_results/phase2/reports/R2_MAJOR4_D18_RNA_PROTEIN_DESCRIPTIVE_REPORT.md",
+      "bytes": 2490,
+      "sha256": "674060e63ebb52ac9aa22aa93df7ad2dd5bf37f9be1edc713725a8a8bf85183d"
+    },
+    {
       "path": "revision_results/phase2/reports/REBUTTAL_EVIDENCE_DRAFT_PHASE2.md",
       "bytes": 1795,
       "sha256": "f5b9cccad19423b9e88a873ece556581509476cc265264a05ce3fdcae298dcd7"
+    },
+    {
+      "path": "revision_results/phase2/reports/REBUTTAL_REQUIRED_RESULTS_INDEX_ZH.md",
+      "bytes": 3618,
+      "sha256": "89c0cc7dd15511e011c768cd85cf8bf6426b19eeaf82631b5963918b1b193708"
     },
     {
       "path": "revision_results/phase2/reports/RESULT_FILE_INDEX_PHASE2.md",
@@ -276,8 +496,8 @@
     },
     {
       "path": "revision_results/phase2/reports/REVIEWER_EVIDENCE_MATRIX_PHASE2.md",
-      "bytes": 4184,
-      "sha256": "773e7748057afd47d088490f043be403e72ac352257f3783a5c3742353ee5dde"
+      "bytes": 4595,
+      "sha256": "e5734f7f580fa7877e2cc37677f6a31dd8738b68a71eb695833f0dcc75180091"
     }
   ]
 }
