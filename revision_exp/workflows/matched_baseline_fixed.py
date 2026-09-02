@@ -29,6 +29,20 @@ REGISTRY = {
         "data_types": ["RNA", "ATAC", "ADT"], "label_key": "celltype", "requested_K": 510,
         "obs_name_canonicalization": [None, None, {"pattern": r"\.([0-9]+)$", "replacement": r"-\1"}],
     },
+    "D13": {
+        "data_files": [
+            "/home/zhangpeiru/data/RNA+ADT/GSE164378/GSE164378_rna.h5ad",
+            "/home/zhangpeiru/data/RNA+ADT/GSE164378/GSE164378_adt.h5ad",
+        ],
+        "data_types": ["RNA", "ADT"], "label_key": "celltype", "requested_K": 3235,
+    },
+    "D16": {
+        "data_files": [
+            "/home/zhangpeiru/data/RNA+ATAC/ma/Ma-2020-RNA.h5ad",
+            "/home/zhangpeiru/data/RNA+ATAC/ma/Ma-2020-ATAC.h5ad",
+        ],
+        "data_types": ["RNA", "ATAC"], "label_key": "cell_type", "requested_K": 645,
+    },
 }
 
 
