@@ -43,7 +43,7 @@ Primary resolution is requested K/n=0.02. Labels do not enter GARQ training or K
 ## 7. Methods P2-E1–E8
 
 - E1: full-data instrumented legacy GARQ plus requested-K matched SEACells, MetaQ and fixed-representation KMeans, seeds 0–2, K/n=0.02 on corrected D5/D11/D17/D18; common assignment, size and per-type evaluator (48/48 runs).
-- E2: block contribution traces were exported for all 12 runs; the full modality grid and perturbation grid remain pending.
+- E2: block contribution traces were exported for all 12 core GARQ runs. The corrected D18 extension is now complete for seven modality combinations × three seeds, 162 neighborhood/homogeneity rows, 9,123 anchor-level compactness rows, and 36 valid full-data permutation/thinning runs. The initial RNA-permutation seeds 0/1 were invalid because perturbations were silently skipped at full size; their evidence is preserved and excluded, and the compatibility-equivalent corrected grid is reported separately.
 - E3: fixed-representation SEACells/KMeans and official MetaQ controls on four datasets, with all realized K within target ±5%, plus official EpiCarousel full ATAC assignments for D11/D17. The 0.01/0.05 frontiers remain pending.
 - E4: full-length legacy traces establish actual branch execution; matched-K schedule variants remain pending.
 - E5: registry mapping is complete; unified MOFA+ multi-batch runs are pending.
@@ -72,13 +72,13 @@ Rare-state recovery is not consistently positive, and the realized-K-within-±5%
 ## 10. Central claim verdicts
 
 - Rare-state preservation: **NOT SUPPORTED as a broad superiority claim** by the realized-K-within-±5% four-method comparison; results are cell-type dependent and often favor a baseline. Full rare-state subsampling is still missing.
-- Multimodal fidelity: **INCONCLUSIVE**; block diagnostics exist but the full modality/perturbation grid is missing.
+- Multimodal fidelity: **NOT SUPPORTED as a strong robustness claim**; the completed full-data modality and perturbation grids show limited within-anchor neighbor retention, very low cross-modality kNN overlap, and low or strongly seed-dependent perturbation ARI. The narrower statement that GARQ produces a shared multimodal aggregation is supported.
 - Scalability: **PARTIALLY_SUPPORTED** for execution on D5/D11/D17/D18, but D13/D16 scaling and sparse-safe comparison are missing; CPU memory must be stated explicitly.
 - GARQ-specific downstream advantage: **INCONCLUSIVE**; D17 trajectory and D18 held-out cross-fit comparisons are not complete.
 
 ## 11. Reviewer-comment evidence
 
-R1 size questions are directly addressed by 12 full runs and size tables. R1/R2 modality questions currently have diagnostic block traces but not sufficient confirmatory perturbations. Dense-conversion concerns are supported by stage profiles and D18 RSS. Anchor terminology is corrected to “continuous usage-weighted repositioning of a fixed anchor set”; full runs show first local execution at step 88. EpiCarousel is now represented by official full D11/D17 assignments. Kidney trajectory and D18 specificity remain open. See the evidence matrix for reply-safe wording.
+R1 size questions are directly addressed by 12 full runs and size tables. R1-M2/R2-M1 modality questions now have a completed corrected D18 modality grid, neighborhood/homogeneity evaluation, and perturbation grid; the reply must report the negative/qualified robustness finding. Dense-conversion concerns are supported by stage profiles and D18 RSS. Anchor terminology is corrected to “continuous usage-weighted repositioning of a fixed anchor set”; full runs show first local execution at step 88. EpiCarousel is now represented by official full D11/D17 assignments. Kidney trajectory and D18 specificity remain open. See the evidence matrix and `R2_MAJOR1_MULTIMODAL_ANCHOR_REPLY_REPORT.md` for reply-safe wording.
 
 ## 12. Candidate manuscript changes
 
