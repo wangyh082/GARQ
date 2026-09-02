@@ -16,9 +16,6 @@ def init_gart_anchors(
     
     with torch.no_grad():
         for batch_idx, data in enumerate(dataloader):
-            if batch_idx >= 2:  
-                break
-            
             x_list = []
             for i in range(model.omics_num):
                 x_list.append(data["x"][i].to(device, non_blocking=True))
@@ -28,6 +25,14 @@ def init_gart_anchors(
             hidden = model.combine_hiddens(hiddens)
             
             all_hiddens.append(hidden.detach())
+
+            # Preserve the released two-batch initialization whenever it is
+            # sufficient, but collect additional batches for datasets whose
+            # requested anchor count exceeds those training points.  FAISS
+            # requires n_training_points >= n_clusters.
+            points_collected = sum(item.shape[0] for item in all_hiddens)
+            if batch_idx >= 1 and points_collected >= model.quantizer.entry_num:
+                break
     
  
     all_hidden = torch.cat(all_hiddens, dim=0)
