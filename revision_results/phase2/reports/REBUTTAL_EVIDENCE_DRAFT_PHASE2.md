@@ -16,6 +16,39 @@ Status: VERIFIED EVIDENCE DRAFT; not the final rebuttal.
 
 Tables: `matchedK_focal_rare_summary.csv`, `matchedK_focal_rare_paired_contrasts.csv`, `full_benchmark_long.csv`.
 
+## R1 Major 3 / R2 Major 5 — implementation-scale and batch/order concern
+
+**What we did.** We added a five-point, 300-epoch D13 scaling series (10k,
+25k, 50k, 100k and full 161,764 cells; seed 0), a corrected full D16 profile,
+four training batch sizes × three seeds on corrected D5/D11, and five frozen
+inference batch sizes with ten pre-specified order permutations on each of D5
+and D11. All planned rows completed with the common evaluator; original D13
+and D16 compatibility failures and their compatibility-equivalent retries are
+retained.
+
+**What we found.** D13 full completed at K=3,234/3,235 in about 119 minutes
+with peak CPU RSS 202.9 GiB and GPU allocated/reserved 5.25/7.13 GiB, but the
+25k/50k points had 28/238 empty anchors and size Gini 0.261/0.670. D16 full
+completed at K=645/645 with peak CPU RSS 207.84 GiB during preprocessing and
+GPU allocated/reserved 1.58/2.29 GB during inference. Training membership was
+not batch-size invariant (mean ARI versus batch 256: D5 0.1302 at batch 2048;
+D11 0.0412), and order permutations at inference batch 1,024 gave mean ARI
+0.5746 (D5) and 0.6942 (D11).
+
+**What we can safely say.** “The added experiments establish implementation
+feasibility at the tested sizes and expose CPU preprocessing and the released
+batch-local graph as important limitations. We therefore report qualified
+scalability evidence rather than uniform runtime, size or batch/order
+invariance.”
+
+**What we cannot say.** We cannot claim linear scaling, uniformly stable
+metacell sizes, low total memory from GPU values alone, a global-graph result,
+or a completed unified D13–D16 batch-integration/MOFA+ benchmark. D13/D16
+scaling uses one seed each.
+
+Dedicated report: `R1_MAJOR3_R2_MAJOR5_SCALABILITY_REPORT.md`; exact CSVs and
+server log paths are indexed in `RESULT_FILE_INDEX_PHASE2.md`.
+
 ## R2 Minor Comment 4 — Figure 4b Mast Cells
 
 **What we did.** We audited the canonical D17 `celltype` labels (74 Mast Cells

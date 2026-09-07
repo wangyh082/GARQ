@@ -1,6 +1,6 @@
 # Result file index — Phase 2
 
-The authoritative machine-readable inventory is `revision_results/phase2/manifests/run_manifest_phase2.json` (48 entries). SHA256 integrity is recorded in `revision_results/phase2/manifests/MANIFEST_PHASE2.sha256`.
+The authoritative machine-readable inventory is `revision_results/phase2/manifests/run_manifest_phase2.json`; its current entry count and SHA256 are recorded in the JSON/checksum pair. `revision_results/phase2/GARQ_phase2_handoff_bundle.zip` contains the small report and summary subset. SHA256 integrity is recorded in `revision_results/phase2/manifests/MANIFEST_PHASE2.sha256`.
 
 ## Requested-K matched benchmark
 
@@ -12,6 +12,20 @@ The authoritative machine-readable inventory is `revision_results/phase2/manifes
 - `01_size_resolution/matchedK_focal_rare_paired_contrasts.csv`: 24 paired GARQ-minus-baseline contrasts.
 
 Large cell-level assignments, source H5ADs, official MetaQ metacell H5ADs, and reconstructable matrices are intentionally excluded from Git and the bundle. Server-side logs retain failed and successful retries. The ZIP contains reports, source adapters/workflows, audit/environment records, small summary tables, manifest and checksum.
+
+## R1 Major 3 / R2 Major 5 implementation-scale unit
+
+- `08_scalability/d13_scaling_series.csv`: five D13 seed-0 sizes through the full 161,764-cell run.
+- `08_scalability/stage_profile.csv`: stage-level wall, CPU RSS and GPU allocation/reservation for the 12 corrected full GARQ runs.
+- `08_scalability/training_batch_size.csv`: 24 D5/D11 training batch-size rows (256/512/1024/2048 × seeds 0–2).
+- `08_scalability/training_batch_size_assignment_stability.csv`: 18 same-seed assignment-stability contrasts against batch 256.
+- `08_scalability/inference_stability/D5/seed0_K002/batch_size_order_stability.csv` and the corresponding D11 file: 55 frozen-checkpoint evaluations per dataset.
+- `08_scalability/D16/GARQ/full_seed0_profile_K002_retry2/metacell_size_summary.csv` and `stage_profile.csv`: corrected D16 full profile summaries.
+- `R1_MAJOR3_R2_MAJOR5_SCALABILITY_REPORT.md`: dedicated PASS/FAIL evidence, exact results, safe reply wording and limitations.
+
+Large D13 anchor traces, cell assignments and checkpoints remain server-side;
+failed configurations and driver logs are preserved under the server
+`revision_results/phase2/logs/` directory.
 
 ## R2 Minor Comment 4 — Figure 4b Mast analysis
 

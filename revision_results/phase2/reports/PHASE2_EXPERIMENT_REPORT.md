@@ -22,6 +22,16 @@ draft, tables, figures, non-exact-K rationale and preserved strict-audit
 failure evidence are under `fig4b/reviewer_mast_quantification/` and the
 dedicated `R2_MINOR4_FIG4B_MAST_REPORT.md`.
 
+The implementation-scale delivery unit for R1 Major 3 and R2 Major 5 is also
+complete at a qualified implementation level. A five-point, one-seed D13
+series reaches the full 161,764-cell dataset; a corrected D16 full profile,
+four training batch sizes × three seeds on D5/D11, and 110 frozen-checkpoint
+inference batch/order evaluations are all PASS. The results expose
+non-monotonic size tails and sensitivity to the released batch-local graph,
+so they support execution feasibility and explicit memory reporting, not a
+claim of uniform scalability or batch/order invariance. See
+`R1_MAJOR3_R2_MAJOR5_SCALABILITY_REPORT.md`.
+
 ## 2. Git, environments and hardware
 
 - Base commit: `5da45adcd62f1be8ee318d8742c80c59cb242ca2`.
@@ -63,7 +73,7 @@ Primary resolution is requested K/n=0.02. Labels do not enter GARQ training or K
 - E5: registry mapping is complete; unified MOFA+ multi-batch runs are pending.
 - E6: D17 assignments exist for GARQ and EpiCarousel; common Slingshot/UCell comparison is pending.
 - E7: D18 GARQ assignments exist for three seeds; MOFA+ and cross-fit held-out analyses are pending.
-- E8: stage-level wall, CPU RSS and GPU allocation/reservation were recorded for all 12 GARQ runs; D13/D16 scaling series is pending.
+- E8: stage-level wall, CPU RSS and GPU allocation/reservation were recorded for all 12 GARQ runs; the D13 five-point scaling series, corrected D16 full profile, D5/D11 training batch-size grid and frozen-checkpoint inference order diagnostic are complete. Sparse-safe/global-graph equivalence and the unified D13–D16 batch-integration benchmark remain pending.
 
 ## 8. Results P2-E1–E8
 
@@ -79,6 +89,21 @@ D5 wall time was 1,066–1,088 s and peak RSS about 5.43 GB. D11 wall was 965–
 
 Sources: `revision_results/phase2/01_size_resolution/full_benchmark_long.csv`, `metacell_size_summary.csv`, `per_type_metrics_long.csv`, `revision_results/phase2/02_modality/modality_block_contribution_full.csv`, and `revision_results/phase2/08_scalability/stage_profile.csv`. Config IDs and fingerprints are in resolved configs/manifests.
 
+Implementation-scale results are reported in the dedicated R1 Major 3/R2
+Major 5 unit. D13 (seed 0) completed at 10k/25k/50k/100k/full with realized
+K 200/472/762/1,999/3,234 and peak CPU RSS 13.3/32.0/63.2/125.7/202.9 GiB;
+the 50k point had 238 empty anchors and Gini 0.670, whereas the full point
+had one empty anchor and Gini 0.107. D16 corrected full seed 0 completed at
+K=645/645 with 207.84 GiB peak CPU RSS during preprocessing and 1.58/2.29 GB
+peak GPU allocated/reserved memory during inference. D5/D11 batch-size means
+show GPU reserved memory rising to 2.106/17.895 GB at batch 2048, while mean
+membership ARI versus batch 256 remained low (D5 0.1302; D11 0.0412). At
+inference batch 1,024, cell-order permutations produced mean ARI 0.5746 on
+D5 and 0.6942 on D11. These exact values support a qualified
+implementation-level scalability statement and a negative batch/order
+invariance finding; they do not establish biological quality or a global-graph
+solution.
+
 ## 9. Negative results and uncertainty
 
 Rare-state recovery is not consistently positive, and the realized-K-within-±5% baselines directly contradict a broad GARQ superiority claim. D5 seed1/2 used an incorrect evaluation label key; training was label-blind and unchanged, and all 12,103 IDs were matched for post-hoc evaluator correction. Baseline failures and compatibility retries were retained. EpiCarousel required documented compatibility shims and its native pipeline is not a fixed-representation comparison. D18 CPU memory is high. Representation remains partly confounded because GARQ and MetaQ are native pipelines while KMeans and SEACells share the fixed representation.
@@ -87,12 +112,12 @@ Rare-state recovery is not consistently positive, and the realized-K-within-±5%
 
 - Rare-state preservation: **NOT SUPPORTED as a broad superiority claim** by the realized-K-within-±5% four-method comparison; results are cell-type dependent and often favor a baseline. Full rare-state subsampling is still missing.
 - Multimodal fidelity: **NOT SUPPORTED as a strong robustness claim**; the completed full-data modality and perturbation grids show limited within-anchor neighbor retention, very low cross-modality kNN overlap, and low or strongly seed-dependent perturbation ARI. The narrower statement that GARQ produces a shared multimodal aggregation is supported.
-- Scalability: **PARTIALLY_SUPPORTED** for execution on D5/D11/D17/D18, but D13/D16 scaling and sparse-safe comparison are missing; CPU memory must be stated explicitly.
+- Scalability: **PARTIALLY_SUPPORTED (implementation-level)**. D13 five-point scaling, corrected D16 full profiling and D5/D11 batch/order diagnostics are complete, but the series is non-monotonic, one-seed, and CPU-memory-heavy; sparse-safe/global-graph equivalence and unified batch integration remain missing.
 - GARQ-specific downstream advantage: **INCONCLUSIVE**; D17 trajectory and D18 held-out cross-fit comparisons are not complete.
 
 ## 11. Reviewer-comment evidence
 
-R1 size questions are directly addressed by 12 full runs and size tables. R1-M2/R2-M1 modality questions now have a completed corrected D18 modality grid, neighborhood/homogeneity evaluation, and perturbation grid; the reply must report the negative/qualified robustness finding. Dense-conversion concerns are supported by stage profiles and D18 RSS. Anchor terminology is corrected to “continuous usage-weighted repositioning of a fixed anchor set”; full runs show first local execution at step 88. EpiCarousel is now represented by official full D11/D17 assignments. Kidney trajectory and D18 specificity remain open. See the evidence matrix and `R2_MAJOR1_MULTIMODAL_ANCHOR_REPLY_REPORT.md` for reply-safe wording.
+R1 size questions are directly addressed by 12 full runs and size tables. R1-M2/R2-M1 modality questions now have a completed corrected D18 modality grid, neighborhood/homogeneity evaluation, and perturbation grid; the reply must report the negative/qualified robustness finding. Dense-conversion concerns are supported by stage profiles, the D13 scaling series and D16 full profile; the reply must distinguish CPU RSS from GPU allocation/reservation and report the non-monotonic 25k/50k behavior. R1-M3/R2-M5 are reply-ready with this qualified implementation-level evidence, while R1-M5 remains partial because unified batch integration is not complete. Anchor terminology is corrected to “continuous usage-weighted repositioning of a fixed anchor set”; full runs show first local execution at step 88. EpiCarousel is now represented by official full D11/D17 assignments. Kidney trajectory and D18 specificity remain open. See the evidence matrix, `R1_MAJOR3_R2_MAJOR5_SCALABILITY_REPORT.md` and `R2_MAJOR1_MULTIMODAL_ANCHOR_REPLY_REPORT.md` for reply-safe wording.
 
 ## 12. Candidate manuscript changes
 
@@ -100,7 +125,7 @@ Correct D5/D11 identities everywhere; remove Phase-1 biological numbers derived 
 
 ## 13. Blockers and deferred work
 
-Completed Tier-1 item: primary-resolution realized-K-within-±5% GARQ/SEACells/MetaQ/KMeans on corrected D5/D11/D17/D18 (three seeds; 48/48 common-evaluator passes). Deferred Tier-1 items are focal full-data subsampling, 0.01/0.05 resolution frontiers, matched-K E4 variants, D17 trajectory, D18 MOFA+/cross-fit, and D13/D16 full profile. Details and package failures are in `BLOCKED_OR_DEFERRED_PHASE2.md` and `FAILURE_LOG_PHASE2.md`.
+Completed Tier-1 items include primary-resolution realized-K-within-±5% GARQ/SEACells/MetaQ/KMeans on corrected D5/D11/D17/D18 (three seeds; 48/48 common-evaluator passes) and the qualified R1-M3/R2-M5 implementation-scale unit (D13 five-point series, D16 full profile, D5/D11 training batch-size and inference order diagnostics). Deferred Tier-1 items are focal full-data subsampling, 0.01/0.05 resolution frontiers, matched-K full E4 variants, D17 trajectory, D18 MOFA+/cross-fit, sparse-safe/global-graph equivalence, and the unified D13–D16 batch-integration benchmark. Details and package failures are in `BLOCKED_OR_DEFERRED_PHASE2.md` and `FAILURE_LOG_PHASE2.md`.
 
 ## 14. Reproducibility commands
 
