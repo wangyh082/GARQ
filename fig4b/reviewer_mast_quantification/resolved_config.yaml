@@ -1,0 +1,41 @@
+dataset: D17 Human_Kidney_Cancer
+figure_dir: /data/zhangpeiru/GARQ_revision/fig4b
+output_dir: /data/zhangpeiru/GARQ_revision/fig4b/reviewer_mast_quantification
+requested_K: 403
+n_cells_expected: 16143
+canonical_label_priority:
+- celltype
+- cell_type
+- annotation
+- CellType
+associated_definition:
+  m_min: 3
+  fold_enrichment_min: 5
+  bh_q_max: 0.05
+permutation:
+  n_permutations: 10000
+  random_seed: 20260907
+method_order:
+- GARQ
+- MetaQ
+- SEACells
+- MetaCell V2
+- SuperCell
+assignment_paths:
+  GARQ: /home/zhangpeiru/results/1_ours/RNA_ATAC/kidney/kidney403_403metacell_k5_ids.h5ad
+  MetaQ: /home/zhangpeiru/results/2_MetaQ/RNA_ATAC/kidney/kidney403_403metacell_ids.h5ad
+  SEACells: /home/zhangpeiru/vscode/SEACells-main/ours/save/RNA+ATAC/kidney/kidney_ad.h5ad
+  MetaCell V2: /home/zhangpeiru/results/4_mc2/RNA_ATAC/kidney/kidney_metacells2_ad.h5ad
+  SuperCell: /home/zhangpeiru/results/5_supercell/RNA_ATAC/kidney/kidney_supercell.h5ad
+profile_paths:
+  GARQ RNA: /home/zhangpeiru/data/analysis/new/kidney_403metacell_rna.h5ad
+  GARQ ATAC: /home/zhangpeiru/data/analysis/new/kidney_403metacell_atac.h5ad
+  MetaQ RNA: /home/zhangpeiru/results/2_MetaQ/RNA_ATAC/kidney/kidney_RNA_403metacell.h5ad
+  MetaQ ATAC: /home/zhangpeiru/results/2_MetaQ/RNA_ATAC/kidney/kidney_ATAC_403metacell.h5ad
+  SEACells RNA: /home/zhangpeiru/vscode/SEACells-main/ours/save/RNA+ATAC/kidney/kidney_rna_metacells.h5ad
+  SEACells ATAC: /home/zhangpeiru/vscode/SEACells-main/ours/save/RNA+ATAC/kidney/kidney_atac_metacells.h5ad
+  MetaCell V2 RNA: /home/zhangpeiru/results/4_mc2/RNA_ATAC/kidney/kidney_rna_metacells.h5ad
+  MetaCell V2 ATAC: /home/zhangpeiru/results/4_mc2/RNA_ATAC/kidney/kidney_atac_metacells.h5ad
+  SuperCell RNA: /home/zhangpeiru/results/5_supercell/RNA_ATAC/kidney/kidney_rna_metacells.h5ad
+  SuperCell ATAC: /home/zhangpeiru/results/5_supercell/RNA_ATAC/kidney/kidney_atac_metacells.h5ad
+analysis_mode: exact_frozen_figure4b_assignment

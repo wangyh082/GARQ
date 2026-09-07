@@ -1,0 +1,19 @@
+{
+  "label_key": "celltype",
+  "n_total": 16143,
+  "unique_labels": [
+    "Endothelial Cells",
+    "Injured PT-like",
+    "Low Quality / Dying",
+    "Mast Cells",
+    "Myeloid Cells",
+    "Parietal Epithelial Cells",
+    "Podocytes",
+    "Proximal Tubule",
+    "Stressed Tumor (p53+)",
+    "T Cells",
+    "Tumor (Neuronal-like)",
+    "Tumor Epithelial"
+  ],
+  "mast_count": 74
+}
