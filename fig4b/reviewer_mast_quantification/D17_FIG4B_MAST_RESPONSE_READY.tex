@@ -1,0 +1,55 @@
+% D17 Figure 4b Mast-cell response-ready material
+\section*{Response to Reviewer 2 Minor Comment 4}
+
+We thank the reviewer for requesting quantitative support for the Mast-cell
+retention statement. We re-evaluated the five frozen Figure 4b assignments
+without retraining or changing any assignment. The canonical D17 metadata
+contains 74 Mast Cells among 16,143 cells (0.46\%). Strict majority recall
+(purity >0.5) is reported separately from associated recall (at least three
+Mast Cells, at least five-fold enrichment, and BH-adjusted one-sided Fisher
+q<0.05), together with purity, metacell number, size, top-k capture, and
+fixed-assignment permutation tests.
+
+The author confirmed that MetaCell V2 and SuperCell used the same nominal
+compression input. We therefore report their realized K values rather than
+silently forcing K=403. This is a same-compression comparison, not an
+exact-realized-K=403 comparison.
+
+\subsection*{Changes in the revised manuscript}
+
+We replace the binary Mast-cell checkmark/cross with the quantitative panel
+Fig4b_mast_quantitative_panel and Supplementary Table
+Supplementary_Table_Fig4b_Mast. The revised text distinguishes visual
+localization, strict majority recovery, and localized enrichment, and calls
+the D17 annotation study-derived.
+
+\subsection*{Revised Results paragraph}
+
+Mast Cells comprised 74 of 16,143 cells (0.46\%). GARQ majority recall was
+0.000, associated recall was 0.568,
+maximum purity was 0.302, and the number of associated
+metacells was 4. Top-three capture was
+0.486 with permutation P=9.999e-05; normalized-HHI
+permutation P=9.999e-05. Mast-cell-associated metacells remained identifiable in the GARQ space; localized enrichment and strict majority recovery varied across methods.
+
+\subsection*{Revised Figure 4b caption}
+
+Quantitative evaluation of Mast-cell organization in five frozen Figure 4b
+assignments. Panels show associated and strict-majority recall, maximum purity
+with 0.5 and 0.7 reference lines, associated metacell count with majority count,
+and associated-metacell sizes. The nominal requested K was 403; realized K is
+reported for each method because the author authorized the same-compression
+comparison without post-hoc K correction.
+
+\subsection*{Supplementary Methods}
+
+For metacell M_k, purity was p_k=m_k/|M_k|. Associated metacells required
+m_k>=3, at least five-fold enrichment over global abundance, and BH-adjusted
+one-sided Fisher q<0.05. Majority was p_k>0.5 and high purity p_k>=0.7.
+Assignments and sizes were preserved for 10,000 label permutations with seed
+20260907. No marker was used to select a threshold or assignment.
+
+\subsection*{Supplementary Table LaTeX}
+
+The compact table is in Supplementary_Table_Fig4b_Mast.tex and the complete
+metacell-level table is in fig4b_mast_metacell_level.csv.

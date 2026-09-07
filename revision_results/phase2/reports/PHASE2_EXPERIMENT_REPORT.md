@@ -8,13 +8,27 @@ Gate 0 corrected the two dataset identities that invalidated the Phase-1 biologi
 
 The primary-resolution comparison is now realized-K matched within ±5% for GARQ, official SEACells 0.3.3, official MetaQ 1.0.6, and KMeans: 48/48 dataset-method-seed runs passed the common evaluator. MetaQ calibration used only the seed-0 requested/realized K relation and froze the mapping for seeds 1–2; no labels or biological metrics entered calibration. The rare-state evidence is mixed and frequently unfavorable to GARQ. GARQ was below KMeans/SEACells for D5 Treg, below MetaQ/SEACells for D17 Mast Cells, and below KMeans/SEACells for D18 DC.Myeloid; no method recovered D18 T.DoubleNegative. Full-length GARQ runs show the local anchor branch first executes at quantized step 88. D18 GARQ is computationally feasible but CPU-memory-heavy (about 82.45 GB peak RSS per seed), while peak GPU allocation was about 1.71 GB.
 
+The Figure 4b Mast-cell frozen-assignment analysis for R2 Minor Comment 4 is
+now complete under an explicit author override: all methods used the same
+nominal compression input, while the realized K values are GARQ=403,
+MetaQ=403, SEACells=403, MetaCell V2=429 and SuperCell=404. The exact D17
+Mast count is 74/16,143 (0.4584%). GARQ associated recall was 0.5676 and its
+maximum purity was 0.3016, but strict majority and high-purity recovery were
+zero; MetaQ, SEACells, MetaCell V2 and SuperCell likewise had zero strict
+majority recovery. The only-GARQ interpretation is not supported; the
+review-safe outcome is that Mast-cell-associated metacells were identifiable
+but enrichment and strict recovery varied by method. The report, response
+draft, tables, figures, non-exact-K rationale and preserved strict-audit
+failure evidence are under `fig4b/reviewer_mast_quantification/` and the
+dedicated `R2_MINOR4_FIG4B_MAST_REPORT.md`.
+
 ## 2. Git, environments and hardware
 
 - Base commit: `5da45adcd62f1be8ee318d8742c80c59cb242ca2`.
 - Phase 1 commit: `cfaf79bdcbc26840b6cbf67e3531d6fab6540a09`.
 - Phase 2 branch: `revision/major-review-experiments-phase2`.
 - Gate-0 Phase 2 commit: `59d295dddda624b43f01ca89c31c4209e70e2b5c`.
-- GARQ environment: Conda `MetqQ2`; tests: 28 passed, 13 warnings.
+- GARQ environment: Conda `MetqQ2`; final server test suite: 43 passed, 13 warnings (the earlier 28-test checkpoint is retained in historical reports).
 - EpiCarousel: official PyPI 0.0.2 in isolated Python 3.11 venv.
 - Server: 2 × NVIDIA RTX 4090 (24,564 MiB each), 503 GiB RAM. Jobs were limited to one project-heavy process per GPU.
 
@@ -34,7 +48,7 @@ Source: `revision_results/phase2/audit/phase1_result_validity.csv`.
 
 ## 5. Baseline versions
 
-Official SEACells 0.3.3 and MetaQ 1.0.6 completed D5/D11/D17/D18 × seeds 0–2. KMeans completed the same 12 cells of the design. All used requested K/n=0.02 and the fixed equal-weight representation; all assignments were evaluated by the common evaluator. SEACells needed a writable, C-contiguous numerical copy because full-data NNDescent rejects read-only mmap input; the initial failures are retained. MetaQ required an explicit package-directory import shim, absolute input resolution before its output-directory `chdir`, creation of its expected `figures/` directory, and omission of a broken label-only plotting path; labels were used only by the external evaluator. Row-order cell-ID restoration was accepted only after invariant paired-order checks, including D18 canonicalization. MetaQ D5's first batch status is nonzero solely because an empty metadata path was passed after successful assignment; separate evaluator recoveries all passed and the original evidence remains. Official EpiCarousel 0.0.2 passed a correct-D11 2,000-cell smoke and full D11/D17. MetaCell 0.9.5 and MOFA+ 0.7.2 import, but confirmatory results remain pending. SuperCell remains uninstalled.
+Official SEACells 0.3.3 and MetaQ 1.0.6 completed D5/D11/D17/D18 × seeds 0–2. KMeans completed the same 12 cells of the design. All used requested K/n=0.02 and the fixed equal-weight representation; all assignments were evaluated by the common evaluator. SEACells needed a writable, C-contiguous numerical copy because full-data NNDescent rejects read-only mmap input; the initial failures are retained. MetaQ required an explicit package-directory import shim, absolute input resolution before its output-directory `chdir`, creation of its expected `figures/` directory, and omission of a broken label-only plotting path; labels were used only by the external evaluator. Row-order cell-ID restoration was accepted only after invariant paired-order checks, including D18 canonicalization. MetaQ D5's first batch status is nonzero solely because an empty metadata path was passed after successful assignment; separate evaluator recoveries all passed and the original evidence remains. Official EpiCarousel 0.0.2 passed a correct-D11 2,000-cell smoke and full D11/D17. MetaCell 0.9.5 and MOFA+ 0.7.2 import, but confirmatory results remain pending. SuperCell remains uninstalled. Separately, the Figure 4b frozen MetaCell V2 and SuperCell files were quantified under the author-approved same-compression rule (realized K=429 and 404); these are not exact-K baseline training runs.
 
 ## 6. Fairness and preregistration
 

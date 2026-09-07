@@ -17,6 +17,8 @@ import sys
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Mapping, Sequence
 
+import numpy as np
+
 
 CANONICAL_RNA = "/home/zhangpeiru/data/analysis/new/kidney_rna_updated.h5ad"
 CANONICAL_ATAC = "/home/zhangpeiru/data/analysis/new/kidney_atac_updated.h5ad"
@@ -75,6 +77,22 @@ def _jsonable(value: Any) -> Any:
     if isinstance(value, Mapping):
         return {str(k): _jsonable(v) for k, v in value.items()}
     return str(value)
+
+
+def _bh(values: Sequence[float]) -> np.ndarray:
+    p = np.asarray(values, dtype=float)
+    result = np.full(len(p), np.nan, dtype=float)
+    finite = np.isfinite(p)
+    if not finite.any():
+        return result
+    indices = np.flatnonzero(finite)
+    order = indices[np.argsort(p[indices], kind="stable")]
+    running = 1.0
+    for rank in range(len(order) - 1, -1, -1):
+        index = int(order[rank])
+        running = min(running, p[index] * len(order) / (rank + 1))
+        result[index] = running
+    return result
 
 
 def _audit_h5ad(path: str, label: str) -> Dict[str, Any]:
@@ -315,8 +333,19 @@ def main(argv: Sequence[str] | None = None) -> int:
     parser.add_argument("--figure-dir", required=True, type=Path)
     parser.add_argument("--output-dir", required=True, type=Path)
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument(
+        "--allow-nonexact-k",
+        action="store_true",
+        help="author-authorized continuation using same-compression realized K",
+    )
     parser.add_argument("--n-permutations", type=int, default=10000)
     args = parser.parse_args(argv)
+    if args.allow_nonexact_k and not args.dry_run:
+        from .fig4b_mast_formal import run_formal
+
+        return run_formal(
+            args.output_dir.resolve(), args.figure_dir.resolve(), args.n_permutations
+        )
     return run_audit(args.figure_dir.resolve(), args.output_dir.resolve(), args.n_permutations, args.dry_run)
 
 

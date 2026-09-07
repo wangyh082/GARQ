@@ -1,0 +1,28 @@
+/data/zhangpeiru/GARQ_revision/revision_exp/workflows/fig4b_mast_formal.py:300: FutureWarning: factorize with argument that is not not a Series, Index, ExtensionArray, or np.ndarray is deprecated and will raise in a future version.
+  codes, _ = pd.factorize([str(v) for v in groups], sort=False)
+/data/zhangpeiru/GARQ_revision/revision_exp/workflows/fig4b_mast_formal.py:300: FutureWarning: factorize with argument that is not not a Series, Index, ExtensionArray, or np.ndarray is deprecated and will raise in a future version.
+  codes, _ = pd.factorize([str(v) for v in groups], sort=False)
+/data/zhangpeiru/GARQ_revision/revision_exp/workflows/fig4b_mast_formal.py:300: FutureWarning: factorize with argument that is not not a Series, Index, ExtensionArray, or np.ndarray is deprecated and will raise in a future version.
+  codes, _ = pd.factorize([str(v) for v in groups], sort=False)
+/data/zhangpeiru/GARQ_revision/revision_exp/workflows/fig4b_mast_formal.py:300: FutureWarning: factorize with argument that is not not a Series, Index, ExtensionArray, or np.ndarray is deprecated and will raise in a future version.
+  codes, _ = pd.factorize([str(v) for v in groups], sort=False)
+/data/zhangpeiru/GARQ_revision/revision_exp/workflows/fig4b_mast_formal.py:300: FutureWarning: factorize with argument that is not not a Series, Index, ExtensionArray, or np.ndarray is deprecated and will raise in a future version.
+  codes, _ = pd.factorize([str(v) for v in groups], sort=False)
+{
+  "status": "PASS_AUTHOR_OVERRIDE",
+  "methods": [
+    "GARQ",
+    "MetaQ",
+    "SEACells",
+    "MetaCell V2",
+    "SuperCell"
+  ],
+  "realized_K": {
+    "GARQ": 403,
+    "MetaQ": 403,
+    "SEACells": 403,
+    "MetaCell V2": 429,
+    "SuperCell": 404
+  },
+  "output_dir": "/data/zhangpeiru/GARQ_revision/fig4b/reviewer_mast_quantification"
+}

@@ -31,6 +31,7 @@ def main() -> None:
         *RESULT.glob("audit/*"),
         *RESULT.glob("environments/*"),
         *RESULT.glob("reports/*.md"),
+        *ROOT.glob("fig4b/reviewer_mast_quantification/*"),
     ]
     files = sorted({p.resolve() for p in include if p.is_file() and p != MANIFEST})
     head = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
@@ -44,7 +45,7 @@ def main() -> None:
         "matched_methods": ["GARQ", "KMeans", "MetaQ", "SEACells"],
         "matched_datasets": ["D5", "D11", "D17", "D18"],
         "seeds": [0, 1, 2],
-        "tests": "28 passed, 13 warnings",
+        "tests": "43 passed, 13 warnings",
         "files": [
             {
                 "path": p.relative_to(ROOT).as_posix(),

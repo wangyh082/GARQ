@@ -1,0 +1,6 @@
+method,status,markers_present,markers_missing,associated_group_count,nonassociated_group_count,associated_score_median,nonassociated_score_median,median_score_effect_associated_minus_other,wilcoxon_or_mannwhitney_p,bh_q,coherence_result
+GARQ,PASS,KIT;TPSAB1;TPSB2;CPA3;MS4A2;HDC;GATA2,,4,399,0.7708464717831689,0.0,0.7708464717831689,1.6181214435370824e-05,4.045303608842706e-05,Mast-associated metacells show coherent Mast-cell marker expression
+MetaQ,PASS,KIT;TPSAB1;TPSB2;CPA3;MS4A2;HDC;GATA2,,7,396,0.8619055258749553,0.0,0.8619055258749553,1.9423062652880348e-08,9.711531326440174e-08,Mast-associated metacells show coherent Mast-cell marker expression
+SEACells,PASS,KIT;TPSAB1;TPSB2;CPA3;MS4A2;HDC;GATA2,,5,398,0.8202455144021498,0.0,0.8202455144021498,3.845821123282941e-05,6.409701872138235e-05,Mast-associated metacells show coherent Mast-cell marker expression
+MetaCell V2,PASS,KIT;TPSAB1;TPSB2;CPA3;MS4A2;HDC;GATA2,,3,426,0.436969034766241,0.0,0.436969034766241,0.0005582416830840665,0.0005582416830840665,Mast-associated metacells show coherent Mast-cell marker expression
+SuperCell,PASS,KIT;TPSAB1;TPSB2;CPA3;MS4A2;HDC;GATA2,,4,400,0.5053459087469866,0.0,0.5053459087469866,6.013851927693713e-05,7.517314909617141e-05,Mast-associated metacells show coherent Mast-cell marker expression
